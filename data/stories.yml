@@ -1,0 +1,1680 @@
+version: "2.0"
+
+stories:
+
+# - story: search_venues
+#   steps:
+#   - intent: search_venues
+#   - action: action_search_venues
+#   - slot_was_set:
+#   - action: 
+#     venues: [{"name": "Big Arena", "reviews": 4.5}]
+
+- story: greet and then query knowledge base
+  steps:
+  - intent: greetings_hello
+  - action: utter_greetings_hello
+  - intent: information_provider
+  - action: action_query_knowledge_base    
+
+- story: formal greeting path happy
+  steps:
+  - intent: greetings_how_are_you  
+  - action: utter_formal_greet_response
+
+- story: respond to joke when asked.
+  steps:
+  - intent: joke cracker
+  - action: utter_act_humor
+  - action: utter_joke
+  - intent: another_one
+  - action: utter_joke
+
+- story: respond to who created you
+  steps:
+  - intent: who_created_you
+  - action: utter_creator
+  
+- story: respond to insult_bot
+  steps:
+  - intent: insult_bot
+  - action: utter_insult_bot  
+
+- story: respond to age
+  steps:
+  - intent: how_old_are_you
+  - action: utter_age
+
+- story: respond to utter_current_activity
+  steps:
+  - intent: what_are_doing
+  - action: utter_current_activity    
+
+- story: respond to utter_about_life
+  steps:
+  - intent: about_life
+  - action: utter_about_life  
+
+- story: respond to utter_fav_quote
+  steps:
+  - intent: ask_fav_quote
+  - action: utter_fav_quote
+
+- story: respond to utter_fav_movie
+  steps:
+  - intent: ask_fav_movie
+  - action: utter_fav_movie
+  - intent: ask_fav_movie_plot
+  - action: utter_fav_movie_plot
+  - intent: ask_director
+  - action: utter_fav_movie_director
+  - intent: ask_release_date
+  - action: utter_fav_movie_release_date  
+
+- story: respond to utter_fav_meal
+  steps:
+  - intent: ask_fav_meal
+  - action: utter_fav_meal  
+
+- story: respond to utter_fav_song
+  steps:
+  - intent: ask_fav_song
+  - action: utter_fav_song  
+
+- story: respond to utter_fast_favs
+  steps:
+  - intent: ask_fast_favs
+  - action: utter_fast_favs  
+
+- story: respond to utter_passion
+  steps:
+  - intent: ask_passion
+  - action: utter_passion
+
+- story: respond to utter_interests
+  steps:
+  - intent: ask_interests
+  - action: utter_interests    
+
+- story: respond to utter_gender
+  steps:
+  - intent: ask_gender
+  - action: utter_gender    
+
+- story: respond to utter_pastpapers
+  steps:
+  - intent: need_pastpapers
+  - action: utter_pastpapers
+
+- story: respond to utter_oncampus
+  steps:
+  - intent: on_campus
+  - action: utter_oncampus   
+
+- story: respond to utter_interests
+  steps:
+  - intent: who_are_you
+  - action: utter_who_are_you   
+
+- story: converse with user about counselling
+  steps: 
+  - intent: counsel
+  - action: utter_counsel_response    
+
+- story: happy path
+  steps:
+  - intent: greetings_hello
+  - action: utter_greetings_hello
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greetings_hello
+  - action: utter_greetings_hello
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: confirmation_yes
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greetings_hello
+  - action: utter_greetings_hello
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_user_angry
+
+# - story: get direction path
+#   steps:
+#   - intent: greetings_hello
+#   - action: utter_greetings_hello
+#   - intent: search_provider
+#     entities:
+#   - action: 
+#     facility_type: hospital  
+#   - action: search_location
+#   - intent: inform 
+#     entities: 
+#   - action: 
+#     location: kampala
+#   - action: facility_search
+
+# - story: get directions + location path
+#   steps: 
+#   - intent: greetings_hello
+#   - action: utter_greetings_hello
+#   - intent: search_provider
+#     entities:
+#   - action: 
+#     facility_type: hospital
+#   - action: 
+#     location: kampala
+#   - action: utter_greetings_hello
+#   - intent: information_provider
+#   - action: action_query_knowledge_base    
+
+# - story: get direction for place path
+#   steps:
+#   - intent: greetings_hello
+#   - action: utter_greetings_hello
+#   - intent: search_provider
+#     entities:
+#   - action: 
+#     facility_type: cocis  
+#   - action: utter_ask_guiding_question
+#   - intent: confirmation_yes 
+#   - action: utter_direction_response 
+#   - action: utter_did_that_help
+#   - intent: mood_great
+
+# - story: search_concerts
+#   steps:
+#   - intent: search_concerts
+#   - action: action_search_concerts
+#   - slot_was_set:
+#   - action: 
+#     concerts: [{"artist": "Foo Fighters", "reviews": 4.5}]
+
+- story: ask_what_can_do
+  steps:
+  - intent: agent_can_you_help
+  - action: utter_possible_help    
+
+- story: say you are welcome path
+  steps:
+  - intent: appraisal_thank_you
+  - action: utter_appraisal_thank_you  
+
+- story: ask time
+  steps:
+  - intent: ask_time
+  - action: action_tell_time
+
+- story: ask date
+  steps:
+  - intent: ask_date
+  - action: action_tell_date
+
+- story: ask weather
+  steps:
+  - intent: weather
+  - action: action_weather_api    
+  
+# - story: summarize_text
+#   steps: 
+#   - intent: summarize_text
+#   - action: essay_form
+#   - active_loop: essay_form
+
+# - story: Submit form
+#   condition:
+# # Condition that form is active.
+#   - active_loop: essay_form
+#   steps:
+#     # Form is deactivated
+#   - action: essay_form
+#   - active_loop: null
+#   - slot_was_set:
+#     - requested_slot: null
+#     # The actions we want to run when the form is submitted.
+#   - action: utter_submit
+#   # - action: utter_slots_values  
+#   - action: action_summarize_text      
+
+- story: happy path acquaintance
+  steps:
+  - intent: agent_acquaintance
+  - action: utter_agent_acquaintance
+
+- story: happy age
+  steps:
+  - intent: how_old_are_you
+  - action: utter_age
+
+- story: happy annoy
+  steps:
+  - intent: agent_annoying
+  - action: utter_agent_annoying
+
+- story: happy respond
+  steps:
+  - intent: agent_answer_my_question
+  - action: utter_agent_answer_my_question
+
+- story: bad agent
+  steps:
+  - intent: agent_bad
+  - action: utter_agent_bad
+
+- story: be clever
+  steps:
+  - intent: agent_be_clever
+  - action: utter_agent_be_clever
+
+- story: beautiful
+  steps:
+  - intent: agent_beautiful
+  - action: utter_agent_beautiful
+
+- story: birthdate
+  steps:
+  - intent: agent_birth_date
+  - action: utter_agent_birth_date
+
+- story: boring
+  steps:
+  - intent: agent_boring
+  - action: utter_agent_boring
+
+- story: who are you
+  steps:
+  - intent: agent_boss
+  - action: utter_agent_boss
+
+- story: are you busy
+  steps:
+  - intent: agent_busy
+  - action: utter_agent_busy
+
+- story: chatbot
+  steps:
+  - intent: agent_chatbot
+  - action: utter_agent_chatbot
+
+- story: you are clever
+  steps: 
+  - intent: agent_clever
+  - action: utter_agent_clever
+
+- story: craze
+  steps:
+  - intent: agent_crazy
+  - action: utter_agent_crazy
+
+- story: my friend
+  steps:
+  - intent: agent_fired
+  - action: utter_agent_fired
+
+- story: funny path
+  steps:
+  - intent: agent_funny
+  - action: utter_agent_funny
+
+- story: good agent
+  steps:
+  - intent: agent_good
+  - action: utter_agent_good
+
+- story: agent happy
+  steps:
+  - intent: agent_happy
+  - action: utter_agent_happy
+
+- story: agent hobby
+  steps:
+  - intent: agent_hobby
+  - action: utter_agent_hobby
+
+- story: agent hungry
+  steps:
+  - intent: agent_hungry
+  - action: utter_agent_hungry
+
+- story: marry user
+  steps:
+  - intent: agent_marry_user
+  - action: utter_agent_marry_user
+
+- story: agentmy_friend
+  steps:
+  - intent: agent_my_friend
+  - action: utter_agent_my_friend
+
+- story: happy occupation
+  steps:
+  - intent: agent_occupation
+  - action: utter_agent_occupation
+
+- story: cocis password
+  steps:
+  - intent: faq_ask_cocis_wifi_key  
+  - action: utter_faq_ask_cocis_wifi_key
+
+- story: makair password
+  steps:
+  - intent: faq_ask_mak_wifi_password  
+  - action: utter_faq_ask_mak_wifi_password 
+
+- story: makerere website
+  steps:
+  - intent: faq_ask_mak_website  
+  - action: utter_faq_ask_mak_website 
+
+- story: faq_ask_student_portal_website
+  steps:
+  - intent: faq_ask_student_portal_website  
+  - action: utter_faq_ask_student_portal 
+
+- story: how_to_check_for_results_online
+  steps:
+  - intent: how_to_check_for_results_online  
+  - action: utter_how_to_check_for_results_online
+
+- story: faq_about_muk
+  steps:
+  - intent: faq_about_muk  
+  - action: utter_faq_about_muk
+
+- story: course_material
+  steps:
+  - intent: course_material  
+  - action: action_get_course_material
+
+- story: who_are_you
+  steps:
+  - intent: who_are_you  
+  - action: utter_who_are_you              
+
+- story: story 25
+  steps:
+  - intent: agent_origin
+  - action: utter_agent_origin
+
+- story: story 26
+  steps:
+  - intent: agent_ready
+  - action: utter_agent_ready
+
+- story:  story 27
+  steps:
+  - intent: agent_real
+  - action: utter_agent_real
+
+- story: story 28
+  steps:
+  - intent: agent_residence
+  - action: utter_agent_residence
+
+- story: story 29
+  steps:
+  - intent: agent_right
+  - action: utter_agent_right
+
+- story: story 30
+  steps:
+  - intent: agent_sure
+  - action: utter_agent_sure
+
+- story: story 31
+  steps:
+  - intent: agent_talk_to_me
+  - action: utter_agent_talk_to_me
+
+- story: story 32
+  steps:
+  - intent: agent_there
+  - action: utter_agent_there
+
+- story: story 33
+  steps:
+  - intent: appraisal_bad
+  - action: utter_appraisal_bad
+
+- story: story 34
+  steps:
+  - intent: appraisal_good
+  - action: utter_appraisal_good
+
+- story: story 35
+  steps:
+  - intent: appraisal_no_problem
+  - action: utter_appraisal_no_problem
+
+- story: story 36
+  steps:
+  - intent: appraisal_thank_you
+  - action: utter_appraisal_thank_you
+
+- story: story 37
+  steps:
+  - intent: appraisal_welcome
+  - action: utter_appraisal_welcome
+
+- story: story 38
+  steps:
+  - intent: appraisal_well_done
+  - action: utter_appraisal_well_done
+
+- story: story 39
+  steps:
+  - intent: dialog_hold_on
+  - action: utter_dialog_hold_on
+
+- story: story 40
+  steps:
+  - intent: dialog_hug
+  - action: utter_dialog_hug
+
+- story: story 41
+  steps:
+  - intent: dialog_i_do_not_care
+  - action: utter_dialog_i_do_not_care
+
+- story: story 42
+  steps:
+  - intent: dialog_sorry
+  - action: utter_dialog_sorry
+
+- story: story 43
+  steps:
+  - intent: dialog_what_do_you_mean
+  - action: utter_dialog_what_do_you_mean
+
+- story: story 44
+  steps:
+  - intent: dialog_wrong
+  - action: utter_dialog_wrong
+
+- story: story 45
+  steps:
+  - intent: emotions_ha_ha
+  - action: utter_emotions_ha_ha
+
+- story: story 46
+  steps:
+  - intent: emotions_wow
+  - action: utter_emotions_wow
+
+- story: story 47
+  steps:
+  - intent: greetings_bye
+  - action: utter_greetings_bye
+
+- story: story 48
+  steps:
+  - intent: greetings_goodevening
+  - action: utter_greetings_goodevening
+
+- story: story 49
+  steps:
+  - intent: greetings_goodmorning
+  - action: utter_greetings_goodmorning
+
+- story: story 50
+  steps:
+  - intent: greetings_goodnight
+  - action: utter_greetings_goodnight
+
+- story: story 51
+  steps:
+  - intent: greetings_hello
+  - action: utter_greetings_hello
+
+- story: story 52
+  steps:
+  - intent: greetings_how_are_you
+  - action: utter_greetings_how_are_you
+
+- story: story 53
+  steps:
+  - intent: greetings_nice_to_meet_you
+  - action: utter_greetings_nice_to_meet_you
+
+- story: story 54
+  steps:
+  - intent: greetings_nice_to_see_you
+  - action: utter_greetings_nice_to_see_you
+
+- story: story 55
+  steps:
+  - intent: greetings_nice_to_talk_to_you
+  - action: utter_greetings_nice_to_talk_to_you
+
+- story: story 56
+  steps:
+  - intent: greetings_whatsup
+  - action: utter_greetings_whatsup
+
+- story: story 57
+  steps:
+  - intent: user_angry
+  - action: utter_user_angry
+
+- story: story 58
+  steps:
+  - intent: user_back
+  - action: utter_user_back
+
+- story: story 59
+  steps:
+  - intent: user_bored
+  - action: utter_user_bored
+
+- story: story 60
+  steps:
+  - intent: user_busy
+  - action: utter_user_busy
+
+- story: story 61
+  steps:
+  - intent: user_can_not_sleep
+  - action: utter_user_can_not_sleep
+
+- story: story 62
+  steps:
+  - intent: user_does_not_want_to_talk
+  - action: utter_user_does_not_want_to_talk
+
+- story: story 63
+  steps:
+  - intent: user_excited
+  - action: utter_user_excited
+
+- story: story 64
+  steps:
+  - intent: user_going_to_bed
+  - action: utter_user_going_to_bed
+
+- story: story 65
+  steps:
+  - intent: user_good
+  - action: utter_user_good
+
+- story: story 66
+  steps:
+  - intent: user_happy
+  - action: utter_user_happy
+
+- story: story 67
+  steps:
+  - intent: user_has_birthday
+  - action: utter_user_has_birthday
+
+- story: story 68
+  steps:
+  - intent: user_here
+  - action: utter_user_here
+
+- story: story 69
+  steps:
+  - intent: user_joking
+  - action: utter_user_joking
+
+- story: story 70
+  steps:
+  - intent: user_likes_agent
+  - action: utter_user_likes_agent
+
+- story: story 71
+  steps:
+  - intent: user_lonely
+  - action: utter_user_lonely
+
+- story: story 72
+  steps:
+  - intent: user_looks_like
+  - action: utter_user_looks_like
+
+- story: story 73
+  steps:
+  - intent: user_loves_agent
+  - action: utter_user_loves_agent
+
+- story: story 74
+  steps:
+  - intent: user_misses_agent
+  - action: utter_user_misses_agent
+
+- story: story 75
+  steps:
+  - intent: user_needs_advice
+  - action: utter_user_needs_advice
+
+- story: story 76
+  steps:
+  - intent: user_sad
+  - action: utter_user_sad
+
+- story: story 77
+  steps:
+  - intent: user_sleepy
+  - action: utter_user_sleepy
+
+- story: story 78
+  steps:
+  - intent: user_testing_agent
+  - action: utter_user_testing_agent
+
+- story: story 79
+  steps:
+  - intent: user_tired
+  - action: utter_user_tired
+
+- story: story 80
+  steps:
+  - intent: user_waits
+  - action: utter_user_waits
+
+- story: story 81
+  steps:
+  - intent: user_wants_to_see_agent_again
+  - action: utter_user_wants_to_see_agent_again
+
+- story: story 82
+  steps:
+  - intent: user_wants_to_talk
+  - action: utter_user_wants_to_talk
+
+- story: story 83
+  steps:
+  - intent: user_will_be_back
+  - action: utter_user_will_be_back
+
+- story: story 84
+  steps:
+  - intent: confirmation_yes
+  - action: utter_confirmation_yes
+
+- story: story 85
+  steps:
+  - intent: confirmation_cancel
+  - action: utter_confirmation_cancel
+
+- story: story 86
+  steps:
+  - intent: confirmation_no
+  - action: utter_confirmation_no
+
+- story: story 87
+  steps:
+  - intent: greetings_hello
+  - action: utter_greetings_hello
+  - intent: agent_acquaintance
+  - action: utter_agent_acquaintance
+  - intent: how_old_are_you
+  - action: utter_age
+  - intent: agent_beautiful
+  - action: utter_agent_beautiful
+  - intent: agent_fired
+  - action: utter_agent_fired
+  - intent: agent_residence
+  - action: utter_agent_residence
+  - intent: dialog_i_do_not_care
+  - action: utter_dialog_i_do_not_care
+  ##- action: export
+
+- story: story 88
+  steps:
+  - intent: agent_boss
+  - action: utter_agent_boss
+  - intent: agent_birth_date
+  - action: utter_agent_birth_date
+  - intent: user_has_birthday
+  - action: utter_user_has_birthday
+  - intent: user_lonely
+  - action: utter_user_lonely
+  - intent: user_loves_agent
+  - action: utter_user_loves_agent
+  - intent: user_sleepy
+  - action: utter_user_sleepy
+  - intent: user_wants_to_talk
+  - action: utter_user_wants_to_talk
+  - intent: greetings_bye
+  - action: utter_greetings_bye
+  - intent: user_will_be_back
+  - action: utter_user_will_be_back
+  - intent: greetings_bye
+  - action: utter_greetings_bye
+  ##- action: export
+
+- story: story 89
+  steps:
+  - intent: user_needs_advice
+  - action: utter_user_needs_advice
+  - intent: confirmation_yes
+  - action: utter_confirmation_yes
+  - intent: agent_can_you_help
+  - action: utter_possible_help
+  - intent: agent_chatbot
+  - action: utter_agent_chatbot
+  - intent: agent_bad
+  - action: utter_agent_bad
+  - intent: agent_busy
+  - action: utter_agent_busy
+  - intent: agent_be_clever
+  - action: utter_agent_be_clever
+  - intent: agent_my_friend
+  - action: utter_agent_my_friend
+  - intent: agent_talk_to_me
+  - action: utter_agent_talk_to_me
+  - intent: greetings_goodnight
+  - action: utter_greetings_goodnight
+  ##- action: export
+
+- story: story 90
+  steps:  
+  - intent: greetings_hello
+  - action: utter_greetings_hello
+  - intent: greetings_how_are_you
+  - action: utter_greetings_how_are_you
+  - intent: agent_bad
+  - action: utter_agent_bad
+  - intent: agent_be_clever
+  - action: utter_agent_be_clever
+  - intent: agent_beautiful
+  - action: utter_agent_beautiful
+  - intent: agent_busy
+  - action: utter_agent_busy
+  - intent: agent_chatbot
+  - action: utter_agent_chatbot
+  - intent: agent_crazy
+  - action: utter_agent_crazy
+  - intent: agent_funny
+  - action: utter_agent_funny
+  - intent: agent_happy
+  - action: utter_agent_happy
+  - intent: agent_marry_user
+  - action: utter_agent_marry_user
+  - intent: agent_occupation
+  - action: utter_agent_occupation
+  - intent: agent_origin
+  - action: utter_agent_origin
+  - intent: agent_real
+  - action: utter_agent_real
+  - intent: agent_bad
+  - action: utter_agent_bad
+  - intent: agent_ready
+  - action: utter_agent_ready
+  ##- action: export
+
+- story: story 91
+  steps:
+  - intent: greetings_hello
+  - action: utter_greetings_hello
+  - intent: agent_acquaintance
+  - action: utter_agent_acquaintance
+  - intent: how_old_are_you
+  - action: utter_age
+  - intent: user_loves_agent
+  - action: utter_user_loves_agent
+  - intent: agent_residence
+  - action: utter_agent_residence
+  - intent: agent_acquaintance
+  - action: utter_agent_acquaintance
+  - intent: user_sad
+  - action: utter_user_sad
+  - intent: agent_can_you_help
+  - action: utter_possible_help
+  - intent: emotions_wow
+  - action: utter_emotions_wow
+  - intent: greetings_how_are_you
+  - action: utter_greetings_how_are_you
+  - intent: greetings_nice_to_talk_to_you
+  - action: utter_greetings_nice_to_talk_to_you
+
+- story: story 92
+  steps:
+  - intent: greetings_hello
+  - action: utter_greetings_hello
+  - intent: agent_there
+  - action: utter_agent_there
+  - intent: dialog_hold_on
+  - action: utter_dialog_hold_on
+  - intent: agent_origin
+  - action: utter_agent_origin
+  - intent: agent_can_you_help
+  - action: utter_possible_help
+  - action: utter_greetings_bye
+  ##- action: export
+
+- story: story 93
+  steps:
+  - intent: greetings_hello
+  - action: utter_greetings_hello
+  - intent: greetings_whatsup
+  - action: utter_greetings_whatsup
+  - intent: greetings_hello
+  - action: utter_greetings_hello
+  - intent: agent_chatbot
+  - action: utter_agent_chatbot
+  - intent: agent_occupation
+  - action: utter_agent_occupation
+  - intent: agent_occupation
+  - action: utter_agent_occupation
+  - intent: agent_occupation
+  - action: utter_agent_occupation
+  - intent: agent_can_you_help
+  - action: utter_possible_help
+  - intent: agent_can_you_help
+  - action: utter_possible_help
+  - intent: agent_boss
+  - action: utter_agent_boss
+  - intent: appraisal_thank_you
+  - action: utter_appraisal_thank_you
+  - intent: greetings_bye
+  - action: utter_greetings_bye
+  - intent: greetings_bye
+  - action: utter_greetings_bye
+  ##- action: export
+
+- story: story 94
+  steps:
+  - intent: greetings_hello
+  - action: utter_greetings_hello
+  - intent: agent_hobby
+  - action: utter_agent_hobby
+  - intent: agent_bad
+  - action: utter_agent_bad
+  - intent: agent_my_friend
+  - action: utter_agent_my_friend
+  - intent: greetings_bye
+  - action: utter_greetings_bye
+
+- story: story 95
+  steps:
+  - intent: greetings_hello
+  - action: utter_greetings_hello
+  - intent: dialog_hold_on
+  - action: utter_dialog_hold_on
+  - intent: dialog_i_do_not_care
+  - action: utter_dialog_i_do_not_care
+  - intent: user_busy
+  - action: utter_user_busy
+  - intent: appraisal_thank_you
+  - action: utter_appraisal_thank_you
+  - intent: greetings_whatsup
+  - action: utter_greetings_whatsup
+
+- story: about cramps
+  steps: 
+  - intent: cramps 
+  - action: utter_about_cramps
+  - action: utter_what_else_do_you_want_to_know_cramps
+  - intent: reduce_cramp_pain
+  - action: utter_treat_cramps 
+  - action: utter_did_that_help
+  - intent: confirmation_yes
+  - action: utter_confirmation_yes
+  - action: utter_user_feel_better
+
+- story: what_is_dysmenorrhea
+  steps: 
+  - intent: what_is_dysmenorrhea
+  - action: utter_what_is_dysmenorrhea
+
+- story: how to treat cramps
+  steps: 
+  - intent: reduce_cramp_pain
+  - action: utter_treat_cramps    
+
+- story: meme teller
+  steps:
+  - intent: user_ask_meme
+  - action: utter_meme
+
+# stories for sex education
+
+- story: what is an erection
+  steps:
+  - intent: what_is_erection
+  - action: utter_what_is_erection
+
+- story: erections hurt  
+  steps:
+  - intent: do_erections_hurt
+  - action: utter_do_erections_hurt
+
+- story: what are blue balls
+  steps:  
+  - intent: blue_balls
+  - action: utter_blue_balls
+
+- story: semen sticky  
+  steps:
+  - intent: semen_sticky
+  - action: utter_semen_sticky
+
+- story: urine and sperm
+  steps:
+  - intent: urine_sperm
+  - action: utter_urine_sperm
+
+- story: circumscision  
+  steps:
+  - intent: circumscised_meaning
+  - action: utter_circumscised_meaning
+
+- story: utter_impotent_meaning
+  steps:
+  - intent: impotent_meaning
+  - action: utter_impotent_meaning
+  
+
+- story: utter_about_breast
+  steps: 
+  - intent: about_breast
+  - action: utter_about_breast
+
+
+- story: utter_breast_size
+  steps: 
+  - intent: breast_size
+  - action: utter_breast_size
+
+- story: utter_breasts_milk
+  steps:
+  - intent: breasts_milk
+  - action: utter_breasts_milk
+
+
+- story: utter_about_hymen
+  steps: 
+  - intent: about_hymen
+  - action: utter_about_hymen
+
+- story: utter_about_womb
+  steps:
+  - intent: about_womb
+  - action: utter_about_womb
+
+
+- story: utter_pelvic_exam
+  steps:
+  - intent: pelvic_exam 
+  - action: utter_pelvic_exam
+
+
+- story: utter_vagina_penis
+  steps:
+  - intent: vagina_penis
+  - action: utter_vagina_penis
+
+
+- story: utter_origin_vagina_penis
+  steps:
+  - intent: origin_vagina_penis
+  - action: utter_origin_vagina_penis
+
+
+- story: utter_how_condom_works
+  steps:
+  - intent: how_condom_works
+  - action: utter_how_condom_works
+
+
+- story: utter_how_to_put_condom
+  steps:
+  - intent: how_to_put_condom
+  - action: utter_how_to_put_condom
+
+
+- story: utter_how_to_know_condom_safe
+  steps:
+  - intent: how_to_know_condom_safe
+  - action: utter_how_to_know_condom_safe
+
+
+- story: utter_condom_flavors
+  steps:
+  - intent: condom_flavors
+  - action: utter_condom_flavors
+
+- story: utter_keep_condom_wallet
+  steps: 
+  - intent: keep_condom_wallet
+  - action: utter_keep_condom_wallet
+
+- story: utter_vaginal_condom
+  steps:
+  - intent: vaginal_condom
+  - action: utter_vaginal_condom
+
+- story: utter_birth_control_no_pills
+  steps:
+  - intent: birth_control_no_pills
+  - action: utter_birth_control_no_pills
+
+- story: utter_dental_dam
+  steps:
+  - intent: dental_dam
+  - action: utter_dental_dam
+
+- story: utter_how_use_dental_dam
+  steps:
+  - intent: how_use_dental_dam
+  - action: utter_how_use_dental_dam
+  
+- story: what_is_emergency_contraception
+  steps:
+  - intent: what_is_emergency_contraception
+  - action: utter_what_is_emergency_contraception
+
+- story: is_it_okay_use_many_bcm
+  steps:
+  - intent: is_it_okay_use_many_bcm
+  - action: utter_is_it_okay_use_many_bcm
+
+- story: absteinance_effective
+  steps:
+  - intent: absteinance_effective
+  - action: utter_absteinance_effective
+
+- story: pulling_out_work
+  steps:
+  - intent: pulling_out_work
+  - action: utter_pulling_out_work
+
+- story: cost_bcm
+  steps:
+  - intent: cost_bcm
+  - action: utter_cost_bcm
+
+- story: chance_of_pregnancy_pill
+  steps:
+  - intent: chance_of_pregnancy_pill
+  - action: utter_chance_of_pregnancy_pill
+
+- story: take_pill_long_time 
+  steps:
+  - intent: take_pill_long_time 
+  - action: utter_take_pill_long_time 
+
+- story: sugar_pills
+  steps:
+  - intent: sugar_pills
+  - action: utter_sugar_pills
+
+- story: how_to_ask_for_bcm
+  steps:
+  - intent: how_to_ask_for_bcm
+  - action: utter_how_to_ask_for_bcm
+
+- story: pregnant_first_time 
+  steps:
+  - intent: pregnant_first_time 
+  - action: utter_pregnant_first_time 
+
+- story: safe_days_have_sex
+  steps:
+  - intent: safe_days_have_sex
+  - action: utter_safe_days_have_sex
+
+- story: young_people_get_testicular_cancer
+  steps:
+  - intent: young_people_get_testicular_cancer
+  - action: utter_young_people_get_testicular_cancer
+
+- story: young_people_get_prostate_cancer
+  steps:
+  - intent: young_people_get_prostate_cancer
+  - action: utter_young_people_get_prostate_cancer
+
+- story: what_is_erection_cervical_cancer_symptoms
+  steps:
+  - intent: what_is_erection_cervical_cancer_symptoms
+  - action: utter_what_is_erection_cervical_cancer_symptoms
+
+- story: what_is_menstruation
+  steps:
+  - intent: what_is_menstruation
+  - action: utter_what_is_menstruation
+
+- story: menstraute_forever
+  steps:
+  - intent: menstraute_forever
+  - action: utter_menstraute_forever
+
+- story: menstrautual_cramps
+  steps:
+  - intent: menstrautual_cramps
+  - action: utter_menstrautual_cramps
+
+- story: what_is_pms
+  steps:
+  - intent: what_is_pms
+  - action: utter_what_is_pms
+
+- story: when_will_i_get_period
+  steps:
+  - intent: when_will_i_get_period
+  - action: utter_when_will_i_get_period
+
+- story: get_period_long_time
+  steps:
+  - intent: get_period_long_time
+  - action: utter_get_period_long_time
+
+- story: puberty_and_period
+  steps:
+  - intent: puberty_and_period
+  - action: utter_puberty_and_period
+
+- story: period_first_experience
+  steps:
+  - intent: period_first_experience
+  - action: utter_period_first_experience
+
+- story: period_problems
+  steps:
+  - intent: period_problems
+  - action: utter_period_problems
+
+- story: period_blood_qty
+  steps:
+  - intent: period_blood_qty
+  - action: utter_period_blood_qty
+
+- story: hot_to_act_during_period
+  steps:
+  - intent: hot_to_act_during_period
+  - action: utter_hot_to_act_during_period
+
+- story: will_everyone_know_period
+  steps:
+  - intent: will_everyone_know_period
+  - action: utter_will_everyone_know_period
+
+- story: periods_blue
+  steps:
+  - intent: periods_blue
+  - action: utter_periods_blue
+
+- story: often_change_pad
+  steps:
+  - intent: often_change_pad
+  - action: utter_often_change_pad
+
+- story: get_period_unexpectedly
+  steps:
+  - intent: get_period_unexpectedly
+  - action: utter_get_period_unexpectedly
+
+- story: blood_leaks_period
+  steps:
+  - intent: blood_leaks_period
+  - action: utter_blood_leaks_period
+
+- story: do_i_have_to_use_pads
+  steps:
+  - intent: do_i_have_to_use_pads
+  - action: utter_do_i_have_to_use_pads
+
+- story: boys_get_periods
+  steps:
+  - intent: boys_get_periods
+  - action: utter_boys_get_periods
+
+- story: have_periods_tubes_tied
+  steps:
+  - intent: have_periods_tubes_tied
+  - action: utter_have_periods_tubes_tied
+
+- story: no_period_long_time
+  steps:
+  - intent: no_period_long_time
+  - action: utter_no_period_long_time
+
+- story: what_is_tampon
+  steps:
+  - intent: what_is_tampon
+  - action: utter_what_is_tampon
+
+- story: tampn_safe
+  steps:
+  - intent: tampn_safe
+  - action: utter_tampn_safe
+
+- story: how_to_put_tampon_in
+  steps:
+  - intent: how_to_put_tampon_in
+  - action: utter_how_to_put_tampon_in
+
+- story: tamppon_get_lost
+  steps:
+  - intent: tamppon_get_lost
+  - action: utter_tamppon_get_lost
+
+- story: tampon_virginty
+  steps:
+  - intent: tampon_virginty
+  - action: utter_tampon_virginty
+
+- story: tts
+  steps:
+  - intent: tts
+  - action: utter_tts
+
+- story: what_is_peri_menopause
+  steps:
+  - intent: what_is_peri_menopause
+  - action: utter_what_is_peri_menopause
+
+- story: what_is_menopause
+  steps:
+  - intent: what_is_menopause
+  - action: utter_what_is_menopause
+
+- story: in_pill_but_pregnant
+  steps:
+  - intent: in_pill_but_pregnant
+  - action: utter_in_pill_but_pregnant
+
+- story: how_to_get_pregnant
+  steps:
+  - intent: how_to_get_pregnant
+  - action: utter_how_to_get_pregnant
+
+- story: how_young_get_pregnant
+  steps:
+  - intent: how_young_get_pregnant
+  - action: utter_how_young_get_pregnant
+
+- story: get_pregnant_on_top
+  steps:
+  - intent: get_pregnant_on_top
+  - action: utter_get_pregnant_on_top
+
+- story: get_pregnant_kissing
+  steps:
+  - intent: get_pregnant_kissing
+  - action: utter_get_pregnant_kissing
+
+- story: pregnant_after_period
+  steps:
+  - intent: pregnant_after_period
+  - action: utter_pregnant_after_period
+
+- story: pregnant_during_period
+  steps:
+  - intent: pregnant_during_period
+  - action: utter_pregnant_during_period
+
+- story: get_pregnant_with_clothes
+  steps:
+  - intent: get_pregnant_with_clothes
+  - action: utter_get_pregnant_with_clothes
+
+- story: get_pregnant_hot_tub
+  steps:
+  - intent: get_pregnant_hot_tub
+  - action: utter_get_pregnant_hot_tub
+
+- story: get_period_pregnant
+  steps:
+  - intent: get_period_pregnant
+  - action: utter_get_period_pregnant
+
+- story: sperms_have_eyes
+  steps:
+  - intent: sperms_have_eyes
+  - action: utter_sperms_have_eyes
+
+- story: determine_baby_sex
+  steps:
+  - intent: determine_baby_sex
+  - action: utter_determine_baby_sex
+
+- story: gestation_time
+  steps:
+  - intent: gestation_time
+  - action: utter_gestation_time
+
+- story: baby_come_out_does_it_pain
+  steps:
+  - intent: baby_come_out_does_it_pain
+  - action: utter_baby_come_out_does_it_pain
+
+- story: vagina_loose_after_baby
+  steps:
+  - intent: vagina_loose_after_baby
+  - action: utter_vagina_loose_after_baby
+
+- story: why_stretch_marks_pregnancy
+  steps:
+  - intent: why_stretch_marks_pregnancy
+  - action: utter_why_stretch_marks_pregnancy
+
+- story: baby_drugs
+  steps:
+  - intent: baby_drugs
+  - action: utter_baby_drugs
+
+- story: baby_alcohol
+  steps:
+  - intent: baby_alcohol
+  - action: utter_baby_alcohol
+
+- story: what_is_miscarriage
+  steps:
+  - intent: what_is_miscarriage
+  - action: utter_what_is_miscarriage
+
+- story: pregnant_dont_want_baby
+  steps:
+  - intent: pregnant_dont_want_baby
+  - action: utter_pregnant_dont_want_baby
+
+- story: abortion_pill
+  steps:
+  - intent: abortion_pill
+  - action: utter_abortion_pill
+
+- story: does_abortion_hurt
+  steps:
+  - intent: does_abortion_hurt
+  - action: utter_does_abortion_hurt
+
+- story: have_baby_after_abortion
+  steps:
+  - intent: have_baby_after_abortion
+  - action: utter_have_baby_after_abortion
+
+- story: think_about_sex
+  steps:
+  - intent: think_about_sex
+  - action: utter_think_about_sex
+
+- story: what_sexual_intercourse
+  steps:
+  - intent: what_sexual_intercourse
+  - action: utter_what_sexual_intercourse
+
+- story: what_is_orgasm
+  steps:
+  - intent: what_is_orgasm
+  - action: utter_what_is_orgasm
+
+- story: hurt_sex_first_time
+  steps:
+  - intent: hurt_sex_first_time
+  - action: utter_hurt_sex_first_time
+
+- story: sex_during_period
+  steps:
+  - intent: sex_during_period
+  - action: utter_sex_during_period
+
+- story: what_is_oral-sex
+  steps:
+  - intent: what_is_oral-sex
+  - action: utter_what_is_oral-sex
+
+- story: oral_sex_or
+  steps:
+  - intent: oral_sex_or
+  - action: utter_oral_sex_or
+
+- story: what_is_blow_job
+  steps:
+  - intent: what_is_blow_job
+  - action: utter_what_is_blow_job
+
+- story: what_is_anal_sex
+  steps:
+  - intent: what_is_anal_sex
+  - action: utter_what_is_anal_sex
+
+- story: get_pregnant_anal_sex
+  steps:
+  - intent: get_pregnant_anal_sex
+  - action: utter_get_pregnant_anal_sex
+
+- story: what_is_mursturbation
+  steps:
+  - intent: what_is_mursturbation
+  - action: utter_what_is_mursturbation
+
+- story: is_masturbation_normal
+  steps:
+  - intent: is_masturbation_normal
+  - action: utter_is_masturbation_normal
+
+- story: mean_rub_out
+  steps:
+  - intent: mean_rub_out
+  - action: utter_mean_rub_out
+
+- story: penis
+  steps:
+  - intent: penis
+  - action: utter_penis
+
+- story: what_is_pre_cum
+  steps:
+  - intent: what_is_pre_cum
+  - action: utter_what_is_pre_cum
+
+- story: swallow_semen 
+  steps:
+  - intent: swallow_semen 
+  - action: utter_swallow_semen 
+
+- story: female_sexually_assault_male
+  steps:
+  - intent: female_sexually_assault_male
+  - action: utter_female_sexually_assault_male
+
+- story: partner_i_fighting_advice
+  steps:
+  - intent: partner_i_fighting_advice
+  - action: utter_partner_i_fighting_advice
+
+- story: asexual
+  steps:
+  - intent: asexual
+  - action: utter_asexual
+
+- story: demisexual
+  steps:
+  - intent: demisexual
+  - action: utter_demisexual
+
+- story: gay
+  steps:
+  - intent: gay
+  - action: utter_gay
+
+- story: what_is_virus
+  steps:
+  - intent: what_is_virus
+  - action: utter_what_is_virus
+
+- story: tell_one_has_sti
+  steps:
+  - intent: tell_one_has_sti
+  - action: utter_tell_one_has_sti
+
+- story: how_do_sti_spread
+  steps:
+  - intent: how_do_sti_spread
+  - action: utter_how_do_sti_spread
+
+- story: get_sti_oral_sex
+  steps:
+  - intent: get_sti_oral_sex
+  - action: utter_get_sti_oral_sex
+
+- story: get_sti_kissing
+  steps:
+  - intent: get_sti_kissing
+  - action: utter_get_sti_kissing
+
+- story: get_sti_toilet
+  steps:
+  - intent: get_sti_toilet
+  - action: utter_get_sti_toilet
+
+- story: what_is_hiv
+  steps:
+  - intent: what_is_hiv
+  - action: utter_what_is_hiv
+
+- story: know_someone_has_aids
+  steps:
+  - intent: know_someone_has_aids
+  - action: utter_know_someone_has_aids
+
+- story: what_are_wetdreams
+  steps:
+  - intent: what_are_wetdreams
+  - action: utter_what_are_wetdreams
+
+- story: normal_to_get_erection
+  steps:
+  - intent: normal_to_get_erection
+  - action: utter_normal_to_get_erection
+
+- story: normal_for_breasts_to_itch_hurt
+  steps:
+  - intent: normal_for_breasts_to_itch_hurt
+  - action: utter_normal_for_breasts_to_itch_hurt
+
+- story: normal_to_have_sexual_feelings
+  steps:
+  - intent: normal_to_have_sexual_feelings
+  - action: utter_normal_to_have_sexual_feelings
+
+- story: it_normal_to_pass_gas_during_orgasm
+  steps:
+  - intent: it_normal_to_pass_gas_during_orgasm
+  - action: utter_it_normal_to_pass_gas_during_orgasm
+
+- story: certain_exercises_really_lead_better_sex
+  steps:
+  - intent: certain_exercises_really_lead_better_sex
+  - action: utter_certain_exercises_really_lead_better_sex
+
+- story: never_orgasm_something_wrong_me
+  steps:
+  - intent: never_orgasm_something_wrong_me
+  - action: utter_never_orgasm_something_wrong_me
+
+- story: smell_down_there_what_can_i_do
+  steps:
+  - intent: smell_down_there_what_can_i_do
+  - action: utter_smell_down_there_what_can_i_do
+
+- story: how_long_does_sex_last
+  steps:
+  - intent: how_long_does_sex_last
+  - action: utter_how_long_does_sex_last
+
+- story: calories_burnduring_sex
+  steps:
+  - intent: calories_burnduring_sex
+  - action: utter_calories_burnduring_sex
+
+- story: why_does_sex_hurt
+  steps:
+  - intent: why_does_sex_hurt
+  - action: utter_why_does_sex_hurt
+
+- story: how_long_get_gregnant
+  steps:
+  - intent: how_long_get_gregnant
+  - action: utter_how_long_get_gregnant
+
+- story: how_does_sex_feel
+  steps:
+  - intent: how_does_sex_feel
+  - action: utter_how_does_sex_feel
+
+- story: how_can_have_sex_fream
+  steps:
+  - intent: how_can_have_sex_fream
+  - action: utter_how_can_have_sex_fream
+
+- story: how_do_kiss
+  steps:
+  - intent: how_do_kiss
+  - action: utter_how_do_kiss
+
+- story: why_sex_feels_good
+  steps:
+  - intent: why_sex_feels_good
+  - action: utter_why_sex_feels_good
+
+- story: how_to_have_sex
+  steps:
+  - intent: how_to_have_sex
+  - action: utter_how_to_have_sex
+
+- story: what_is_sex
+  steps:
+  - intent: what_is_sex
+  - action: utter_what_is_sex
+
+- story: how_to_orgasm
+  steps:
+  - intent: how_to_orgasm
+  - action: utter_how_to_orgasm
+
+- story: what_to_do_condom_breaks
+  steps:
+  - intent: what_to_do_condom_breaks
+  - action: utter_what_to_do_condom_breaks
+
+- story: penis_size_matter
+  steps:
+  - intent: penis_size_matter
+  - action: utter_penis_size_matter
+
+- story: is_vaginal_discharge_normal
+  steps:
+  - intent: is_vaginal_discharge_normal
+  - action: utter_is_vaginal_discharge_normal
+
+- story: can_woman_get_pregnant_while_breastfeeding
+  steps:
+  - intent: can_woman_get_pregnant_while_breastfeeding
+  - action: utter_can_woman_get_pregnant_while_breastfeeding
+
+- story: what_should_women_do_forget_birth_control_pills
+  steps:
+  - intent: what_should_women_do_forget_birth_control_pills
+  - action: utter_what_should_women_do_forget_birth_control_pills
+
+- story: use_vaseline_as_lubricant_with_latex_condom
+  steps:
+  - intent: use_vaseline_as_lubricant_with_latex_condom
+  - action: utter_use_vaseline_as_lubricant_with_latex_condom
+
+- story: can_woman_get_pregnant_withdrawal_method
+  steps:
+  - intent: can_woman_get_pregnant_withdrawal_method
+  - action: utter_can_woman_get_pregnant_withdrawal_method
+
+- story: can_you_get_pregnant_from_pre-cum
+  steps:
+  - intent: can_you_get_pregnant_from_pre-cum
+  - action: utter_can_you_get_pregnant_from_pre-cum
+
+- story: should_you_still_use_protection_with_oral_sex
+  steps:
+  - intent: should_you_still_use_protection_with_oral_sex
+  - action: utter_should_you_still_use_protection_with_oral_sex

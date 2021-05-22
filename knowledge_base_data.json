@@ -1,0 +1,429 @@
+{
+    "restaurant": [{
+            "id": 0,
+            "name": "Cocis Canteen",
+            "meal": "breakfast",
+            "outside-seating": true,
+            "price-range": "mid-range"
+        },
+        {
+            "id": 1,
+            "name": "Giuld Canteen",
+            "meal": "lunch",
+            "outside-seating": false,
+            "price-range": "cheap"
+        },
+        {
+            "id": 2,
+            "name": "Tasty Bites",
+            "meal": "breakfast",
+            "outside-seating": true,
+            "price-range": "mid-range"
+        },
+        {
+            "id": 3,
+            "name": "Lụa Restaurant",
+            "meal": "Vietnamese",
+            "outside-seating": true,
+            "price-range": "cheap"
+        },
+        {
+            "id": 4,
+            "name": "Pfefferberg",
+            "meal": "supper",
+            "outside-seating": true,
+            "price-range": "mid-range"
+        },
+        {
+            "id": 5,
+            "name": "Marubi Ramen",
+            "meal": "all",
+            "outside-seating": false,
+            "price-range": "cheap"
+        },
+        {
+            "id": 6,
+            "name": "Fresh Bites",
+            "meal": "Lunch",
+            "outside-seating": true,
+            "price-range": "cheap"
+        }
+    ],
+    "college": [
+
+        {
+            "id": 0,
+            "name": "College of Agricultural and Environmental Sciences (CAES)",
+            "area": "University Road, Opposite Main Library"
+        },
+        {
+            "id": 1,
+            "name": "College of Business and Management Sciences (CoBAMS)",
+            "schools": "Faculty of Economics and Management (FEMA)\nInstitute of Statistics and Applied Economics(ISAE)",
+            "about-info": "Background & History The College of Business and Management Sciences(COBAMS) is one of the 8 Colleges of Makerere University, it was formed as a merger between the Faculty of Economics and Management(FEMA) and the Institute of Statistics and Applied Economics(ISAE).The merger followed the University Council’ s recommendation of 2008 that required all Faculties and Institutes to explore and implement college formation, as part of the strategies to improve efficiency and effectiveness of the overall organisation and management of Makerere University.",
+            "courses": "Bachelor of Science in Actuarial Science\nBachelor of Arts in Development Economics\nBachelor of Arts in Economics\nBachelor of Science in Business Statistics\nBachelor of Business Administration\nBachelor of Science in Population Studies\nBachelor of Science in Quantitative Economics\nBachelor of Statistics\nBachelor of Commerce"
+
+
+        },
+        {
+            "id": 2,
+            "name": "College of Computing and Information Sciences (CoCIS)",
+            "schools": "School of Computing and Informatics Technology (SCIT)\nEast African School of Library and Information Science(EASLIS)",
+            "about-info": "CoCIS is one of the largest computing and ICT training, information science, research and consultancy colleges in Africa. It cuts across as a world class College and has maintained its place as an icon of excellence on the continent. It is committed to delivering excellent services in the area of Computing, Library, Records and Information Sciences and attracts both local and international students. CoCIS boasts of the state of the art infrastructure including lecture theaters, giant computer laboratories, specialized computer laboratories and a college library. Its three buildings can accommodate over 10,000 students in one sitting.",
+            "courses": "Bachelor of Science in Computer Science\nBachelor of Science in Software Engineering"
+        },
+        {
+            "id": 3,
+            "name": "College of Education and External Studies (CEES)"
+        },
+        {
+            "id": 4,
+            "name": "College of Engineering, Design, Art and Technology (CEDAT)"
+        },
+        {
+            "id": 5,
+            "name": "College of Health Sciences (CHS)"
+        },
+        {
+            "id": 6,
+            "name": "College of Humanities and Social Sciences (CHUSS)"
+        },
+        {
+            "id": 7,
+            "name": "College of Natural Sciences (CoNAS)"
+        },
+        {
+            "id": 8,
+            "name": "College of Veterinary Medicine, Animal Resource and Bio-Security (CoVAB)"
+        },
+        {
+            "id": 9,
+            "name": "School of Law"
+        }
+
+    ],
+
+    "institute": [{
+            "id": 0,
+            "name": "Infectious Diseases Institute (IDI)"
+        },
+        {
+            "id": 0,
+            "name": "Makerere Institute of Social Research (MISR)"
+        },
+        {
+            "id": 0,
+            "name": "Makerere University Agricultural Research Institute Kabanyolo (MUARIK)"
+        }
+    ],
+    "halls": [
+
+        {
+            "id": 0,
+            "gender": "female",
+            "name": "Africa Hall"
+        },
+        {
+            "id": 1,
+            "gender": "female",
+            "name": "Complex Hall"
+        },
+        {
+            "id": 2,
+            "gender": "female",
+            "name": "Mary Stuart Hall"
+        },
+        {
+            "id": 3,
+            "gender": "male",
+            "name": "Livingstone Hall"
+        },
+        {
+            "id": 4,
+            "gender": "male",
+            "name": "Lumumba Hall"
+        },
+        {
+            "id": 5,
+            "gender": "male",
+            "name": "Nkurumah Hall"
+        },
+        {
+            "id": 6,
+            "gender": "male",
+            "name": "Nsibirwa Hall"
+        },
+        {
+            "id": 7,
+            "gender": "male",
+            "name": "Mitchell Hall"
+        },
+        {
+            "id": 8,
+            "gender": "male",
+            "name": "University Hall"
+        }
+
+
+    ],
+
+    "lecturer": [{
+
+            "id": 0,
+            "name": "Dr Rose Nakibuule",
+            "email": "rnakibuule@gmail.com",
+            "office-hours": "",
+            "area": "chs",
+            "phone": "0701116829"
+        }, {
+            "id": 1,
+            "name": "Dr John Ngubiri",
+            "email": "ngubiri@cis.mak.ac.ug",
+            "office-hours": "",
+            "area": "cocis",
+            "phone": "0776543466"
+        },
+        {
+            "id": 2,
+            "name": "Marriette Katarahwire",
+            "email": "kmarriette@cis.mak.ac.ug",
+            "office-hours": "",
+            "area": "cocis",
+            "phone": ""
+        },
+        {
+            "id": 3,
+            "name": "Dr Micheal Kizito",
+            "email": "mkizito@cis.mak.ac.ug",
+            "office-hours": "",
+            "area": "cocis",
+            "phone": ""
+        },
+        {
+            "id": 4,
+            "name": "Mr John Kizito",
+            "email": "jkizito@cis.mak.ac.ug",
+            "office-hours": "",
+            "area": "cocis",
+            "phone": "0774715632"
+        },
+        {
+            "id": 5,
+            "name": "Dr Daudi Jjingo",
+            "email": "djjingo@cis.mak.ac.ug",
+            "office-hours": "",
+            "area": "cocis",
+            "phone": ""
+        },
+        {
+            "id": 6,
+            "name": "Ms Barbara Nansamba",
+            "email": "bnansamba@cis.mak.ac.ug",
+            "office-hours": "",
+            "area": "cocis",
+            "phone": "077494598"
+        }, {
+            "id": 7,
+            "name": "Eng Bainomugisha",
+            "email": "baino@cis.mak.ac.ug",
+            "area": "cocis",
+            "office-hours": "",
+            "phone": "0794665051"
+        },
+        {
+            "id": 8,
+            "name": "Mr David Byansi",
+            "email": "byansid4@gmail.com",
+            "office-hours": "",
+            "area": "cocis",
+            "phone": "0757887502"
+        }, {
+            "id": 9,
+            "name": "Mr Joseph Lwoma",
+            "office-hours": "",
+            "area": "cocis",
+            "email": "",
+            "phone": "0774036703"
+        },
+        {
+            "id": 10,
+            "name": "Mr Moses Nasinyama",
+            "email": "mmakoha@gmail.com",
+            "office-hours": "",
+            "area": "cocis",
+            "phone": "0702865645"
+        },
+        {
+            "id": 11,
+            "name": "Mr Ssemwogerere Joseph",
+            "office-hours": "",
+            "area": "cocis",
+            "email": "",
+            "phone": "0777539045"
+        }
+
+
+    ],
+    "hostel": [{
+            "id": 0,
+            "name": "Nalikka Hostel",
+            "price-range": "expensive at UGX600,000 per semester",
+            "breakfast-included": true,
+            "area": "Kikoni",
+            "free-wifi": true,
+            "star-rating": 5,
+            "transport-shuttle": true
+        },
+        {
+            "id": 1,
+            "name": "J J Hostel",
+            "price-range": "expensive at UGX550,000 per semester",
+            "breakfast-included": true,
+            "area": "Kikoni",
+            "free-wifi": true,
+            "star-rating": 4,
+            "transport-shuttle": false
+        },
+        {
+            "id": 2,
+            "name": "Waveney Hostel",
+            "price-range": "mid-range at UGX600,000 per semester",
+            "breakfast-included": false,
+            "area": "Kikoni",
+            "free-wifi": false,
+            "star-rating": 1,
+            "transport-shuttle": false
+        },
+        {
+            "id": 3,
+            "name": "Wandegeya Wall Hostel",
+            "price-range": "cheap at UGX500,000 per semester",
+            "breakfast-included": false,
+            "area": "Wandegeya",
+            "free-wifi": true,
+            "star-rating": 2,
+            "transport-shuttle": false
+        },
+        {
+            "id": 4,
+            "name": "Kare Hostel",
+
+            "price-range": "expensive at UGX700,000 per semester",
+            "breakfast-included": true,
+            "area": "Kikoni",
+            "free-wifi": true,
+            "star-rating": 3,
+            "transport-shuttle": false
+        },
+        {
+            "id": 5,
+            "name": "Bascon Girls Hostel",
+
+            "price-range": "cheap at UGX650,000 per semester",
+            "breakfast-included": true,
+            "area": "Wandegeya",
+            "free-wifi": false,
+            "star-rating": 2,
+            "transport-shuttle": false
+        },
+        {
+            "id": 6,
+            "name": "Akwata Empola Hostel",
+
+            "price-range": "mid-range at UGX800,000 per semester",
+            "breakfast-included": true,
+            "area": "Kikoni",
+            "free-wifi": true,
+            "star-rating": 3,
+            "transport-shuttle": true
+        },
+        {
+            "id": 7,
+            "name": "Nana Hostels",
+
+            "price-range": "expensive at UGX900,000 per semester",
+            "breakfast-included": true,
+            "area": "Makerere",
+            "free-wifi": true,
+            "star-rating": 3,
+            "transport-shuttle": true
+        },
+        {
+            "id": 8,
+            "name": "Muhika Hostel",
+
+            "price-range": "mid-range at UGX750,000 per semester",
+            "breakfast-included": true,
+            "area": "Kikoni",
+            "free-wifi": true,
+            "star-rating": 3,
+            "transport-shuttle": true
+        },
+        {
+            "id": 9,
+            "name": "Kalmax Hostel",
+
+            "price-range": "mid-range at UGX610,000 per semester",
+            "breakfast-included": true,
+            "area": "Kikoni",
+            "free-wifi": true,
+            "star-rating": 3,
+            "transport-shuttle": true
+        },
+        {
+            "id": 10,
+            "name": "DreamWorld Hostel",
+
+            "price-range": "mid-range at UGX600,000 per semester",
+            "breakfast-included": true,
+            "area": "Kikoni",
+            "free-wifi": true,
+            "star-rating": 3,
+            "transport-shuttle": true
+        },
+        {
+            "id": 11,
+            "name": "Douglas Villa Hostel",
+            "price": "UGX570,000 per semester",
+            "price-range": "cheap at UGX570,000 per semester",
+            "breakfast-included": true,
+            "area": "Kikoni",
+            "free-wifi": true,
+            "star-rating": 3,
+            "transport-shuttle": true
+        },
+        {
+            "id": 12,
+            "name": "Sotch Hostel",
+            "price": "UGX800,000 per semester",
+            "price-range": "mid-range at UGX800,000 per semester",
+            "breakfast-included": true,
+            "area": "Kikoni",
+            "free-wifi": true,
+            "star-rating": 3,
+            "transport-shuttle": true
+        },
+        {
+            "id": 13,
+            "name": "Frama Hostel",
+            "price": "UGX500,000 per semester",
+            "price-range": "mid-range at UGX500,000 per semester",
+            "breakfast-included": true,
+            "area": "Kikoni",
+            "free-wifi": false,
+            "star-rating": 3,
+            "transport-shuttle": false
+        },
+        {
+            "id": 14,
+            "name": "MaiMood Hostel",
+            "price": "UGX500,000 per semester",
+            "price-range": "mid-range at UGX500,000 per semester",
+            "breakfast-included": true,
+            "area": "Wandegeya",
+            "free-wifi": true,
+            "star-rating": 3,
+            "transport-shuttle": true
+        }
+    ]
+}

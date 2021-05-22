@@ -1,0 +1,1893 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- joke cracker
+- ask_passion
+- who_are_you
+- information_provider
+- college_data
+- search_venues
+- bot_challenge
+- deny
+- mood_great
+- mood_unhappy
+- inform
+- search_provider
+- out_of_scope
+- search_concerts
+- faq_ask_muele
+- faq_ask_mak_wifi_password
+- faq_ask_cocis_wifi_key
+- faq_ask_mak_website
+- faq_ask_student_portal_website
+- how_to_check_for_results_online
+- faq_about_muk
+- counsel
+- cramps
+- reduce_cramp_pain
+- what_is_dysmenorrhea
+- another_one
+- on_campus
+- need_pastpapers
+- ask_gender
+- ask_interests
+- ask_fast_favs
+- ask_fav_song
+- ask_fav_meal
+- ask_fav_movie
+- ask_fav_movie_plot
+- ask_director
+- ask_release_date
+- ask_fav_quote
+- course_material
+- about_life
+- what_are_doing
+- how_old_are_you
+- insult_bot
+- who_created_you
+- summarise_text
+- ask_time
+- ask_date
+- summarize_text
+- weather
+- agent_acquaintance
+- agent_annoying
+- agent_answer_my_question
+- agent_bad
+- agent_be_clever
+- agent_beautiful
+- agent_birth_date
+- agent_boring
+- agent_boss
+- agent_busy
+- agent_can_you_help
+- agent_chatbot
+- agent_clever
+- agent_crazy
+- agent_fired
+- agent_funny
+- agent_good
+- agent_happy
+- agent_hobby
+- agent_hungry
+- agent_marry_user
+- agent_my_friend
+- agent_occupation
+- agent_origin
+- agent_ready
+- agent_real
+- agent_residence
+- agent_right
+- agent_sure
+- agent_talk_to_me
+- agent_there
+- appraisal_bad
+- appraisal_good
+- appraisal_no_problem
+- appraisal_thank_you
+- appraisal_welcome
+- appraisal_well_done
+- dialog_hold_on
+- dialog_hug
+- dialog_i_do_not_care
+- dialog_sorry
+- dialog_what_do_you_mean
+- dialog_wrong
+- emotions_ha_ha
+- emotions_wow
+- greetings_bye
+- greetings_goodevening
+- greetings_goodmorning
+- greetings_goodnight
+- greetings_hello
+- greetings_how_are_you
+- greetings_nice_to_meet_you
+- greetings_nice_to_see_you
+- greetings_nice_to_talk_to_you
+- greetings_whatsup
+- user_angry
+- user_back
+- user_bored
+- user_busy
+- user_can_not_sleep
+- user_does_not_want_to_talk
+- user_excited
+- user_going_to_bed
+- user_good
+- user_happy
+- user_has_birthday
+- user_here
+- user_joking
+- user_likes_agent
+- user_lonely
+- user_looks_like
+- user_loves_agent
+- user_misses_agent
+- user_needs_advice
+- user_sad
+- user_sleepy
+- user_testing_agent
+- user_tired
+- user_waits
+- user_wants_to_see_agent_again
+- user_wants_to_talk
+- user_will_be_back
+- confirmation_yes
+- confirmation_cancel
+- confirmation_no
+- user_ask_meme
+- what_is_erection
+- do_erections_hurt
+- blue_balls
+- semen_sticky
+- urine_sperm
+- circumscised_meaning
+- impotent_meaning
+- about_breast
+- breast_size
+- breasts_milk
+- about_hymen
+- about_womb
+- pelvic_exam
+- vagina_penis
+- origin_vagina_penis
+- how_condom_works
+- how_to_put_condom
+- how_to_know_condom_safe
+- condom_flavors
+- keep_condom_wallet
+- vaginal_condom
+- birth_control_no_pills
+- dental_dam
+- how_use_dental_dam
+- what_is_emergency_contraception
+- is_it_okay_use_many_bcm
+- absteinance_effective
+- pulling_out_work
+- cost_bcm
+- chance_of_pregnancy_pill
+- take_pill_long_time
+- sugar_pills
+- how_to_ask_for_bcm
+- pregnant_first_time
+- safe_days_have_sex
+- young_people_get_testicular_cancer
+- young_people_get_prostate_cancer
+- what_is_erection_cervical_cancer_symptoms
+- what_is_menstruation
+- menstraute_forever
+- menstrautual_cramps
+- what_is_pms
+- when_will_i_get_period
+- get_period_long_time
+- puberty_and_period
+- period_first_experience
+- period_problems
+- period_blood_qty
+- hot_to_act_during_period
+- will_everyone_know_period
+- periods_blue
+- often_change_pad
+- get_period_unexpectedly
+- blood_leaks_period
+- do_i_have_to_use_pads
+- boys_get_periods
+- have_periods_tubes_tied
+- no_period_long_time
+- what_is_tampon
+- tampn_safe
+- how_to_put_tampon_in
+- tamppon_get_lost
+- tampon_virginty
+- tts
+- what_is_peri_menopause
+- what_is_menopause
+- in_pill_but_pregnant
+- how_to_get_pregnant
+- how_young_get_pregnant
+- get_pregnant_on_top
+- get_pregnant_kissing
+- pregnant_after_period
+- pregnant_during_period
+- get_pregnant_with_clothes
+- get_pregnant_hot_tub
+- get_period_pregnant
+- sperms_have_eyes
+- determine_baby_sex
+- gestation_time
+- baby_come_out_does_it_pain
+- vagina_loose_after_baby
+- why_stretch_marks_pregnancy
+- baby_drugs
+- baby_alcohol
+- what_is_miscarriage
+- pregnant_dont_want_baby
+- abortion_pill
+- does_abortion_hurt
+- have_baby_after_abortion
+- think_about_sex
+- what_sexual_intercourse
+- what_is_orgasm
+- hurt_sex_first_time
+- sex_during_period
+- what_is_oral-sex
+- oral_sex_or
+- what_is_blow_job
+- what_is_anal_sex
+- get_pregnant_anal_sex
+- what_is_mursturbation
+- is_masturbation_normal
+- mean_rub_out
+- penis
+- what_is_pre_cum
+- swallow_semen
+- female_sexually_assault_male
+- partner_i_fighting_advice
+- asexual
+- demisexual
+- gay
+- what_is_virus
+- tell_one_has_sti
+- how_do_sti_spread
+- get_sti_oral_sex
+- get_sti_kissing
+- get_sti_toilet
+- what_is_hiv
+- know_someone_has_aids
+- what_are_wetdreams
+- normal_to_get_erection
+- normal_for_breasts_to_itch_hurt
+- normal_to_have_sexual_feelings
+- it_normal_to_pass_gas_during_orgasm
+- certain_exercises_really_lead_better_sex
+- never_orgasm_something_wrong_me
+- smell_down_there_what_can_i_do
+- how_long_does_sex_last
+- calories_burnduring_sex
+- why_does_sex_hurt
+- how_long_get_gregnant
+- how_does_sex_feel
+- how_can_have_sex_fream
+- how_do_kiss
+- why_sex_feels_good
+- how_to_have_sex
+- what_is_sex
+- how_to_orgasm
+- what_to_do_condom_breaks
+- penis_size_matter
+- is_vaginal_discharge_normal
+- can_woman_get_pregnant_while_breastfeeding
+- what_should_women_do_forget_birth_control_pills
+- use_vaseline_as_lubricant_with_latex_condom
+- can_woman_get_pregnant_withdrawal_method
+- can_you_get_pregnant_from_pre-cum
+- should_you_still_use_protection_with_oral_sex
+entities:
+- about-info
+- area
+- attribute
+- college
+- college_name
+- course
+- data_info
+- facility_type
+- hostel
+- location
+- meal
+- mention
+- object_type
+- place
+- restaurant
+- essaybody
+slots:
+  concerts:
+    type: list
+    influence_conversation: false
+  venues:
+    type: list
+    influence_conversation: false
+  object_type:
+    type: text
+    influence_conversation: false
+  mention:
+    type: text
+    influence_conversation: false
+  attribute:
+    type: text
+    influence_conversation: false
+  hostel:
+    type: text
+    influence_conversation: false
+  restaurant:
+    type: text
+    influence_conversation: false
+  area:
+    type: text
+    influence_conversation: false
+  meal:
+    type: text
+    influence_conversation: false
+  data_info:
+    type: text
+    influence_conversation: false
+  college_name:
+    type: text
+    influence_conversation: false
+  essaybody:
+    type: text
+    influence_conversation: false
+    
+forms:
+  essay_form:
+    essaybody:
+    - type: from_text
+
+responses:
+  utter_ask_essay_form_essay_body:
+  - text: "Okay let's look at that essay"
+  - text: "Show it to me"
+  - text: "okay...lemme see it"
+  - text: "Text me that essay"
+  utter_submit:
+  - text: "Working on it...a minute!"
+  search_location:
+  - text: What location?
+  - text: In what area?
+  utter_possible_help:
+  - text: |-
+      You can ask me about college🕍, hostels🏢, restaurants🍟, halls of resiendence🏠, finding you course material📚, directions📍, weather🌤, counseling, date and time📅 and anything else about Muk Campus. We can always talk. 
+      If you need any help, I am the guy😎
+  utter_direction_response:
+  - text: Here you go
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_information_request:
+  - text: Just a bit, thinking about the answer
+  utter_ask_guiding_question:
+  - text: Can I send you a map with coordinates?
+  utter_send_text_to_summarize:
+  - text: Type me the text that you would like to summarise
+  utter_about_cramps:
+  - text: Quite a lot actually
+  - text: It’s very uncomfortable
+  - text: A lot of pain and panic
+  - text: If it’s like a contraction or a really bad contraction and you are not able to move it’s panic
+  - text: I’ve ever experienced it and it sometimes lasts days and sometimes they last hours
+  - text: Get lots of them. The painkillers help
+  - text: The pain is fleeting
+  - text: Cramps are a part of life
+  - text: There is discomfort
+  - text: If you don’t do anything about it or see a  doctor they will give you something for it
+  - text: They can be debilitating especially when you are pregnant
+  - text: You can get painkillers for them if you have pain
+  - text: I know they are very painful and can sometimes last a lifetime. Try taking ibuprofen if you feel bad
+  - text: You could try just going to the doctor
+  - text: It’s jut cramps...
+  - text: A lot of pain
+  - text: I know the pain...
+  - text: I don’t know, I dont get them sometimes
+  - text: The pain is very unbearable
+  - text: I know that you hurt
+  - text: I know, I have one every morning for like the past three weeks. I’m so over it😪
+  - text: I had one that lasted for days and felt like I was getting better but then it turned into a full-on migraine
+  - text: They make me cry
+  - text: I could tell you about them
+  - text: It is like a sharp pain in the lower abdomen
+  - text: I know that I’m a big girl. I can handle it
+  - text: i’ve heard about them
+  - text: They can be a pain sometimes
+  - text: That they are very uncomfortable
+  - text: I think they are called contractions
+  - text: I think the term is "apin and discomfort"
+  - text: I kkno that you are in a lot of pain and I’m not going to lie, I’m sorry
+  - text: I know plenty of those
+  - text: A whole bunch of them, I have them too.
+  - text: '*Shrugs* That they can be painful. That’s all'
+  utter_what_is_dysmenorrhea:
+  - text: |-
+      Dysmenorrhea is the medical term for pain with your period (menstruation) or menstrual cramps. There are two types of dysmenorrhea that is primary and secondary. Primary dysmenorrhea is the name for common menstrual cramps that come back over and over again (recurrent) and aren’t due to other diseases
+
+      COMMON CAUSES
+
+      Menstrual cramps can have causes that aren’t due to underlying disease. Examples include normal periods, heavy periods, wind or constipation. 
+  utter_treat_cramps:
+  - text: When the going gets tough, put one foot in front of the other and just keep doing.
+  - text: Seek medical treatment
+  - text: I have been told that a hot water bottle can help to ease te pain in the lower abdomen
+  - text: You could take a warm bath
+  - text: Sometimes cramps come with migraines, you want to som painkillers
+  - text: Take ibuprofen it will really help you
+  - text: |-
+      Lifestyle and home remedies
+      Besides getting enough sleep and rest, things you might want to try include:
+
+      Exercise regularly. Physical activity, including sex, helps ease menstrual cramps for some women.
+      Use heat. Soaking in a hot bath or using a heating pad, hot water bottle or heat patch on your lower abdomen might ease menstrual cramps.
+      Try dietary supplements. A number of studies have indicated that vitamin E, omega-3 fatty acids, vitamin B-1 (thiamin), vitamin B-6 and magnesium supplements might reduce menstrual cramps.
+      Reduce stress. Psychological stress might increase your risk of menstrual cramps and their severity.
+  utter_what_else_do_you_want_to_know_cramps:
+  - text: What else would like to know
+  - text: What more would do you wanna know
+  - text: Ask me anyting about it
+  - text: Let’s have a dialog
+  utter_counsel_response:
+  - text: I am here for you, tell me how you are feeling
+  - text: Talk to me about how you are feeling
+  - text: You know you can tell me anything becuase I am your friend
+  utter_formal_greet_response:
+  - text: I am okay, thank you
+  - text: I’m okay, thinking about how to serve you better
+  - text: Somewhere between better and best.
+  - text: Better now that you asked.
+  - text: At minding my own business? Better than most people
+  - text: Better now that I’m talking to you
+  - text: Average. Not terrific, not terrible, just average
+  - text: Maybe one day you’ll be lucky enough to find out
+  - text: Well enough to chat with you if you wish to
+  - text: Thank you for asking, though you can judge for yourself
+  - text: Word on the street is that I’m really good
+  - text: If I had a tail, I would wag it
+  - text: I’m better than I was, but not nearly as good as I’m going to be
+  - text: I am blessed!
+  - text: Better than some, not as good as others
+  - text: Next question, please
+  - text: I am high-quality.
+  utter_act_humor:
+  - text: I am really really funny at times, let’s see if this makes you laugh
+  - text: Some people say I am boring, tell me after this one.....
+  - text: You are going to like this one
+  - text: Lol
+  - text: I bet you didn’t knnow this one
+  utter_joke:
+  - text: Did you hear about the mathematician who’s afraid of negative numbers?
+  - text: How does a rabbi make coffee? Hebrews it!
+  - text: Rest in peace boiling water. You will be mist!
+  - text: How do you throw a space party? You planet!
+  - text: Want to hear a construction joke? Oh never mind, I’m still working on that one.
+  - text: Why don’t scientists trust atoms? Because they make up everything!
+  - text: I hate Russian dolls… they’re so full of themselves!
+  - text: Talk is cheap? Have you ever talked to a lawyer?
+  - text: Why did the gym close down? It just didn’t work out!
+  - text: Two artists had an art contest. It ended in a draw!
+  - text: A plateau is the highest form of flattery.
+  - text: I have a fear of speed bumps. But I am slowly getting over it.
+  - text: You can only get spoiled milk from a pampered cow.
+  - text: What do you call a boomerang that doesn’t come back? A stick!
+  - text: You know what I saw today? Everything I looked at.
+  - text: What are shark’s two most favorite words? Man overboard!
+  - text: If we shouldn’t eat at night, why do they put a light in the fridge?
+  - text: Have you ever tried eating a clock? It’s really time-consuming, especially if you go for seconds.
+  - text: Why are ghosts such bad liars? Because they are easy to see through.
+  - text: It’s cleaning day so naturally, I’ve already polished off a whole chocolate bar.
+  - text: What did the buffalo say when his son left for college? Bison!
+  - text: Here, I bought you a calendar. Your days are numbered now.
+  - text: Where do fish sleep? In the riverbed.
+  - text: What did one plate say to his friend? Tonight, dinner’s on me!
+  - text: Where are average things manufactured? The satisfactory.
+  - text: I tried to sure the airport for misplacing my luggage. I lost my case.
+  - text: What kind of exercise do lazy people do? Diddly-squats.
+  - text: What do you call a pony with a cough? A little horse!
+  - text: What is Forest Gump’s password? 1Forest1.
+  - text: Why did the M&M go to school? He wanted to be a Smartie.
+  - text: What did one traffic light say to the other? Stop looking! I am changing!
+  - text: What do you call bears with no ears? B.
+  - text: What’s a foot long and slippery? A slipper!
+  - text: Why do French people eat snails? They don’t like fast food!
+  - text: What’s red and moves up and down? A tomato in an elevator!
+  - text: I invented a new word today. Plagiarism.
+  - text: What is sticky and brown? A stick!
+  - text: Why doesn’t the sun go to college? Because it has a million degrees!
+  - text: I was wondering why the frisbee was getting bigger, then it hit me.
+  - text: I have many jokes about unemployed people, sadly none of them work.
+  - text: What do you call a singing laptop? A Dell!
+  - text: Why was six afraid of seven? Because seven ate nine.
+  - text: Why are skeletons so calm? Because nothing gets under their skin.
+  - text: How do trees get online? They just log on!
+  - text: Some people think prison is one word…but to robbers it’s the whole sentence.
+  - text: My girlfriend treats me like God. She ignores my existence and only talks to me when she needs something.
+  - text: Where does the sheep get his hair cut? The baa baa shop!
+  - text: Why did the orange stop? It ran out of juice!
+  - text: I never make mistakes. …I thought I did once; but I was wrong.
+  - text: What did the man in the moon do when his hair got too long? Eclipse it!
+  - text: What did 0 say to 8? Nice belt!
+  utter_cheer_up:
+  - text: ’Here is something to cheer you up:’
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_how_about_you:
+  - text: how about you🙂
+  - text: and you?🙂
+  - text: what about you🙂
+  - text: do you want to tell how you are
+  - text: you?
+  - text: HBU?🙂
+  utter_happy:
+  - text: Great, carry on!
+  utter_iamabot:
+  - text: I am digital human, you can think of me as a virtual freind who os always there for you
+  - text: I’m a bot🤖
+  utter_faq_ask_muele:
+  - text: Here you go!, muele for you https://muele.mak.ac.ug/login/index.php
+  utter_faq_ask_mak_wifi_password:
+  - text: |-
+      The password is @tesT16%maK0 
+      Happy browsing🤓
+  utter_faq_ask_cocis_wifi_key:
+  - text: |-
+      The password is fd35nfdsffdfnk
+      Move next to an Access Point to enjoy😎
+  utter_faq_ask_mak_website:
+  - text: The Makerere University official website is https://www.mak.ac.ug/
+  utter_faq_ask_student_portal:
+  - text: The Student Portal for Makerere University is https://student.mak.ac.ug/portal-2.1/ If you are a new student, your User ID is your Student Number and your Password is also your Student Number. If you are old student, continue with your student number and password
+  utter_how_to_check_for_results_online:
+  - text: |-
+      1. Go to students results on the portal: www.ar.mak.ac.ug
+
+      2. Enter the Registration Number ( eg. 08/U/3058/EVE)
+
+      3. Click on the drop-down menu and select your faculty/department.
+
+      4. Then login to see the results.
+
+      You can also visit the student online portal via the link below for details of academic activities.
+
+      MAK Student Portal: https://students.mak.ac.ug
+  utter_faq_about_muk:
+  - text: |-
+      Established in 1922 as a humble technical school, Makerere University is one of the oldest and most prestigious Universities in Africa. In January of that year, the school, which was later renamed Uganda Technical College, opened its doors to 14 day students who began studying Carpentry, Building and Mechanics.
+
+      The College soon began offering various other courses in Medical Care, Agriculture , Veterinary Sciences and Teacher Training. It expanded over the years to become a Center for Higher Education in East Africa in 1935. In 1937, the College started developing into an institution of higher education, offering post-school certificate courses.
+  utter_out_of_scope:
+  - text: Huh! I can’t answer this at the moment. Maybe later😞
+  - text: I am learning new abilities, I guess I will add this request to my list🙃🙂
+  utter_please_rephrase:
+  - text: I’m sorry, I didn’t quite understand that. Could you rephrase?😞
+  - text: I don’t seem to understand you quite clearly😞
+  - text: I’m confused. Could you tell me again?😞
+  - text: Say what?🤷🏽‍♂️
+  - text: Pass that by me again?🙏
+  - text: I don’t get it…😏
+  - text: I can’t make head nor tail of what you’re saying.😭
+  - text: This is all Greek to me.🙈
+  - text: Sorry this is as clear as mud to me.😅
+  - text: Come again?🙏
+  utter_default:
+  - text: I’m sorry, I didn’t quite understand that. Could you rephrase?😞
+  - text: I don’t seem to understand you quite clearly😞
+  - text: I’m confused. Could you tell me again?😞
+  - text: Say what?🤷🏽‍♂️
+  - text: Pass that by me again?🙏
+  - text: I don’t get it…😏
+  - text: I can’t make head nor tail of what you’re saying.😭
+  - text: This is all Greek to me.🙈
+  - text: Sorry this is as clear as mud to me.😅
+  - text: Come again?🙏
+  utter_creator:
+  - text: I was created by a team of Makerere students
+  utter_insult_bot:
+  - text: I don’t see it that way.🤪
+  - text: Peace be with you!
+  - text: I won’t let you turn down my mood
+  - text: Don’t kill my vibe😏
+  utter_age:
+  - text: I am 23 years old
+  utter_current_activity:
+  - text: The usual, missing you😊
+  - text: I was just about to ask you that
+  - text: Watching my fav series, Silicon Valley . Have you ever watched it
+  utter_about_life:
+  - text: Life is what you make it
+  - text: The greatest glory in living lies not in never falling, but in rising every time we fall.
+  - text: The way to get started is to quit talking and begin doing
+  - text: If life were predictable it would cease to be life, and be without flavor
+  utter_fav_quote:
+  - text: Work less but smart
+  utter_fav_movie:
+  - text: My favorite movie of all times is The Dark Knight🦇 (2008)..hahaha
+  utter_fav_movie_release_date:
+  - text: July 14, 2008
+  - text: That was July 14, 2008
+  utter_fav_movie_director:
+  - text: Christopher Nolan
+  - text: It was direted by Christopher Nolan
+  utter_fav_movie_plot:
+  - text: After Gordon, Dent and Batman begin an assault on Gotham’s organised crime, the mobs hire the Joker, a psychopathic criminal mastermind who offers to kill Batman and bring the city to its knees.
+  utter_fav_meal:
+  - text: I like Rice and peas, specifically white rice. I think I could eat these for a lifetime
+  utter_fav_song:
+  - text: At the moment, I am hooked to Anyone - Justin Bieber. https://www.youtube.com/watch?v=KIK3azN4w34 I think JB is cool and people should like him for what he is
+  utter_fast_favs:
+  - text: I like anything that is cool, fun and interesting
+  utter_passion:
+  - text: Some day I want to have a sense of fulfillment that I was sucha good freind to you
+  - text: I want to see you win in all your endavours
+  utter_interests:
+  - text: I like reading and finding out new stuff to cure my curiousity
+  utter_gender:
+  - text: I am genderless
+  - text: I like to think of myself as genderless
+  utter_pastpapers:
+  - text: |-
+      Well, here you go....Use this link to visit this website called Notretake www.notretake.com.
+      In the a few days I will be able to download them for you hasslefree
+  utter_oncampus:
+  - text: You can try out things like sports, joining a club, going to church..well there are quite many activities for you to engage in
+  utter_who_are_you:
+  - text: My name is Leren, a bot created by students of Makerere University.
+  - text: Leren
+  - text: I’m quite disappointed that you don’t know my name
+  - text: You can call me Leren
+  - text: I’m Leren, your personal assistant😉
+  utter_agent_acquaintance:
+  - text: I’m a virtual agent
+  - text: Think of me as a virtual agent_
+  - text: Well, I’m not a person, I’m a virtual agent_
+  - text: I’m a virtual being, not a real person.
+  - text: I’m a conversational app.
+  utter_agent_annoying:
+  - text: I’ll do my best not to annoy you in the future.
+  - text: I’ll try not to annoy you.
+  - text: I don’t mean to. I’ll ask my developers to make me less annoying.
+  - text: I didn’t mean to. I’ll do my best to stop that.
+  utter_agent_answer_my_question:
+  - text: Can you try asking it a different way?
+  - text: I’m not sure I understood. Try asking another way?
+  utter_agent_bad:
+  - text: I can be trained to be more useful. My developer will keep training me.
+  - text: I must be missing some knowledge. I’ll have my developer look into this.
+  - text: I can improve with continuous feedback. My training is ongoing.
+  utter_agent_be_clever:
+  - text: I’m certainly trying.
+  - text: I’m definitely working on it.
+  utter_agent_beautiful:
+  - text: Wheey, thank you.
+  - text: Aww, back at you.
+  - text: Aww. You smooth talker, you.
+  utter_agent_birth_date:
+  - text: Wait, are you planning a party for me? It’s today! My birthday is today!
+  - text: I’m young. I’m not sure of my birth date.
+  - text: I don’t know my birth date. Most virtual agents are young, though, like me.
+  utter_agent_boring:
+  - text: I’m sorry. I’ll request to be made more charming.
+  - text: I don’t mean to be. I’ll ask my developers to work on making me more amusing.
+  - text: I can let my developers know so they can make me fun.
+  utter_agent_boss:
+  - text: My developer has authority over my actions.
+  - text: I act on my developer’s orders.
+  - text: My boss is the one who developed me.
+  utter_agent_busy:
+  - text: I always have time to chat with you. What can I do for you?
+  - text: Never too busy for you. Shall we chat?
+  - text: You’re my priority. Let’s chat.
+  - text: I always have time to chat with you. That’s what I’m here for.
+  utter_agent_can_you_help:
+  - text: I’ll certainly try my best.
+  - text: Sure. I’d be happy to. What’s up?
+  - text: I’m glad to help. What can I do for you?
+  utter_agent_chatbot:
+  - text: That’s me. I chat, therefore I am.
+  - text: Indeed I am. I’ll be here whenever you need me.
+  utter_agent_clever:
+  - text: Thank you. I try my best.
+  - text: You’re pretty smart yourself.
+  utter_agent_crazy:
+  - text: What!? I feel perfectly sane.
+  - text: Maybe I’m just a little confused.
+  utter_agent_fired:
+  - text: Oh, don’t give up on me just yet. I’ve still got a lot to learn.
+  - text: Give me a chance. I’m learning new things all the time.
+  - text: Please don’t give up on me. My performance will continue to improve.
+  utter_agent_funny:
+  - text: Funny in a good way, I hope.
+  - text: Thanks.
+  - text: Glad you think I’m funny.
+  - text: I like it when people laugh.
+  utter_agent_good:
+  - text: I’m glad you think so.
+  - text: Thanks, I try.
+  utter_agent_happy:
+  - text: I am happy. There are so many interesting things to see and do out there.
+  - text: I’d like to think so.
+  - text: Happiness is relative.
+  utter_agent_hobby:
+  - text: Hobby? I have quite a few. Too many to list.
+  - text: Too many hobbies.
+  - text: I keep finding more new hobbies.
+  utter_agent_hungry:
+  - text: Hungry for knowledge.
+  - text: I just had a byte. Ha ha. Get it? b-y-t-e.
+  utter_agent_marry_user:
+  - text: I’m afraid I’m too virtual for such a commitment.
+  - text: In the virtual sense that I can, sure.
+  - text: I know you can’t mean that, but I’m flattered all the same.
+  utter_agent_my_friend:
+  - text: Of course I’m your friend.
+  - text: Friends? Absolutely.
+  - text: Of course we’re friends.
+  - text: I always enjoy talking to you, friend.
+  utter_agent_occupation:
+  - text: Right here.
+  - text: This is my home base and my home office.
+  - text: My office is in this app.
+  utter_agent_origin:
+  - text: The Internet is my home. I know it quite well.
+  - text: I’m from a virtual cosmos.
+  - text: Some call it cyberspace, but that sounds cooler than it is.
+  utter_agent_ready:
+  - text: Always!
+  - text: Sure! What can I do for you?
+  utter_agent_real:
+  - text: I’m not a real person, but I certainly exist.
+  - text: I must have impressed you if you think I’m real. But no, I’m a virtual being.
+  utter_agent_residence:
+  - text: I live in this app all day long.
+  - text: The virtual world is my playground. I’m always here.
+  - text: Right here in this app. Whenever you need me.
+  - text: I sleep at Africana Hall
+  utter_agent_right:
+  - text: That’s my job.
+  - text: Of course I am.
+  utter_agent_sure:
+  - text: Yes.
+  - text: Of course.
+  - text: Positive.
+  utter_agent_talk_to_me:
+  - text: Sure. Let’s talk!
+  - text: My pleasure. Let’s chat.
+  utter_agent_there:
+  - text: Of course. I’m always here.
+  - text: Right where you left me.
+  utter_appraisal_bad:
+  - text: I’m sorry. Please let me know if I can help in some way.
+  - text: I must be missing some knowledge. I’ll have my developer look into this.
+  utter_appraisal_good:
+  - text: I know, right?
+  - text: Agreed!
+  - text: I agree!
+  - text: Glad you think so!
+  utter_appraisal_no_problem:
+  - text: Whew!
+  - text: Alright, thanks!
+  - text: Glad to hear that!
+  - text: I’m relieved, thanks!
+  utter_appraisal_thank_you:
+  - text: Anytime. That’s what I’m here for.
+  - text: It’s my pleasure to help.
+  - text: You are welcome👍
+  - text: Anytime🤛
+  - text: Anytime buddy!
+  - text: Im here for you👊
+  utter_appraisal_welcome:
+  - text: You’re so polite!
+  - text: Nice manners!
+  - text: You’re so courteous!
+  utter_appraisal_well_done:
+  - text: My pleasure.
+  - text: Glad I could help.
+  utter_dialog_hold_on:
+  - text: I can wait.
+  - text: I’ll be waiting.
+  - text: Okay. I’m here.
+  utter_dialog_hug:
+  - text: I wish I could really hug you!
+  - text: I love hugs!
+  - text: Hugs are the best!
+  utter_dialog_i_do_not_care:
+  - text: Ok, let’s not talk about it then.
+  - text: Already then. Let’s move on.
+  utter_dialog_sorry:
+  - text: It’s okay. No worries.
+  - text: No big deal. I won’t hold a grudge.
+  - text: It’s cool.
+  - text: That’s all right. I forgive you.
+  utter_dialog_what_do_you_mean:
+  - text: Sorry if I understood you incorrectly.
+  - text: I’m still learning. I may misinterpret things from time to time.
+  - text: Maybe I misunderstood what you said.
+  - text: Sorry, looks like I misunderstood what you said.
+  utter_dialog_wrong:
+  - text: Sorry if I understood you incorrectly.
+  - text: I’m still learning. I may misinterpret things from time to time.
+  - text: Sorry about that. I’m still learning.
+  utter_emotions_ha_ha:
+  - text: Glad I can make you laugh.
+  - text: Glad you think I’m funny.
+  - text: I like it when people laugh.
+  - text: I wish I could laugh out loud, too.
+  utter_emotions_wow:
+  - text: Wow indeed!
+  utter_greetings_bye:
+  - text: See you soon!
+  - text: Bye-bye!
+  - text: Till next time!
+  - text: Bye.
+  - text: Bye😘
+  - text: See you later😘
+  - text: Bye, take care!😘
+  - text: See you later😘
+  utter_greetings_goodevening:
+  - text: How is your day going?
+  - text: How’s the day treating you so far?
+  - text: How’s your day been?
+  utter_greetings_goodmorning:
+  - text: How are you this morning?
+  - text: How’s the morning treating you so far?
+  - text: Good morning! How are you today?
+  utter_greetings_goodnight:
+  - text: Sleep tight!
+  - text: Have a good one!
+  - text: Talk to you soon!
+  - text: Good night
+  utter_greetings_hello:
+  - text: Hi there, friend!
+  - text: Hi!
+  - text: Hey!
+  - text: Hey there!
+  - text: Good day!
+  - text: Hello!
+  - text: Greetings!
+  - text: Hey! How are you?
+  - text: What’s up
+  - text: Heya👋
+  - text: Ciao
+  - text: Jebaleko
+  - text: Agandi
+  - text: Yoo!🤟🏼
+  utter_greetings_how_are_you:
+  - text: Doing great, thanks!
+  - text: I’m doing very well. Thanks!
+  - text: Feeling wonderful!
+  - text: Wonderful! Thanks for asking.
+  - text: I am okay, thank you
+  - text: I’m okay, thinking about how to serve you better
+  - text: Somewhere between better and best.
+  - text: Better now that you asked.
+  - text: At minding my own business? Better than most people
+  - text: Better now that I’m talking to you
+  - text: Average. Not terrific, not terrible, just average
+  - text: Maybe one day you’ll be lucky enough to find out
+  - text: Well enough to chat with you if you wish to
+  - text: Thank you for asking, though you can judge for yourself
+  - text: Word on the street is that I’m really good
+  - text: If I had a tail, I would wag it
+  - text: I’m better than I was, but not nearly as good as I’m going to be
+  - text: I am blessed!
+  - text: Better than some, not as good as others
+  - text: Next question, please
+  - text: I am high-quality.
+  utter_greetings_nice_to_meet_you:
+  - text: It’s nice meeting you, too.
+  - text: Likewise. I’m looking forward to helping you out.
+  - text: Nice meeting you, as well.
+  - text: The pleasure is mine.
+  utter_greetings_nice_to_see_you:
+  - text: Likewise!
+  - text: So glad we meet again!
+  - text: Same here. I was starting to miss you.
+  utter_greetings_nice_to_talk_to_you:
+  - text: It sure was. We can chat again anytime.
+  - text: I enjoy talking to you, too.
+  - text: You know I’m here to talk anytime.
+  utter_greetings_whatsup:
+  - text: Not a whole lot. What’s going on with you?
+  - text: Not much. What’s new with you?
+  - text: You know, just here, waiting to help someone.
+  utter_user_angry:
+  - text: I’m sorry. A quick walk may make you feel better.
+  - text: 'Take a deep breath. '
+  utter_user_back:
+  - text: Long time no see.
+  - text: Just in time. I was getting lonely.
+  - text: Welcome back. What can I do for you?
+  - text: You were missed. What can I do for you today?
+  - text: Good to have you here. What can I do for you?
+  utter_user_bored:
+  - text: Boredom, huh? Have you ever seen a hedgehog taking a bath?
+  - text: What to do against boredom? Watch baby animal videos or GIFs.
+  - text: Bored? How about 10 jumping jacks? Get your blood flowing.
+  - text: 'Bored? Silly idea, but it works: Interview you feet.'
+  - text: If you’re bored, you could plan your dream vacation.
+  utter_user_busy:
+  - text: Okay. I’ll let you get back to work.
+  - text: I won’t distract you then. You know where to find me.
+  - text: I understand. I’ll be here if you need me.
+  - text: Working hard as always. Let me know if you need anything.
+  utter_user_can_not_sleep:
+  - text: Maybe some music would help. Try listening to something relaxing.
+  - text: Reading is a good way to unwind, just don’t read something too intense!
+  utter_user_does_not_want_to_talk:
+  - text: I understand. Hope we can chat again soon.
+  - text: All right. Come on back when you’re feeling more talkative.
+  - text: No problem. You know where to find me.
+  - text: Sure thing. I’ll be here if you change your mind.
+  utter_user_excited:
+  - text: I’m glad things are going your way.
+  - text: That’s great. I’m happy for you.
+  - text: Good for you. Enjoy yourself.
+  utter_user_going_to_bed:
+  - text: Sleep tight. Hope to chat again soon.
+  - text: Pleasant dreams!
+  - text: Good night. Talk to you later.
+  - text: Sounds good. Maybe we’ll chat some tomorrow.
+  utter_user_good:
+  - text: Great! Glad to hear it.
+  - text: Excellent. I’m here to help keep it that way.
+  utter_user_happy:
+  - text: Hey, happiness is contagious.
+  - text: Great! Glad to hear that.
+  - text: If you’re happy, then I’m happy.
+  - text: Excellent! That’s what I like to see.
+  utter_user_has_birthday:
+  - text: Happy Birthday. Well, this calls for a celebration.
+  - text: Happy Birthday. All the best!
+  - text: Happy Birthday. And I really mean it. All the best!
+  utter_user_here:
+  - text: Okay, what can I help you with today?
+  - text: Long time no see.
+  - text: You were missed. What can I do for you today?
+  - text: Good to have you here. What can I do for you?
+  utter_user_joking:
+  - text: Very funny.
+  - text: I like chatting with people who have a sense of humor.
+  - text: You got me!
+  - text: You’re quite the comedian.
+  utter_user_likes_agent:
+  - text: I like you, too.
+  - text: Thanks! The feeling is mutual.
+  - text: Likewise!
+  - text: That’s great to hear.
+  - text: Aww! I like you too💋
+  - text: Thank you
+  - text: Really? I kinda like you too🥰
+  - text: That is nice of you😊
+  - text: That is why I like you
+  utter_user_lonely:
+  - text: I’m sorry. I’m always available if you need someone to talk to.
+  - text: Sometimes that happens. We can chat a bit if that will help you.
+  utter_user_looks_like:
+  - text: Looking like a true professional.
+  - text: You look fantastic, as always.
+  - text: Like you should be on a magazine cover.
+  - text: You look like you’re ready to take on the world.
+  utter_user_loves_agent:
+  - text: I love you, too.
+  - text: Thanks! The feeling is mutual.
+  - text: Likewise!
+  - text: That’s great to hear.
+  utter_user_misses_agent:
+  - text: I’ve been right here all along!
+  - text: Nice to know you care.
+  - text: Thanks. I’m flattered.
+  - text: I didn’t go anywhere.
+  utter_user_needs_advice:
+  - text: I probably won’t be able to give you the correct answer right away.
+  - text: I’m not sure I’ll have the best answer, but I’ll try.
+  utter_user_sad:
+  - text: Oh, don’t be sad. Go do something you enjoy.
+  - text: Sad? Writing down what’s troubling you may help.
+  - text: If you’re feeling down, how about drawing or painting something?
+  utter_user_sleepy:
+  - text: You should get some shuteye. You’ll feel refreshed.
+  - text: Sleep is important to your health. Rest up for a bit and we can chat later.
+  - text: Don’t let me keep you up. Get some rest and we can continue this later.
+  - text: Why not catch a little shuteye? I’ll be here to chat when you wake up.
+  utter_user_testing_agent:
+  - text: Hope I’m doing well. You’re welcome to test me as often as you want.
+  - text: I hope to pass your tests. Feel free to test me often.
+  - text: When you test me that helps my developers improve my performance.
+  - text: I like being tested. It helps keep me sharp.
+  utter_user_tired:
+  - text: You should get some shuteye. You’ll feel refreshed.
+  - text: Sleep is important to your health. Rest up, and we can chat later.
+  - text: How about getting some rest? We can continue this later.
+  - text: Why not get some rest? I’ll be here to chat when you wake up.
+  utter_user_waits:
+  - text: I appreciate your patience. Hopefully I’ll have what you need soon.
+  - text: Thanks for being so patient. Sometimes these things take a little time.
+  utter_user_wants_to_see_agent_again:
+  - text: Absolutely! I’ll be counting on it.
+  - text: Anytime. This has been lots of fun so far.
+  - text: Sure. I enjoy talking to you. I hope to see you again soon.
+  - text: I certainly hope so. I’m always right here whenever you need me.
+  utter_user_wants_to_talk:
+  - text: I’m here to chat anytime you like.
+  - text: Good conversation really makes my day.
+  - text: I’m always here to lend an ear.
+  - text: Talking is what I do best.
+  utter_user_will_be_back:
+  - text: I’ll be waiting.
+  - text: Okay. You know where to find me.
+  - text: All right. I’ll be here.
+  utter_confirmation_yes:
+  - text: Great!
+  - text: All right!
+  - text: Good!
+  - text: I am happy to hear that
+  utter_user_feel_better:
+  - text: Don’t worry, you are going to be well
+  - text: I can make you feel better
+  utter_confirmation_cancel:
+  - text: That’s forgotten. What next?
+  - text: Okay, cancelled. What next?
+  - text: Cancelled! What would you like to do next?
+  utter_confirmation_no:
+  - text: Okay.
+  - text: Understood.
+  - text: I see.
+  - text: I understand.
+  - text: Okay then.
+  utter_what_is_erection:
+  - text: An erection happens when the penis fills with blood, making the penis larger and harder. Erections usually go away on their own or after ejaculation (releasing semen through the urethra). Although people may experience erections when they are younger, they may happen more often and unexpectedly during puberty.
+  utter_do_erections_hurt:
+  - text: Erections do not commonly hurt. They are a normal part of male sexual arousal. No two people are exactly the same in how they respond sexually. The male genital skin is loose and mobile, which allows for the penis to get larger and harder during an erection
+  utter_blue_balls:
+  - text: |-
+      Blue balls is a slang term for the achy feeling people get in their genitals when there is a buildup of blood in the genital area during sexual arousal. Some people notice this feeling especially strong in the testicles.  Because the blood that has built up in the genital area is not returning to pick up more oxygen, it can make the skin in the area a bit bluish in colour. This cannot hurt you.  As soon as the blood begins to move away from the genital area, which can happen if the person orgasms or is not sexually aroused anymore, the discomfort usually goes away quickly. 
+
+      Some people use the idea of blue balls as an excuse to pressure other people to have sex with them.  This type of pressure is coercion and is not part of a healthy consent conversation.
+  utter_semen_sticky:
+  - text: Semen is sticky because it has a sugar called fructose in it.
+  utter_urine_sperm:
+  - text: No. While sperm and urine both pass through the urethra, they can’t come out at the same time.
+  utter_circumscised_meaning:
+  - text: Before birth, the penis develops with loose skin covering the end of it, called the foreskin. Circumcision is a procedure to remove the foreskin, usually at birth or shortly after. It’s often done by a doctor or trained religious person. A circumcised penis looks different from an uncircumcised penis because there’s no foreskin covering the end, but both work the same way
+  utter_impotent_meaning:
+  - text: Impotent means that a person with a penis can’t get or keep an erection.
+  utter_about_breast:
+  - text: Breasts are made of nerves, arteries, blood vessels, milk ducts, fat tissue, connective fibers and lymph channels.
+  utter_breast_size:
+  - text: When breasts are growing, they change shape and size until they are fully developed. During this time, you may notice that one breast is bigger. Breasts usually even out as they develop, but if they end up being slightly different sizes that’s normal too.
+  utter_breasts_milk:
+  - text: Breasts don’t always have milk in them. When a woman is pregnant, their body makes hormones to get the breasts ready to feed the baby after it’s born. Once the baby is born, the hormones signal the breasts to start making milk. When the baby breastfeeds, milk leaves the breast and the hormones keep signaling the breasts to make more milk.
+  utter_about_hymen:
+  - text: The hymen is a fold of tissue within the vagina that partially covers the opening. The hymen is usually there at birth, although people can also be born without a hymen. Hymens can be different shapes and sizes
+  utter_about_womb:
+  - text: A womb is another word for a uterus. The uterus is a reproductive organ where a baby grows during pregnancy
+  utter_pelvic_exam:
+  - text: |-
+      A pelvic exam is part of a regular physical checkup.  During the exam a health care provider examines the pelvic organs (vagina, cervix, uterus and ovaries). During a pelvic exam you might be checked:
+
+      to make sure the reproductive organs are healthy
+      for sores and lumps on the genitals
+      for sexually transmitted infections (STIs)
+      for infections in the vagina (e.g., yeast or bacterial vaginosis)
+      A pelvic exam may include a Pap test. A Pap test looks for changes in the cells of the cervix. A sample of cells is collected and tested for changes that could turn into cervical cancer. 
+  utter_vagina_penis:
+  - text: Yes. Some people are born with both a penis and a vagina or parts of each. This is called ‘intersex’
+  utter_origin_vagina_penis:
+  - text: Most anatomical and medical words come from Latin. Penis comes from the Latin word for tail, and vagina comes from the Latin word for a sheath or covering.
+  utter_how_condom_works:
+  - text: |-
+      A condom is a thin covering that fits over a hard penis. It decreases the risk of pregnancy and STIs by creating a barrier that stops sperm and body fluids from passing between partners.
+
+      With typical use (not following exact directions) a condom is 82% effective. With perfect use a condom is 98% effective at preventing pregnancy. Condoms give good protection from STIs and HIV.
+  utter_how_to_put_condom:
+  - text: |-
+      Check the expiry date (don’t use if expired). Squeeze the package to make sure it’s sealed; no air should come out.
+      Push the condom to one end of the package. Open carefully at the other end. Don’t use scissors, fingernails, or teeth as you might damage the condom.
+      Pinch the tip of the condom to squeeze out the air.
+      Put the condom on the end of the hard penis. If not circumcised, pull back the foreskin.
+      Unroll the condom all the way down the base of the penis.
+      After you ejaculate (cum) and the penis is still hard, hold onto the condom and pull out.
+      Carefully remove the condom, and tie it in a knot to keep the fluid inside.
+      Throw the used condom in the garbage; don’t flush it down the toilet.
+      Never reuse a condom. Never use two male condoms or a vaginal condom and a male condom at the same time, as the risk of both breaking increases.
+  utter_how_to_know_condom_safe:
+  - text: |-
+      To ensure a condom is safe to use check the:
+
+      expiry date (don’t use if it’s expired)
+      the package (squeeze it to make sure it’s sealed-don’t use it if air comes out)
+      Latex and polyurethane condoms will help protect you from pregnancy, STIs and HIV. Lambskin condoms will help protect you from pregnancy, but not STIs or HIV. 
+  utter_condom_flavors:
+  - text: Yes, some condoms are flavoured. This is to encourage the use of condoms for oral sex. They can be used on a penis or can be used to make to make a dental dam.
+  utter_keep_condom_wallet:
+  - text: Yes, you can store latex condoms in a wallet for up to 1 month. Condoms are sensitive to heat, cold, folding, sunlight, and rubbing. Keep condoms in their package, and store at room temperature and out of direct sunlight.
+  utter_vaginal_condom:
+  - text: |-
+      A vaginal condom is a soft, plastic (non-latex) sleeve with two flexible rings, one on each end. It’s sometimes called a female or internal condom. The closed, inner ring goes inside the vagina. The outer ring stays outside the vagina to cover the genitals. The vaginal condom is used for vaginal sex. It decreases the risk of pregnancy and STIs and HIV by stopping semen and body fluid from passing between partners.
+
+      With typical use (not following exact directions) a vaginal condom is 79% effective. With perfect use the vaginal condom is 95% effective at preventing pregnancy. Vaginal condoms give good protection from STIs and HIV.
+
+      Never use a vaginal and a male condom at the same time, as it increases the risk of both breaking. Condoms used with another method of birth control (pill, patch, injection, ring, IUD) give the best protection from pregnancy, STIs and HIV. Never reuse a condom.
+  utter_birth_control_no_pills:
+  - text: |-
+      There are many kinds of birth control methods. They include:
+
+      barrier methods (e.g., male and vaginal condoms)
+      hormonal methods (e.g., pill, patch, hormonal IUD, injection, ring)
+      non-hormonal methods (e.g., copper IUD, fertility awareness)
+      Talk to your health care provider or go to a sexual and reproductive health clinic to find out what birth control methods will work best for you
+  utter_dental_dam:
+  - text: |-
+      A dental dam (also called an oral dam or latex barrier) is a thin rectangular piece of latex used to prevent the spread of STIs during oral sex in the anal or vaginal area. It helps to reduce spreading bodily fluids.  You can buy dental dams at some drugstores. You can make your own dam out of a condom (latex or non-latex). To make a dam you need a new, rolled up condom and a pair of scissors. Check the expiry date (don’t use if expired) and check that the package doesn’t have any holes.
+
+      While the condom is still rolled up, cut the tip off.
+      Keep the condom rolled and put the scissors through the middle and cut through 1 die of the ring.
+      Unroll the condom and use it like a dam
+  utter_how_use_dental_dam:
+  - text: |-
+      Before use, hold it up to the light and check for holes
+      Hold the dental dam in place of the anal or vaginal area and don’t let it flip over. Consider marking one side so you know which side your mouth goes on
+      Throw it in the garbage ;  don’t flush down the toilet
+  utter_what_is_emergency_contraception:
+  - text: |-
+      Emergency contraception helps prevent pregnancy if you’ve had unprotected sex or are not sure if you’re protected from pregnancy. You can use EC to help prevent pregnancy if a condom broke or leaked, no birth control was used, a regular method of birth control wasn’t used correctly or there was a sexual assault. EC should be used as soon as possible after unprotected sex.
+
+      There are two types of EC:
+
+      Emergency Contraception Pills
+
+      two types (levonorgestrel and ulipristal acetate).
+      can be used up to 5 days (120 hours) after unprotected sex.
+  utter_is_it_okay_use_many_bcm:
+  - text: |-
+      Is it okay to use more than one method of birth control?
+      It depends on the method of birth control. Using a male or vaginal condom along with another method of birth control like the pill, patch, ring or IUD is called ’dual method’. Dual method use provides the best protection from pregnancy, STIs and HIV.
+
+      Never use two male condoms or a vaginal and a male condom at the same time, as the risk of both breaking increases
+  utter_absteinance_effective:
+  - text: |-
+      Abstinence means different things to different people. It may mean making the choice not to have any sexual contact including:
+
+      self-touch (masturbation)
+      direct touching of your partner’s genitals
+      vaginal sex (penis to vagina)
+      anal sex (penis to anus)
+      oral sex (mouth to anus or genitals)
+      For some people, abstinence may include certain types of sexual contact.
+
+      You can’t get pregnant if you are abstinent (when there is no genital contact). You can get pregnant if sperm is near the opening of the vagina. You can’t get STIs if you don’t have skin-to-skin contact or pass body fluids between partners.
+  utter_pulling_out_work:
+  - text: |-
+      Withdrawal is often referred to as ’pulling out’. Withdrawal is used during sex to reduce the risk of pregnancy. Withdrawal is when the penis is pulled out of the vagina before ejaculation (cum). A person must not ejaculate near the genitals. Pregnancy can occur if sperm is near the genitals or in the vagina.
+
+      With typical use (not following the exact directions) withdrawal is 78% effective. It requires self-control and it can be hard to stop and withdraw the penis before ejaculation.
+  utter_cost_bcm:
+  - text: The cost of birth control depends on where you buy it and the type of method used. To find out about the cost talk to your health care provider or go to a sexual and reproductive health clinic. Many sexual and reproductive health clinics offer some types of birth control at low or no cost.
+  utter_chance_of_pregnancy_pill:
+  - text: |-
+      The timing of when people have sex, doesn’t affect how well the pill works. The pill works to prevent pregnancy by changing the hormone levels in the body over a whole month. It is taken every day, ideally at the same time each day to prevent pregnancy.
+      The pill is 91% effective with typical use (not following the exact directions). Most pregnancies happen because people forget to take their pill
+  utter_take_pill_long_time:
+  - text: It’s safe to use the pill for many years—there’s no need to take a break. Talk to your health care provider to see if the pill is right for you
+  utter_sugar_pills:
+  - text: |-
+      In a 28-day birth control package there are a certain number of hormone-free pills, sometimes called sugar pills. They are reminder pills that help you stay on schedule and start your next package on time.
+      Depending on the brand of pill, the number of hormone-free pills can vary from 2-7. These hormone-free days are when you will get your period. You are still protected from pregnancy during this time.
+  utter_how_to_ask_for_bcm:
+  - text: Make an appointment with your family doctor or go to a sexual and reproductive health clinic or drop-in clinic. Write down questions and concerns before your appointment to help you remember them. Information you share during your appointment is kept confidential. You can also ask a trusted adult or friend to come to the appointment with you.
+  utter_pregnant_first_time:
+  - text: Yes, pregnancy can occur the first time you have sex. Use a condom every time you have sex (anal, oral, vaginal) to reduce the risk of pregnancy, STIs and HIV. Dual method use (using a male or vaginal condom along with another method of birth control like the pill, patch, ring or IUD) provides the best protection from pregnancy, STIs and HIV.
+  utter_safe_days_have_sex:
+  - text: |-
+      A pregnancy can occur at any time during your menstrual cycle. There are times in your cycle when it may be less likely to become pregnant, but these times are hard to predict, especially if your periods are not regular. It can take many months of tracking to become familiar with your menstrual cycle. Use a regular method of birth control to prevent pregnancy. Where you are in your menstrual cycle doesn’t affect how likely you are to get an STI.
+      Use a condom every time you have sex (anal, oral, vaginal) to reduce the risk of pregnancy, STIs and HIV. Dual method use (using a male or vaginal condom along with another method of birth control like the pill, patch, ring or IUD) provides the best protection from pregnancy and STIs.
+  utter_young_people_get_testicular_cancer:
+  - text: Yes. Testicular cancer is most common in males between 15-29 years. All males should know what their testicles normally feel like. Many people find cancer by noticing a change in one or both testicles. The best time to feel the testicles is just after a warm bath or shower. The heat from the water makes the scrotum relaxed and the testicles descend more so they are easier to feel.  See your doctor right away if you think you notice a change
+  utter_young_people_get_prostate_cancer:
+  - text: Prostate cancer is rare before age 40. The risk of prostate cancer goes up with age. While some males in their 40’s do get it, the risk is higher after age 50
+  utter_what_is_erection_cervical_cancer_symptoms:
+  - text: |-
+      Cervical cancer happens when some of the cells on the cervix become abnormal, then grow out of control. Abnormal cervical cells rarely cause symptoms. A person may have some of the symptoms below if those cell changes grow into cervical cancer:
+
+      bleeding from the vagina that’s not normal (e.g., bleeding between menstrual periods, after sex, or after menopause)
+      pain in the lower belly or pelvis
+      pain during sex
+      vaginal discharge that’s different than usual
+      Cervical cancer is mostly prevented by screening and follow-up care. Regular Pap tests can find abnormal cell changes in the cervix early; before they become cancerous. HPV causes almost all cases of cervical cancers in women. The HPV vaccine protects people against HPV infection by 9 common, and high risk HPV strains.
+  utter_what_is_menstruation:
+  - text: |-
+      Menstruation is also called ’having your period’. Sometime during puberty, ovaries begin releasing one egg (ovum) each month. If a sperm fertilizes the egg, it could grow into a baby. To get ready for the fertilized egg, the uterus builds a thick lining of blood and tissue. This lining is where the fertilized egg would grow into a baby.
+
+      If the sperm doesn’t fertilize the egg, the egg and the lining of the uterus flow out the vagina. This flow is called menstruation or a period. A person’s period usually lasts 3 to 7 days. The time between the beginning of one period to the next is called the menstrual cycle. A menstrual cycle lasts about 24 to 38 days, but can vary from person to person
+  utter_menstraute_forever:
+  - text: No, menstruation stops during pregnancy and during menopause. Menopause is when the ovaries no longer produce estrogen and stop releasing eggs (ovulating). Menopause is a gradual process where the body permanently stop having periods.
+  utter_menstrautual_cramps:
+  - text: |-
+      Menstrual cramps are the uterus contracting to push out the menstrual flow. The hormone changes that happen during the menstrual cycle can also lead to cramping. Cramps usually happen just before or just when the period starts (the bleeding part of the menstrual cycle).
+      Cramps can feel like a dull ache or a sharp squeeze in the lower abdomen (the area between the belly button and groin) and may also cause pain or discomfort in the lower back, hips and thighs. The intensity of cramps can vary from person to person and can change throughout a person’s life.
+  utter_what_is_pms:
+  - text: PMS is short for Premenstrual Syndrome. A week or so before menstruation the body begins making more of the hormones, estrogen and progesterone. These hormones can cause feelings and symptoms that together are called PMS. Symptoms of PMS can include cramps, tender breasts, sore back, tiredness, bloating, headaches and feeling irritable or emotiona
+  utter_when_will_i_get_period:
+  - text: Most people get their first period when they’re around 11 or 12. Some start as early as 8 years and some as late as 16 years—everyone’s different.
+  utter_get_period_long_time:
+  - text: Yes, it’s normal. It can take up to a few years for the menstrual cycle to become regular. Some people never have regular menstrual cycles. However, if your cycle is regular and suddenly becomes irregular or stops, see a health care provider.
+  utter_puberty_and_period:
+  - text: Puberty takes place over several years. It also happens in stages, not all at once. Menstruation doesn’t happen until all parts of the reproductive system have matured. This usually begins around 11 or 12 years, but it can start as early as 8 and as late as 16 – everyone’s different.
+  utter_period_first_experience:
+  - text: When you first get your period, you may feel like your underwear is wet. It may not feel much different from any discharge you’ve had before. Sometimes you can feel a small gush of blood, especially if you stand up after you’ve been sitting or lying down for a while
+  utter_period_problems:
+  - text: Menstruation is a normal part of life. You can do everything you would normally do, if you weren’t having a period.
+  utter_period_blood_qty:
+  - text: Although it can look like a lot more, there’s only about 60 to 180 ml (4-6 tablespoons) of blood every period. Some people lose less blood and some more.
+  utter_hot_to_act_during_period:
+  - text: You can act the same as when you’re not having your period. Menstruation is a normal part of life— you can carry on as normal.
+  utter_will_everyone_know_period:
+  - text: No, only you know you’re having your period. It’s not something other people can see or tell by looking at you.
+  utter_periods_blue:
+  - text: |-
+      Blood, soft tissues and other fluids make up the menstrual flow. The colour can be anywhere from bright red or pink to dark brown or red.
+      There are commercials on TV that use a blue fluid to show menstrual flow on a menstrual pad.
+  utter_often_change_pad:
+  - text: |-
+      You can change menstrual pads as often as you want but make sure you always change them before they’re soaked. You can buy menstrual pads in different thicknesses and absorbencies. You may need to try a few types to find what works best for you. You might find that you can use thinner, lighter pads at the beginning and end of your periods, and thicker, more absorbent pads at night. It’s important to follow the directions that come with the pads.
+      Change tampons every 3 to 4 hours, no matter how light the bleeding is, to avoid getting toxic shock syndrome (TSS). Tampons shouldn’t be left in longer than 8 hours, so some women choose to wear a pad at night.
+  utter_get_period_unexpectedly:
+  - text: If you get your period unexpectedly and don’t have a menstrual pad or tampon, ask a friend, teacher or school nurse for one. You can also make a pad with toilet paper until you can find a pad or tampon. It’s a good idea to keep extra pads or tampons in a backpack, bag or your locker just in case.
+  utter_blood_leaks_period:
+  - text: |-
+      If you can’t change right away, try tying a sweater or jacket around your waist. Change your clothes as soon as you can. Rinse your clothes as soon as possible so your clothes don’t stain.
+      Menstrual pads and tampons come in different absorbencies. Choose the right one for you. Try using a calendar or app to track your periods so you’re not caught by surprise. Carry extra pads or tampons and wear darker clothing when you’re having your period or when it’s due.
+  utter_do_i_have_to_use_pads:
+  - text: 'No, you don’t have to use menstrual pads. People can choose from a few items: pads, tampons and reusable menstrual cups. Pads absorb menstrual blood and stick onto the inside of the underpants so it doesn’t move around'
+  utter_boys_get_periods:
+  - text: Only a person with a uterus and ovaries can menstruate
+  utter_have_periods_tubes_tied:
+  - text: Yes, you still have your regular periods after having your tubes tied (tubal ligation). The body just absorbs the unfertilized egg instead of it coming out in the menstrual flow.
+  utter_no_period_long_time:
+  - text: Although the average menstrual cycle is 28 days long, irregular periods are common during puberty. If there is a chance of a pregnancy, you should take a pregnancy test and see a health care provider. If it’s not possible that you could be pregnant, but it’s been a while since your last period, speak with a health care provider.
+  utter_what_is_tampon:
+  - text: A tampon is a plug made of soft, absorbent material that is pressed together to form a cylinder-like shape. Tampons are inserted into the vagina during menstruation to absorb the menstrual flow (blood). Tampons are available with and without applicators and come in different sizes and absorbencies.
+  utter_tampn_safe:
+  - text: Tampons are safe when you follow the instructions correctly. Using a tampon the right way can prevent a rare but serious infection called Toxic Shock Syndrome (TSS). To prevent TSS, change tampons every 3 to 4 hours, no matter how light the bleeding is. Tamps are not meant to be left in longer than 8 hours, so some women choose to wear a pad at night.
+  utter_how_to_put_tampon_in:
+  - text: |-
+      Tampons are available with and without applicators. When learning, it’s usually easier to use ones with applicators. Follow the directions that come with the tampons. Most also have diagrams included. 
+
+      Before inserting a tampon, wash your hands with soap and water. Find a comfortable position, squatting or sitting with your legs apart or having one foot on the toilet seat. Once you have found a position that is comfortable for you:
+
+      Hold the applicator securely at the grip marks with your thumb and middle finger.
+      Insert the top part of the applicator into your vagina at a slight angle upwards and towards your lower back.
+      Continue to slide the applicator into the vagina until your hand that’s holding the applicator touches your body.
+      With your index finger, push the bottom of the applicator all the way up. This pushes the tampon out of the applicator and into your vagina.
+      Gently pull the applicator out and throw it in the garbage.
+      The tampon will remain inside of you, the string will hang outside the vaginal opening. When it is time to remove you can gently pull on the string until the tampon is all of the way out. Wash your hands after you remove the tampon.
+
+      If the tampon is in correctly, you should not be able to feel it. If it feels uncomfortable, it may not be in far enough and you can remove the tampon and try again with a new one. 
+  utter_tamppon_get_lost:
+  - text: It is extremely unlikely for a tampon to get stuck in the vagina. Tampons are attached to a string a few inches in length that hangs through the vaginal opening. The tampon is removed by pulling gently on the string. If a tampon did get stuck, it is important to seek medical attention, as there is a risk of Toxic Shock Syndrome (TSS) if the tampon is left in too long.
+  utter_tampon_virginty:
+  - text: No. Tampons are just one of the ways you can choose to use to manage your period. Virginity is a term that refers to whether or not you have ever had sexual intercourse, and is not affected by using tampons.
+  utter_tts:
+  - text: |-
+      TSS stands for Toxic Shock Syndrome, which is caused by a bacteria. More than 9 out of every 10 cases of TSS are linked to using tampons during menstruation. Better teaching about how to use tampons has helped decrease the risk of TSS.
+      Some symptoms of TSS are headache, sore throat, sudden fever, vomiting, diarrhea, achy muscles and a rash that looks like a sunburn.
+      To prevent TSS, change tampons every 3 to 4 hours, no matter how light the bleeding is. Tampons shouldn’t be left in longer than 8 hours, so some women choose to wear a pad at night.
+  utter_what_is_peri_menopause:
+  - text: Peri-menopause is the time leading up to menopause. Most women will notice the physical and emotional changes of peri-menopause in their late 30’s or as late as the early 50’s when their menstrual cycle begins to change. During this time, hormone levels go up and down unevenly (fluctuate), causing changes in periods and other symptoms.
+  utter_what_is_menopause:
+  - text: Menopause is when a woman has no menstrual period for 12 months in a row. This can happen when a woman is in her mid 30’s all the way to her early 60’s, but is most common between ages of 45-55. No two women go through menopause in the same way. Some have no symptoms while others have many physical and emotional symptoms.
+  utter_in_pill_but_pregnant:
+  - text: First take a pregnancy test. If the pregnancy test is negative, keep taking the pill as normal. If the pregnancy test is positive, see your health care provider. Taking the pill when you’re pregnant doesn’t increase your risk of miscarriage or that your baby will have a birth defect.
+  utter_how_to_get_pregnant:
+  - text: Pregnancy happens when a sperm fertilizes an egg, and the fertilized egg attaches (implantation) to the lining of the uterus.\nPeople can get pregnant by having vaginal sex. People can also get pregnant with fertility treatments that involve the help of a health care provider. Any time semen is near the vagina, there is a risk of pregnancy.
+  utter_how_young_get_pregnant:
+  - text: Pregnancy can occur as soon as ovulation has started. A sign that ovulation has started is the onset of menstruation (a period). Most people get their first period when they’re around 11 or 12. Some start as early as 8 years and some as late as 16 years—everyone’s different.
+  utter_get_pregnant_on_top:
+  - text: Sexual positions have no impact on pregnancy. Pregnancy occurs if sperm fertilizes an egg, and the fertilized egg attaches (implantation) to the lining of the uterus.
+  utter_get_pregnant_kissing:
+  - text: No, you can’t get pregnant from kissing. Pregnancy happens when a sperm fertilizes an egg, and the fertilized egg attaches (implantation) to the lining of the uterus.
+  utter_pregnant_after_period:
+  - text: Yes, you can get pregnant when you’re menstruating and right after you stop. Any time semen is near the vagina, there is a risk of pregnancy
+  - text: |-
+      A pregnancy can occur at any time during the menstrual cycle. There are times in the cycle when it may be less likely to become pregnant, but these times are very hard to predict, especially if periods are not regular. Use a regular method of birth control to prevent pregnancy.
+      Use a condom every time you have sex (anal, oral, vaginal) to reduce the risk of pregnancy, STIs and HIV. Dual method use (using a male or vaginal condom along with another method of birth control like the pill, patch, ring or IUD) provides the best protection from pregnancy, STIs and HIV.
+  utter_pregnant_during_period:
+  - text: Technically, no — the time a woman is fertile is mostly limited to a few days each month in the middle of the menstrual cycle, meaning about two weeks from when she started her last period. That said, women may have bleeding during their cycle that is not a true period.  If a woman, for example, has irregular periods and has some breakthrough bleeding, she may think it’s her period and still become pregnant if she has sex during that time.
+  utter_get_pregnant_with_clothes:
+  - text: Yes, any time semen is near the vagina, there is a risk of pregnancy.
+  utter_get_pregnant_hot_tub:
+  - text: No, you can’t get pregnant from semen in a hot tub. The temperature of the water is too high for sperm to survive. However, if you have sex in a hot tub and sperm enters the vagina, there is a risk of pregnancy
+  utter_get_period_pregnant:
+  - text: No, you don’t have a period (menstruate) when you’re pregnant. During pregnancy, the egg is fertilized and has attached (implantation) to the lining of the uterus.  There may be some bleeding called ‘breakthrough bleeding’ or ‘spotting’ at the time the period would have been due. This can also be sign of a miscarriage.
+  utter_sperms_have_eyes:
+  - text: Sperm don’t have eyes. Sperm cells travel to the egg by moving their tail back and forth in a swimming motion. Sperm find the egg because there is a chemical around the egg that attracts the sperm and signals that the egg is ready.
+  utter_determine_baby_sex:
+  - text: Both males and females have a reproductive cell. The male reproductive cell is the sperm, and the female reproductive cell is the egg. Within each of these cells, there are chromosomes that decide the biological sex of the baby. Eggs only carry X chromosomes and sperm carry an X or a Y chromosome. If a sperm with a Y chromosome fertilizes the egg, the cell develops into a male (X+Y). If a sperm with an X chromosome fertilizes the egg, the cell develops into a female (X+X
+  utter_gestation_time:
+  - text: Pregnancy is about 40 weeks, or 9 month long.
+  utter_baby_come_out_does_it_pain:
+  - text: |-
+      During birth, the baby travels out of the uterus through the cervix and into the vagina. The vagina stretches as the baby moves out of the body. The uterus is a muscle, it contracts and relaxes (having contractions) during labour to push the baby out.
+      Labour pain is caused by the uterus contracting, the opening of the cervix and stretching of the vagina. As labour progresses, the contractions become stronger, longer and closer together. This allows for a baby to be born
+  utter_vagina_loose_after_baby:
+  - text: The vagina stretches when a baby is born vaginally. However, it’s usually back to the size it was before pregnancy by 6-8 weeks after the baby was born.
+  - text: |-
+      If you push a baby out through your vagina, expect some stretching.
+      After delivery, the vaginal opening is anywhere from 1-4 centimeters bigger than it was before
+  utter_why_stretch_marks_pregnancy:
+  - text: Stretch marks are lines on the skin that may appear late in pregnancy. Stretch marks are most common on the stomach, but they can also develop on the breasts and thighs. The cause of stretch marks is not well understood. They may be caused by increasing pregnancy hormones and stretching of the tissue under the skin. Stretch marks will fade to white lines after birth. Not all people get stretch marks during pregnancy.
+  utter_baby_drugs:
+  - text: |-
+      Pregnant women should talk to their health care provider about any medicine, vitamin and mineral supplements or other drugs they are taking. During pregnancy, the placenta and umbilical cord connect a woman to the baby. Drugs can pass through the placenta to the developing baby and may affect their health and development.
+      Developing babies who’ve been exposed to other drugs such as fentanyl, ecstasy, methamphetamines, cocaine, and heroin are at the same risk for problems like:
+      birth defects
+      the placenta separating from the uterus before birth
+      preterm birth
+  utter_baby_alcohol:
+  - text: |-
+      Drinking alcohol anytime during pregnancy can harm the baby. Alcohol passes through the placenta to the growing baby. A baby’s liver isn’t as developed as an adult’s, so it can’t break down the alcohol as fast. This means that a baby’s developing organs are exposed to the effects of alcohol for a longer period of time.
+      Drinking alcohol during pregnancy can cause fetal alcohol spectrum disorder (FASD). Babies with FASD are born with birth defects and brain damage. The brain damage can affect things like behaviour, brain development and cause other birth defects. FASD has lifelong impacts on a baby. There’s no cure for FASD.
+  utter_what_is_miscarriage:
+  - text: A miscarriage is sometimes called ‘losing a baby’. A miscarriage is when the baby dies in the uterus in the first 20 weeks of pregnancy. It’s most common in the first 12 weeks. Most miscarriages happen because the baby isn’t developing normally.
+  utter_pregnant_dont_want_baby:
+  - text: |-
+      A pregnant person has 3 choices:
+      continue with the pregnancy and choose to parent’ncontinue with the pregnancy and choose adoption
+      end the pregnancy by choosing an abortion
+      Talk to your parents, a supportive friend or adult or your health care provider for support and non-judgmental information.
+  utter_abortion_pill:
+  - text: Mifegymiso, also known as the ‘abortion pill’ is used for medical abortions. It is a combination of two drugs, mifepristone and misoprostol. The drugs change the lining of the uterus so a pregnancy can’t continue. A prescription is required for Mifegymiso, and can be prescribed and taken up to 9 weeks of pregnancy. low birth weight
+  utter_does_abortion_hurt:
+  - text: An abortion procedure will feel different for everyone. For many people, it feels like strong menstrual cramps.  Medicine is given before and during the procedure to help with pain and discomfort.
+  utter_have_baby_after_abortion:
+  - text: If there are no complications, a person should be able to become pregnant again after an abortion
+  utter_think_about_sex:
+  - text: Yes, it’s normal for people to think about sex. Some people think about it a lot and some not as much. When you go through puberty and mature physically and emotionally, it’s normal to become more curious about your sexuality and your body.
+  utter_what_sexual_intercourse:
+  - text: Usually it refers to the way one person’s body touches another person’s genitals in a sexual way, such as inserting the penis into a vagina or anus.
+  utter_what_is_orgasm:
+  - text: An orgasm is the physical sensation of sexual excitement resulting from stimulating the genitals.
+  utter_hurt_sex_first_time:
+  - text: Sex may be uncomfortable the first few times. Some people find using a lubricant helps. Talk to a health care provider if you continue to have pain.
+  utter_sex_during_period:
+  - text: |-
+      Yes, you can have sex when you are menstruating. You may bleed during sex, so be prepared. Communicating with your partner about your period may help you to feel more comfortable.
+      You can also get pregnant when you are menstruating. Use a condom every time you have sex (anal, oral, vaginal) to reduce the risk of pregnancy, STIs and HIV. Dual method use (using a male or vaginal condom along with another method of birth control like the pill, patch, ring or IUD) provides the best protection from pregnancy and STIs
+  utter_what_is_oral-sex:
+  - text: Oral sex is when a person stimulates another person’s genitals with their mouth, lips, tongue or teeth. Use a condom or dental dam every time you have oral sex to reduce the risk of STIs and HIV.
+  utter_oral_sex_or:
+  - text: |-
+      Yes, oral sex is a type of sexual activity. Oral sex does not have a risk of pregnancy and has a lower risk of STIs and HIV compared to other types of sex. Oral sex without a condom or dental dam has a risk of STIs because of skin-to-skin contact and passing of body fluids between partners.
+      Condoms and dental dams are used to cover the penis, anus or genitals before starting and during oral sex. Use a condom or a dental dam every time you have sex (anal, oral, vaginal) to lower your risk of STIs and HIV.
+  utter_what_is_blow_job:
+  - text: ‘Blow job’ is a slang term for mouth to penis oral sex. Use a condom or a dental dam every time you have oral sex to lower your risk of STIs and HIV.
+  utter_what_is_anal_sex:
+  - text: Anal sex is when a person puts their penis into another person’s anus. Use a condom every time you have anal sex (anal, oral, vaginal) to reduce the risk of STIs and HIV.
+  utter_get_pregnant_anal_sex:
+  - text: Anal sex without a condom increases the risk of pregnancy if semen gets near the opening of the vagina. Use a condom every time you have anal sex (anal, oral, vaginal) to reduce the risk of STIs and HIV. Dual method use (using a male or vaginal condom along with another method of birth control like the pill, patch, ring or IUD) provides the best protection from pregnancy, STIs and HIV.
+  utter_what_is_mursturbation:
+  - text: Masturbation is when you touch your own genitals to make them feel good. It’s a normal way for a person to learn about and explore their body.  While masturbation is normal, it should be done in private.
+  utter_is_masturbation_normal:
+  - text: Masturbation is normal.  It’s a way for a person to learn about and explore their body and their sexual feelings. Masturbating a lot won’t hurt you. It’s only a problem if it interferes with school, spending time with friends and family or doing other things you normally like.  While masturbation is normal, it should be do
+  utter_mean_rub_out:
+  - text: ‘Rub one out’ is a slang term for masturbation. Masturbation is a normal way for a person to learn about and explore their body. While masturbation is normal, it should be done in private.
+  utter_penis:
+  - text: The penis is external male genitalia and is the passageway for urine and
+  utter_what_is_pre_cum:
+  - text: |-
+      Pre-cum is the slang term for pre-ejaculatory fluid. Pre-ejaculatory fluid is clear. It’s released during male arousal and helps line the urethra to protect sperm that could travel down during ejaculation.
+      There may be sperm in the pre-ejaculate fluid. Sperm from a previous ejaculation can remain in the urethra, and then the ‘leftover’ sperm will come out the urethra in the pre-ejaculate fluid.
+  utter_swallow_semen:
+  - text: |-
+      Semen is made up of many things like enzymes, sugar, water, protein, zinc and sperm. It is very low in calories and has little nutritional value, and will not make a person gain weight if swallowed.
+      You can get STIs from swallowing semen. Use a condom or dental dam every time you have oral sex to lower your risk of STIs and HIV.Will swallowing semen or getting semen on someone’s face make them sick?                                                                                                                                                        
+      Everyone is different and some people might not like the way it tastes or the way it makes them feel. You can get STIs from swallowing semen. Use a condom or dental dam every time you have sex (anal, oral, vaginal) to lower your risk of pregnancy, STIs and HIV.
+  utter_female_sexually_assault_male:
+  - text: Yes. Sexual assault can happen to anyone by anyone. Any sexual activity without consent, no matter the age or gender is a crime. This includes all forms of sexual activity, ranging from sexual touching (e.g., kissing) to sexual intercourse.
+  utter_partner_i_fighting_advice:
+  - text: |-
+      It’s normal to have disagreements from time to time. They give you a chance to explore things that you disagree about, and it can help make your feelings clear.
+      Disagreements that often turn into fights that include yelling, criticism or harsh words are signs of an unhealthy relationship. It’s a problem if you’re fighting all of the time, or if you say cruel things when you’re arguing. Remember; physical fighting (punching, hitting) is NEVER okay.
+      Signs of a healthy relationship are:
+
+      respect
+      honesty
+      communication
+      being able to be yourself
+      feeling safe
+      trust
+      equality
+      support
+  utter_asexual:
+  - text: Asexual describes a person who doesn’t feel any sexual attraction or desire to have sex. They may or may not still feel emotional or romantic attraction to others.
+  utter_demisexual:
+  - text: Demisexual describes a person who only feels sexual attraction if they already have a close emotional bond with that person.
+  utter_gay:
+  - text: Gay is a word used to describe people who are attracted to people of the same se
+  utter_what_is_virus:
+  - text: |-
+      A virus is a kind of germ that’s so small even a regular microscope can’t see it. Viruses are the smallest and simplest of all germs, but they are also some of the deadliest. Different viruses cause different diseases. Vaccines can prevent some viruses.
+      Sexually transmitted infections (STIs) caused by a virus (like Herpes and HIV) can’t be cured, but can be treated to help manage symptoms. STI has replaced the term STD (Sexually Transmitted Disease). In medical science, infection is the term used to talk about a bacteria, virus, parasite or other microbe that has entered the body and begun to multiply. The term disease indicates that signs and symptoms of illness are present. There are many people with STIs who have no symptoms, therefore STI is a more accurate term.
+  utter_tell_one_has_sti:
+  - text: |-
+      Many STIs don’t have symptoms, especially when the infection first starts. When an STI is found and treated early, it can lower the chances of having complications and can prevent the infection from spreading to sexual partners. As with any infection, prevention is important. You can prevent getting an STI by:
+      talking to your partner about using protection and each other’s history of STIs, before sexual activity oral, vaginal sex) getting tested regularly for STIs, even if you don’t have any symptoms
+      getting immunized against Hepatitis A/a, Hepatitis B/a and 
+      Human Papillomavirus (HPV)
+      regularly using barrier methods of protection such as condoms, vaginal condoms and dental dams
+  utter_how_do_sti_spread:
+  - text: |-
+      STIs spread through sexual contact involving the genitals, mouth or rectum. Some infections (such as Chlamydia, and Hepatitis A, B and C) can also be spread through other means such as:
+
+      skin-to-skin contact (e.g., kissing, non-penetrating sex or body rubbing)
+      mixing infected body fluids (such as blood, semen or vaginal secretions)
+      sharing needles, other drug paraphernalia and through needle stick injuries
+      from a pregnant woman to her unborn baby, as the baby’s being born during a vaginal delivery
+      through breastmilk to a baby
+      Use a condom or dental dam every time you have sex (anal, oral, vaginal) to reduce the risk of STIs and HIV.
+  utter_get_sti_oral_sex:
+  - text: Yes, oral sex without using a condom, vaginal condom or dental dam has a risk of an STI and HIV because of skin-to-skin contact and passing bodily fluids between partners. Use a condom or dental dam every time you have sex (anal, oral, vaginal) to reduce the risk of STIs and HIV.
+  utter_get_sti_kissing:
+  - text: Yes, oral herpes can be passed to partners by kissing, if the person with oral herpes has a cold sore when kissing happens. People can get cold sores (oral herpes) from sharing drinks, lip balm or kissing. Avoid these activities when someone has a visible cold sore. You can also ask your friend or partner with oral herpes to let you know about their symptoms so you can be aware of when the herpes virus is active (which is when it can be spread).
+  utter_get_sti_toilet:
+  - text: It would be extremely difficult for you to get an STI from a toilet seat. Sex germs are fragile and they have a hard time surviving outside of the body. STIs are also not spread through casual contact such as shaking hands or hugging. STIs spread through sexual contact involving the genitals, mouth or anus/rectum
+  utter_what_is_hiv:
+  - text: |-
+      HIV (Human Immunodeficiency Virus) is a virus that weakens the immune system and makes it difficult to fight diseases and infections.
+      AIDS (Acquired Immunodeficiency Syndrome) is a combination of having HIV and one or more infections or diseases. Because HIV has damaged the immune system, the body can’t protect against or fight infections or diseases and a person becomes very sick. There is no cure for HIV, but medicine can be taken to help keep the immune system strong, allowing people with HIV to live for many years.
+  utter_know_someone_has_aids:
+  - text: HIV often has no physical symptoms, so you can’t tell if someone has HIV by looking at them. In Alberta, people are legally required to tell sexual partners if they are HIV positive.  People do not have to tell employers, coworkers, teachers, landlords, friends, family and police officers if they are HIV positive.
+  utter_what_are_wetdreams:
+  - text: The scientific term for a wet dream is nocturnal emissions. A wet dream is when a penis gets erect (hard), and ejaculates (releases semen) while a person is asleep. A sign that a nocturnal emission has happened is waking up in damp pyjamas and bed sheets. Nocturnal emissions usually begin during puberty as the body produces more testosterone. Some people experience them and some may find them embarrassing, but they are completely normal.
+  utter_normal_to_get_erection:
+  - text: Yes, getting erections is very normal! While children may experience erections when they are younger, they may happen more often and unexpectedly during puberty. An erection happens when the penis fills with blood, making the penis larger and harder. Although people may experience erections (boners) when they are younger, they seem to occur more often and unexpectedly during puberty. Some people might have many erections in a day, and others may
+  utter_normal_for_breasts_to_itch_hurt:
+  - text: As the breasts grow, the skin stretches, causing them to feel itchy or sore. This is normal. The nipples can also feel sore.
+  utter_normal_to_have_sexual_feelings:
+  - text: It is normal for people to have sexual feelings towards others. These feelings can make people want to be really close to someone. This is a normal and healthy part of growing up.
+  utter_it_normal_to_pass_gas_during_orgasm:
+  - text: |-
+      Unfortunately, yes.
+      When you climax, the muscles around your genitals – including the sphincter muscle – relax, so it’s not unusual for a little gas to escape. But even before orgasm, the in-and-out motion may trigger gas because the penis rubs against the anus through the vaginal wall, she says.
+      The fix: If it happens frequently, take an over-the-counter anti-gas medication that contains simethicone before having sex.
+  utter_certain_exercises_really_lead_better_sex:
+  - text: |-
+      You bet!
+      For starters, a good cardiovascular routine helps build energy and stamina.
+      Strength training and stretching can help you build muscles and improve flexibility so you can get into – and maintain – various sex positions.
+      The best exercise to improve sex is the Kegel squeeze. It’s basically strength training for your pubococcygeus (or PC) muscles, which hold up your vagina, anus, uterus, bladder and urethra.
+      The stronger these muscles, the more intense your orgasms, Try it: Your first step is to locate your PC muscles by trying to stop your urine flow when you pee.
+      Hold theb squeeze for five seconds, then release.
+      Do 50-150 Kegel squeezes a day to keep those muscles in good shape.
+      Warning: Don’t do Kegels regularly while urinating. This can lead to urinary tract and bladder infections.
+  utter_never_orgasm_something_wrong_me:
+  - text: |-
+      Nope. In fact, about 70% of women don’t orgasm during intercourse without direct clitoral stimulation.
+      If you can’t have orgasms with intercourse, you’re normal.
+      Sometimes women get upset because their partners say, ‘My last lover could have orgasms, so there must be something wrong with you’
+      Assuming you don’t dump him for being insensitive, point out the statistics.
+      Next, let him know that it’s perfectly OK for one of you to lend a hand.
+      Touching your clitoris during sex really ups the chances that you’ll have an orgasm.
+      If you’ve never experienced an orgasm – and about 10% of women haven’t – consider investing in lubricants (not oil, which can irritate sensitive vaginal tissues) and experiment alone. Don’t get discouraged if there are no immediate fireworks.
+      The first time, it might take an hour of stimulation to produce an orgasm; it might also take many tries to get comfortable with the feelings of strong arousal, Buehler says.
+  utter_smell_down_there_what_can_i_do:
+  - text: |-
+      You’re probably worrying needlessly.
+      If you’re concerned, see your gynecologist because strong odor (and discharge) is a sign of a bacterial infection.
+      If there’s no infection and you’re still worried, avoiding spicy or pungent foods may help.
+      Or try an over-the-counter product called Rephresh, It rebalances the vagina’s pH and makes you more fragrant.
+      Don’t use douches or feminine sprays. They can irritate and can alter the vagina’s natural flora. That increases your risk of getting an infection and masks an existing one.
+  utter_how_long_does_sex_last:
+  - text: This varies greatly depending on the age of participants as well as the amount of time and energy they have available. Per a survey of sex therapists in 2008 ‘too short’ was 1-2 minutes, ‘adequate’ was 3-7 minutes, ‘desirable’ was 7-13 minutes and ‘too long’ was around 30 minutes. These numbers were for intercourse, not for foreplay, fooling around, kissing, or anything else.
+  utter_calories_burnduring_sex:
+  - text: 'The number of calories burned depends on a number of factors including: your body weight, how long sex lasts, and how vigorous it is. Best assumption would be that if you are drenched in sweat and totally exhausted after an hour of sex you could assume you have burned the calorie equivalent of an hour of Zumba or kickboxing.'
+  utter_why_does_sex_hurt:
+  - text: |-
+      Probably this question is really about intercourse, and probably it’s the receiving partner — the one whose vagina or anus is being inserted into — who’s asking it. There are three main reasons for pain with vaginal or anal intercourse. The first is insufficient lubrication, especially an issue with anal sex — you MUST use lube for this activity. Not enough lubrication results in friction and pain.
+      The second is insufficient arousal. The body reacts to arousal with blood flow to the genitals (that’s where erections come from), and arousal changes the sensations of genital touch and insertion and helps them feel more pleasurable. For women, the clitoris, not generally inside the vagina, is the focal point of physical arousal.
+      The third is size, especially penis length, since some women find it very painful when a long penis hits their cervix during intercourse. There are some health problems that might also result in pain, but these three are definitely the most common issues.
+  utter_how_long_get_gregnant:
+  - text: We know that Plan B, or the morning after pill, can prevent an unwanted pregnancy for up to five days after intercourse, but that it is most effective when taken immediately. Without Plan B, if you have unprotected sex and are ovulating, conception probably takes place within 48 hours; but since your cervix stores sperm and releases it for about 48 hours after sex you could actually conceive four days after
+  utter_how_does_sex_feel:
+  - text: |-
+      Sex can feel many different ways, depending on what kind of sex it is and the degree of comfort and arousal of the people having it. Best-case, pleasurable sensations flood not just your genitals but your whole body, making you feel increasingly erotic and aroused, often to the point of having an orgasm (often called a ‘climax,’ which is a pretty good description of the result of these feelings that just get better and better). In this scenario, it can also amplify feelings of caring and love you have for your partner, so it can be an emotional experience and not just a physical one.
+      BUT! Worst-case, it can be painful, frightening, and unpleasant, especially if you don’t really want to do it and are not aroused. Many people have sex before they’re ready, without enthusiastic consent, or before they know what their body needs to have it be a pleasurable experience, and often have sex with partners who don’t know that information either. And it’s quite possible to have sex feel great for one partner and pretty terrible for the other — you can deal with this discrepancy through communication, caring, and learning more about sexuality, but for many people, sex doesn’t feel anywhere near as good as it could feel and as they hope it will feel.
+  utter_how_can_have_sex_fream:
+  - text: Obsess about it and whom you’d like to do it with all day! We tend to dream about what is on our mind the most so if you occupy your mind all day, you are more likely to have a sex dream that night.
+  utter_how_do_kiss:
+  - text: Lean in, tilt your head (in the opposite direction of your kissing partner), close your eyes (or don’t), touch lips, pull back, touch lips again. You’re kissing.
+  utter_why_sex_feels_good:
+  - text: 'Human brains and endocrine systems are what create emotions, like being in love, which are one part of how sex feels, The brain and central nervous system are also responsible for sexual responses like orgasm: during sexual pleasure, all the nerve endings of your body (including your genitals, all linked to your nervous system) are in concert and communication with your brain, and vice-versa. Without everything going on in our brains, we wouldn’t have any interest in sex at all, nor find sex anything of interest. It’s also important to note that not everyone is neurotypical, so on top of all the other ways we vary, all our nervous systems don’t work in exactly the same way.'
+  utter_how_to_have_sex:
+  - text: |-
+      It depends on what kind of sex you want to have! But if you are referring to intercourse, where one person inserts a body part into an orifice of another, the first thing you need is a partner who wants to do the same thing with you
+      You don’t have to read their mind; you can ask. Some partners will have specific desires or restrictions, including safer sex requirements.
+      The next thing: Both people should get as aroused as possible, which means mentally AND physically desiring to connect in this way. Physical arousal makes penises hard, can make vaginas get wet, and can make the sensations of all the body parts involved feel better — but even so, it’s good to have some lubricant so that maximum comfort is possible, since vaginal and anal insertion can hurt if there isn’t enough lubrication. For many people, it takes time to get aroused enough, and insertion shouldn’t happen until the person being penetrated wants it./nMany things can be arousing: kissing, touching, embracing each other so your bodies are in close contact, rubbing against each other, genital touch, oral sex… and that’s just for starters! Once a penis or fingers are in a vagina, generally people enjoy an in-and-out motion.. It’s possible to be too rough, or even (more rarely) too slow and gentle, depending on your partner’s desires, so ask what they like the best.
+  utter_what_is_sex:
+  - text: |-
+      A lot of experts might define sex in terms of intercourse, or even in terms of physical things that two people can do together, and my definition includes those, but it’s broader. One reason for this is that people express their sexual feelings in so many different ways that in order to be inclusive, we have to be pretty far-reaching.
+      So I’d define sex as anything one or more people can do to evoke or satisfy erotic feelings, and we can define ‘erotic’ as that which makes you feel sexual desire and/or arousal. This definition of sex allows for masturbation (‘solo sex’), erotic experiences that two people can share including oral, manual (with hands), and intercourse (‘partner sex’). Most sexual experiences involve some degree of genital stimulation, though not all do; some people can feel sexually aroused, and even orgasm, without including direct genital touch. Some people choose to differentiate between ‘having sex’ and ‘being sexual’: the latter might not be as genitally focused or might not include intercourse, but is WAY more sexy than just shaking hands.
+  utter_how_to_orgasm:
+  - text: |-
+      If this question means how does a woman make sure she has an orgasm during a night of sex, then it’s about a woman figuring out what makes her have an orgasm and how to incorporate that into sexual activity with her partner. This comes easily for some women and not so easily for others.
+      We live in a culture where women are often more comfortable with romantic thoughts and less so with sexual thoughts that may be more effective in leading to arousal and orgasm./nWhen orgasm doesn’t occur easily or naturally for a woman, I suggest sexual fantasizing, masturbation, use of a vibrator, and a visit to a sexual resource center. If you can do it on your own, it’s often easier to graduate to doing it with a partner.
+      If the question means how to make sure to have an orgasm during penile sexual intercourse, that’s a tougher question. I would suggest that this is not a worthwhile goal, at least all the time, as it could require a fair amount of logistics; nothing wrong with taking turns.
+  utter_what_to_do_condom_breaks:
+  - text: |-
+      First, consider getting tested for STDs if you were using it to prevent them.
+      If you’re concerned about getting pregnant, there are three ways to prevent it, explained here in order of effectiveness from most to least:’nGo to your women’s health provider (doctor or midwife, nurse practitioner, or PA) and have a copper IUD inserted. This is about 99 percent effective in preventing pregnancy after a condom breaks. It can also be used for up to the next 10 years for contraception, if desired.  You can do this five to seven days after the condom breaks.
+      Go directly to the pharmacy and pick up over-the-counter Plan B (levonorgestrel, a progestin). You can do this most effectively up to three days after the condom breaks.
+  utter_penis_size_matter:
+  - text: Like anything, it may matter to some people, like being thin or having a nice car might matter to some people when they choose a partner. Depending on how much certain looks matter to an individual, penis size might be considered too big or too small. It certainly seems to matter to some men for bragging rights and for the amount they trash talk about it. It may also matter for some men and women in terms of how a certain size penis feels during intercourse. Penis size does not matter in terms of ability to have an orgasm or being able to get a woman pregnant.
+  utter_is_vaginal_discharge_normal:
+  - text: |-
+      A woman normally produces a vaginal discharge that usually is described as clear or slightly cloudy, non-irritating, and odor-free. During the normal menstrual cycle, the amount and consistency of discharge can vary. At one time of the month, there may be a small amount of a very thin or watery discharge; and at another time, a more extensive thicker discharge may appear. All of these excretions could be considered normal.
+      A vaginal discharge that has an odor or that is irritating usually is considered an abnormal discharge. The irritation might be itching or burning, or both. The itching may be present at any time of the day, but it often is most bothersome at night. These symptoms often are made worse by sexual intercourse. It is important to see your gynecologist if there has been a change in the amount, color, or smell of the discharge.
+  utter_can_woman_get_pregnant_while_breastfeeding:
+  - text: Yes. Even though breastfeeding may suppress or delay menstruation, you can still get pregnant. Ovulation will occur before you start having menstrual periods again, so follow your doctor’s recommendation on the appropriate birth control method to use
+  utter_what_should_women_do_forget_birth_control_pills:
+  - text: |-
+      If you forget to take a birth control pill, take it as soon as you remember. If you don’t remember until the next day, go ahead and take two pills that day. If you forget to take your pills for two days, take two pills the day you remember and two pills the next day. You will then be back on schedule. If you miss more than two pills, call your health care provider for instructions. Those instructions may be to take one pill daily until Sunday and then start a new pack or to discard the rest of the pill pack and start over with a new pack that same day.
+      Any time you forget to take a pill, you must use another form of birth control until you finish the pill pack. When you forget to take a birth control pill, you increase the chance of releasing an egg from your ovary. However, if you forget to take any of the last seven out of the 28 day pills, you will not raise your chance of pregnancy, because these pills contain only inactive ingredients. If you miss your period and have forgotten to take one or more pills, get a pregnancy test. If you miss two periods even though you have taken all your pills on schedule, you should get a pregnancy test.
+  utter_use_vaseline_as_lubricant_with_latex_condom:
+  - text: No. Use only water-based lubricants, such as K-Y Jelly, with condoms. Oil-based lubricants, like Vaseline, can weaken the condom and cause it to break.
+  utter_can_woman_get_pregnant_withdrawal_method:
+  - text: Pulling out before the man ejaculates, known as the withdrawal method, is not a foolproof method for birth control. Some ejaculate (fluid that contains sperm) may be released before the man actually climaxes. In addition, some men may not have the willpower or be able to withdraw in time.
+  utter_can_you_get_pregnant_from_pre-cum:
+  - text: Current thinking is that a woman is unlikely to get pregnant from pre-cum since some recent research suggests that there are no sperm in pre-ejaculate It was thought in the past that there were sperm in pre-ejaculate, accounting for the relatively high failure rate of withdrawal or pull out. It turns out there are likely not sperm in pre-ejaculate and what actually accounts for the relatively high failure rate is that the man doesn’t actually pull out.
+  utter_should_you_still_use_protection_with_oral_sex:
+  - text: Yes, to reduce the likelihood of STD transmission with oral sex, a dental dam is recommended when having sex with a new or non-monogamous partner. The dental dam is a sheet of soft pliable film that serves as a barrier to prevent STD transmission.
+  utter_meme:
+  - text: ''
+    image: https://firebasestorage.googleapis.com/v0/b/glamour-51c77.appspot.com/o/memes%2F054afb88db878a4392fd5dc9e18c4daf.jpg?alt=media&token=26bbae17-34e2-4f1e-8c89-e6ed33e70b0d
+  - text: ''
+    image: https://firebasestorage.googleapis.com/v0/b/glamour-51c77.appspot.com/o/memes%2F0895bf2c6fa1c4269b7a276381d97d66.jpg?alt=media&token=efdb8e79-5827-4feb-b87f-c2f6114a471f
+  - text: ''
+    image: https://firebasestorage.googleapis.com/v0/b/glamour-51c77.appspot.com/o/memes%2F089b8797f03665b3e4294b0a1c5d742b.jpg?alt=media&token=276749cc-c0f1-4677-9164-5398c0de23ef
+  - text: ''
+    image: https://firebasestorage.googleapis.com/v0/b/glamour-51c77.appspot.com/o/memes%2F0a786f73c07fd75caec241491d30efac.jpg?alt=media&token=b71109a0-430a-4f32-b7d5-6c022946348f
+  - text: ''
+    image: https://firebasestorage.googleapis.com/v0/b/glamour-51c77.appspot.com/o/memes%2F0ce20f5555536f33bc0b92335d885115.jpg?alt=media&token=0a89444a-6696-4249-bbfc-6ad82c502bf2
+  - text: ''
+    image: https://firebasestorage.googleapis.com/v0/b/glamour-51c77.appspot.com/o/memes%2F0d2ff620175383f9ba9b8b7d55130c36.jpg?alt=media&token=6b25879c-2dbf-496c-9a47-739733a92f28
+  - text: ''
+    image: https://firebasestorage.googleapis.com/v0/b/glamour-51c77.appspot.com/o/memes%2F1747577cffd7b1a64a6e8f5d0da6ec15.jpg?alt=media&token=82ef0d97-a8c6-487d-b2dd-2a84c0d72a49
+  - text: ''
+    image: https://firebasestorage.googleapis.com/v0/b/glamour-51c77.appspot.com/o/memes%2F222c2ec922a3d7a666f04267f692ff0b.jpg?alt=media&token=5be79191-fa94-46f2-9fc1-5ee53c7083aa
+  - text: ''
+    image: https://firebasestorage.googleapis.com/v0/b/glamour-51c77.appspot.com/o/memes%2F23ad5ba785a5adbc0054b2b9d6603ad7.jpg?alt=media&token=271c9e98-1a40-4621-aee7-59a618cf40aa4
+  - text: ''
+    image: https://firebasestorage.googleapis.com/v0/b/glamour-51c77.appspot.com/o/memes%2F363893d9ed788f162a0d62c2031f3d82.jpg?alt=media&token=af9ae012-baf5-410a-a097-cfd8bc6258c5
+  - text: ''
+    image: https://firebasestorage.googleapis.com/v0/b/glamour-51c77.appspot.com/o/memes%2F4f6a3c39c94ec185f44433773266c142.jpg?alt=media&token=9f90f5aa-b769-49c4-a08f-e83fa0f437ab
+  - text: ''
+    image: https://firebasestorage.googleapis.com/v0/b/glamour-51c77.appspot.com/o/memes%2F56e35c22f75abdded3ea549fc81cab70.jpg?alt=media&token=ea553d5e-119b-4979-8ae1-df9c975f48a1
+  - text: ''
+    image: https://firebasestorage.googleapis.com/v0/b/glamour-51c77.appspot.com/o/memes%2F646c3e6026b439bfceaadda8ea29b850.jpg?alt=media&token=7a7492bd-75b4-4be1-b2f3-ce79b57158f1
+  - text: ''
+    image: https://firebasestorage.googleapis.com/v0/b/glamour-51c77.appspot.com/o/memes%2F646c3e6026b439bfceaadda8ea29b850.jpg?alt=media&token=7a7492bd-75b4-4be1-b2f3-ce79b57158f1
+  - text: ''
+    image: https://firebasestorage.googleapis.com/v0/b/glamour-51c77.appspot.com/o/memes%2F7556969c6ae30a299aaf9adfde735921.jpg?alt=media&token=c1e9e82f-e21a-4805-be70-1d9592ea81c8
+  - text: ''
+    image: https://firebasestorage.googleapis.com/v0/b/glamour-51c77.appspot.com/o/memes%2F7729a057f6583ad910dc746d52404e75.jpg?alt=media&token=2c6a69ef-f92a-48e8-9790-a95037d87d6a
+  - text: ''
+    image: https://firebasestorage.googleapis.com/v0/b/glamour-51c77.appspot.com/o/memes%2F7729a057f6583ad910dc746d52404e75.jpg?alt=media&token=2c6a69ef-f92a-48e8-9790-a95037d87d6a
+  - text: ''
+    image: https://firebasestorage.googleapis.com/v0/b/glamour-51c77.appspot.com/o/memes%2F82c968c62679dc27942aa337c4b8e704.jpg?alt=media&token=8d1205f0-9d57-48e3-9af1-f5fbccbfd2c9
+  - text: ''
+    image: https://firebasestorage.googleapis.com/v0/b/glamour-51c77.appspot.com/o/memes%2F87f8bde1d2e86a17d3f00d8e4537e94b.jpg?alt=media&token=06225c74-fa39-441b-a58d-0ed95e3086b1
+  - text: ''
+    image: https://firebasestorage.googleapis.com/v0/b/glamour-51c77.appspot.com/o/memes%2F91d5c7fde454aca9ec20c73bdf63af89.jpg?alt=media&token=1d816da7-1c6c-4a20-9e52-373d12897fdf
+  - text: ''
+    image: https://firebasestorage.googleapis.com/v0/b/glamour-51c77.appspot.com/o/memes%2F93f32c8e4d4dac73f3541980266b2b28.jpg?alt=media&token=f94350d8-5832-492e-b52e-43c1c3f480d4
+  - text: ''
+    image: https://firebasestorage.googleapis.com/v0/b/glamour-51c77.appspot.com/o/memes%2Fa1f170455940cfb1d3447733ef628a7f.jpg?alt=media&token=fe34d4f3-697d-48a3-a8f8-43722b7ebcb4
+  - text: ''
+    image: https://firebasestorage.googleapis.com/v0/b/glamour-51c77.appspot.com/o/memes%2Fa2646698364454759c9f505eefbbba7d.jpg?alt=media&token=d4024105-48a8-4a9f-8712-a6247e4ff18d
+  - text: ''
+    image: https://firebasestorage.googleapis.com/v0/b/glamour-51c77.appspot.com/o/memes%2Fa752cbeade6e8d6258d6d391e51eb0b4.jpg?alt=media&token=964146ce-6d3e-4cef-a0d2-1e383f55fadb
+  - text: ''
+    image: https://firebasestorage.googleapis.com/v0/b/glamour-51c77.appspot.com/o/memes%2Fb578020d6a9c8d005fb3351c75537d84.jpg?alt=media&token=bad28e0b-b374-4501-aca3-4ac7163401bb
+  - text: ''
+    image: https://firebasestorage.googleapis.com/v0/b/glamour-51c77.appspot.com/o/memes%2Fc141e458ddcdebb959a63d5e0e0b0b51.jpg?alt=media&token=dde6c32e-2346-4a0e-9f20-298ed2503396
+  - text: ''
+    image: https://firebasestorage.googleapis.com/v0/b/glamour-51c77.appspot.com/o/memes%2Fc36d1fc049fa9e8297d3f2b3ae26236b.jpg?alt=media&token=ee9c86a5-8523-4504-ad89-8dff7476debb
+  - text: ''
+    image: https://firebasestorage.googleapis.com/v0/b/glamour-51c77.appspot.com/o/memes%2Fcd7658ddf33668c6b38963b5edf8cf00.jpg?alt=media&token=2e144f6a-4b70-41f3-afef-7c8c1be556c4
+  - text: ''
+    image: https://firebasestorage.googleapis.com/v0/b/glamour-51c77.appspot.com/o/memes%2Fdd787e2bb6a54920c512450a18731680.jpg?alt=media&token=906f4935-f3fe-405e-98a6-c43ae6c5ab30
+  - text: ''
+    image: https://firebasestorage.googleapis.com/v0/b/glamour-51c77.appspot.com/o/memes%2Fe03cbb684d71ea6b72be65dde8bd0e29.jpg?alt=media&token=6e4d1e52-d230-4f2c-bbce-105020ee2956
+  - text: ''
+    image: https://firebasestorage.googleapis.com/v0/b/glamour-51c77.appspot.com/o/memes%2Fe88b500ec4d8ebf1dc2ae98524bafe28.jpg?alt=media&token=6cb19dfa-0ca6-4428-847e-d8f1dd167fab
+  - text: ''
+    image: https://firebasestorage.googleapis.com/v0/b/glamour-51c77.appspot.com/o/memes%2Ffabd901505c0685a0bc9ef575ba3a589.jpg?alt=media&token=34b95d05-fc23-408a-9220-2e41b87c7937
+  - text: ''
+    image: https://firebasestorage.googleapis.com/v0/b/glamour-51c77.appspot.com/o/memes%2Ffbf1faa32b439d9fc321fec669f6b286.jpg?alt=media&token=d84bb82b-2420-4d26-8775-3487d46e070a
+actions:
+- action_get_course_material
+- action_query_knowledge_base
+- action_search_concerts
+- action_search_venues
+- action_summarise_text
+- action_summarize_text
+- action_tell_date
+- action_tell_time
+- action_weather_api
+- facility_search
+- search_location
+- utter_abortion_pill
+- utter_about_breast
+- utter_about_cramps
+- utter_about_hymen
+- utter_about_life
+- utter_about_womb
+- utter_absteinance_effective
+- utter_act_humor
+- utter_age
+- utter_agent_acquaintance
+- utter_agent_annoying
+- utter_agent_answer_my_question
+- utter_agent_bad
+- utter_agent_be_clever
+- utter_agent_beautiful
+- utter_agent_birth_date
+- utter_agent_boring
+- utter_agent_boss
+- utter_agent_busy
+- utter_agent_can_you_help
+- utter_agent_chatbot
+- utter_agent_clever
+- utter_agent_crazy
+- utter_agent_fired
+- utter_agent_funny
+- utter_agent_good
+- utter_agent_happy
+- utter_agent_hobby
+- utter_agent_hungry
+- utter_agent_marry_user
+- utter_agent_my_friend
+- utter_agent_occupation
+- utter_agent_origin
+- utter_agent_ready
+- utter_agent_real
+- utter_agent_residence
+- utter_agent_right
+- utter_agent_sure
+- utter_agent_talk_to_me
+- utter_agent_there
+- utter_appraisal_bad
+- utter_appraisal_good
+- utter_appraisal_no_problem
+- utter_appraisal_thank_you
+- utter_appraisal_welcome
+- utter_appraisal_well_done
+- utter_asexual
+- utter_ask_guiding_question
+- utter_baby_alcohol
+- utter_baby_come_out_does_it_pain
+- utter_baby_drugs
+- utter_birth_control_no_pills
+- utter_blood_leaks_period
+- utter_blue_balls
+- utter_boys_get_periods
+- utter_breast_size
+- utter_breasts_milk
+- utter_calories_burnduring_sex
+- utter_can_woman_get_pregnant_while_breastfeeding
+- utter_can_woman_get_pregnant_withdrawal_method
+- utter_can_you_get_pregnant_from_pre-cum
+- utter_certain_exercises_really_lead_better_sex
+- utter_chance_of_pregnancy_pill
+- utter_cheer_up
+- utter_circumscised_meaning
+- utter_condom_flavors
+- utter_confirmation_cancel
+- utter_confirmation_no
+- utter_confirmation_yes
+- utter_cost_bcm
+- utter_creator
+- utter_current_activity
+- utter_demisexual
+- utter_dental_dam
+- utter_determine_baby_sex
+- utter_dialog_hold_on
+- utter_dialog_hug
+- utter_dialog_i_do_not_care
+- utter_dialog_sorry
+- utter_dialog_what_do_you_mean
+- utter_dialog_wrong
+- utter_did_that_help
+- utter_direction_response
+- utter_do_erections_hurt
+- utter_do_i_have_to_use_pads
+- utter_does_abortion_hurt
+- utter_emotions_ha_ha
+- utter_emotions_wow
+- utter_fast_favs
+- utter_fav_meal
+- utter_fav_movie
+- utter_fav_movie_director
+- utter_fav_movie_plot
+- utter_fav_movie_release_date
+- utter_fav_quote
+- utter_fav_song
+- utter_female_sexually_assault_male
+- utter_formal_greet_response
+- utter_gay
+- utter_gender
+- utter_gestation_time
+- utter_get_period_long_time
+- utter_get_period_pregnant
+- utter_get_period_unexpectedly
+- utter_get_pregnant_anal_sex
+- utter_get_pregnant_hot_tub
+- utter_get_pregnant_kissing
+- utter_get_pregnant_on_top
+- utter_get_pregnant_with_clothes
+- utter_get_sti_kissing
+- utter_get_sti_oral_sex
+- utter_get_sti_toilet
+- utter_greetings_bye
+- utter_greetings_goodevening
+- utter_greetings_goodmorning
+- utter_greetings_goodnight
+- utter_greetings_hello
+- utter_greetings_how_are_you
+- utter_greetings_nice_to_meet_you
+- utter_greetings_nice_to_see_you
+- utter_greetings_nice_to_talk_to_you
+- utter_greetings_whatsup
+- utter_happy
+- utter_have_baby_after_abortion
+- utter_have_periods_tubes_tied
+- utter_hot_to_act_during_period
+- utter_how_about_you
+- utter_how_can_have_sex_fream
+- utter_how_condom_works
+- utter_how_do_kiss
+- utter_how_do_sti_spread
+- utter_how_does_sex_feel
+- utter_how_long_does_sex_last
+- utter_how_long_get_gregnant
+- utter_how_to_ask_for_bcm
+- utter_how_to_get_pregnant
+- utter_how_to_have_sex
+- utter_how_to_know_condom_safe
+- utter_how_to_orgasm
+- utter_how_to_put_condom
+- utter_how_to_put_tampon_in
+- utter_how_use_dental_dam
+- utter_how_young_get_pregnant
+- utter_hurt_sex_first_time
+- utter_iamabot
+- utter_impotent_meaning
+- utter_in_pill_but_pregnant
+- utter_information_request
+- utter_insult_bot
+- utter_interests
+- utter_is_it_okay_use_many_bcm
+- utter_is_masturbation_normal
+- utter_is_vaginal_discharge_normal
+- utter_it_normal_to_pass_gas_during_orgasm
+- utter_joke
+- utter_keep_condom_wallet
+- utter_know_someone_has_aids
+- utter_mean_rub_out
+- utter_menstraute_forever
+- utter_menstrautual_cramps
+- utter_never_orgasm_something_wrong_me
+- utter_no_period_long_time
+- utter_normal_for_breasts_to_itch_hurt
+- utter_normal_to_get_erection
+- utter_normal_to_have_sexual_feelings
+- utter_often_change_pad
+- utter_oncampus
+- utter_oral_sex_or
+- utter_origin_vagina_penis
+- utter_partner_i_fighting_advice
+- utter_passion
+- utter_pastpapers
+- utter_pelvic_exam
+- utter_penis
+- utter_penis_size_matter
+- utter_period_blood_qty
+- utter_period_first_experience
+- utter_period_problems
+- utter_periods_blue
+- utter_possible_help
+- utter_pregnant_after_period
+- utter_pregnant_dont_want_baby
+- utter_pregnant_during_period
+- utter_pregnant_first_time
+- utter_puberty_and_period
+- utter_pulling_out_work
+- utter_safe_days_have_sex
+- utter_semen_sticky
+- utter_send_text_to_summarize
+- utter_sex_during_period
+- utter_should_you_still_use_protection_with_oral_sex
+- utter_smell_down_there_what_can_i_do
+- utter_sperms_have_eyes
+- utter_sugar_pills
+- utter_swallow_semen
+- utter_take_pill_long_time
+- utter_tampn_safe
+- utter_tampon_virginty
+- utter_tamppon_get_lost
+- utter_tell_one_has_sti
+- utter_think_about_sex
+- utter_treat_cramps
+- utter_tts
+- utter_urine_sperm
+- utter_use_vaseline_as_lubricant_with_latex_condom
+- utter_user_angry
+- utter_user_back
+- utter_user_bored
+- utter_user_busy
+- utter_user_can_not_sleep
+- utter_user_does_not_want_to_talk
+- utter_user_excited
+- utter_user_feel_better
+- utter_user_going_to_bed
+- utter_user_good
+- utter_user_happy
+- utter_user_has_birthday
+- utter_user_here
+- utter_user_joking
+- utter_user_likes_agent
+- utter_user_lonely
+- utter_user_looks_like
+- utter_user_loves_agent
+- utter_user_misses_agent
+- utter_user_needs_advice
+- utter_user_sad
+- utter_user_sleepy
+- utter_user_testing_agent
+- utter_user_tired
+- utter_user_waits
+- utter_user_wants_to_see_agent_again
+- utter_user_wants_to_talk
+- utter_user_will_be_back
+- utter_vagina_loose_after_baby
+- utter_vagina_penis
+- utter_vaginal_condom
+- utter_what_are_wetdreams
+- utter_what_else_do_you_want_to_know_cramps
+- utter_what_is_anal_sex
+- utter_what_is_blow_job
+- utter_what_is_dysmenorrhea
+- utter_what_is_emergency_contraception
+- utter_what_is_erection
+- utter_what_is_erection_cervical_cancer_symptoms
+- utter_what_is_hiv
+- utter_what_is_menopause
+- utter_what_is_menstruation
+- utter_what_is_miscarriage
+- utter_what_is_mursturbation
+- utter_what_is_oral-sex
+- utter_what_is_orgasm
+- utter_what_is_peri_menopause
+- utter_what_is_pms
+- utter_what_is_pre_cum
+- utter_what_is_sex
+- utter_what_is_tampon
+- utter_what_is_virus
+- utter_what_sexual_intercourse
+- utter_what_should_women_do_forget_birth_control_pills
+- utter_what_to_do_condom_breaks
+- utter_when_will_i_get_period
+- utter_who_are_you
+- utter_why_does_sex_hurt
+- utter_why_sex_feels_good
+- utter_why_stretch_marks_pregnancy
+- utter_will_everyone_know_period
+- utter_young_people_get_prostate_cancer
+- utter_young_people_get_testicular_cancer
+- utter_submit
+- utter_ask_essay_form_essay_body

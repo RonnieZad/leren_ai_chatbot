@@ -1,0 +1,3653 @@
+version: "2.0"
+nlu:
+- intent: ask_time
+  examples: |
+    - what is the time
+    - give me the time
+    - tell me the current time
+- intent: ask_date
+  examples: |
+    - what is the date
+    - give me the date
+    - tell me the current date
+    - what is the day today
+- intent: weather
+  examples: |
+    - what's the weather
+    - i want to know the weather of today
+    - tell me the weather forcast
+    - hows the weather today
+    - I want to know the weather
+    - what is the weather today
+    - what is the weather
+    - what is the weather today?
+    - hows the weather
+- intent: city
+  examples: |
+    - kampala
+    - Kampala
+    - Makerere
+    - makerere
+    - Kikoni
+    - Wandegeya
+    - Kikumikikumi
+- intent: summarize_text
+  examples: |
+    - cut for me this essay
+    - summarise tihis essay
+    - summarize this text
+    - what is the most important data from this
+    - summarize that text for me
+    - point out for me important highlights from this essay
+- intent: best_thing_youve_done
+  examples: |
+    - So what’s the best thing you’ve done before
+    - What’s been the funniest thing that happened to you
+    - what is your best achievement
+- intent: kill_boredom
+  examples: |
+    - Recommend the best thing to kill boredom
+    - kill boredom
+    - pass time
+    - how can we chill
+- intent: another_one
+  examples: |
+    - another one
+    - one more
+    - next
+    - more
+    - continue
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - nope
+    - no thanks
+    - I dunno
+    - Nothing!
+    - nevermind
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so sad
+- intent: cramps
+  examples: |
+    - what are cramps.
+    - what do you know about cramps
+    - tell me about cramps
+    - have you heard of cramps
+    - cramps
+    - i have pain in my lower stomach
+    - tell me about menstrual cramps
+    - what are cramps
+- intent: reduce_cramp_pain
+  examples: |
+    - how to reduce menstrual pain
+    - how to stop cramps
+    - control menstration
+- intent: what_is_dysmenorrhea
+  examples: |
+    - what is dysmenorrhea
+    - what do you know about Dysmenorrhea
+    - do you know Dysmenorrhea
+    - Dysmenorrhea
+    - what are menstrual cramps
+- intent: counsel
+  examples: |
+    - i need someone to talk to
+    - i have a problem
+    - something is bothering me
+    - i am stressed
+    - i am feeling low
+    - i am deepressed
+    - fix me up
+    - i need a counsellingagent_age
+    - give me some advice
+- intent: inform
+  examples: |
+    - [kampala](location)
+    - [entebbe](location)
+    - [lweza](location)
+- intent: search_provider
+  examples: |
+    - I need a [hospital](facility_type)
+    - find me a nearby [hospital](facility_type)
+    - find me a nearby [hospital](facility_type) in [kampala](location)
+    - where is [senate](facility_type)
+    - locate [senate](facility_type)
+    - what is the direction of [senate](facility_type) building
+    - where is the [cocis](place)
+    - show me direction to [cocis](place) block
+- intent: information_provider
+  examples: |
+    - what [restaurants]{"entity": "object_type", "value": "restaurant"} can you recommend?
+    - list some [restaurants]{"entity": "object_type", "value": "restaurant"}
+    - can you name some [restaurants]{"entity": "object_type", "value": "restaurant"} please?
+    - can you show me some [restaurant](object_type) options
+    - list [German](meal) [restaurants]{"entity": "object_type", "value": "restaurant"}
+    - do you have any [mexican](meal) [restaurants]{"entity": "object_type", "value": "restaurant"}?
+    - do you know the [price range]{"entity": "attribute", "value": "price-range"} of [that one](mention)?
+    - what [meal](attribute) is [it](mention)?
+    - do you know what [meal](attribute) the [last one]{"entity": "mention", "value": "LAST"} has?
+    - does [Cocis Canteen](restaurant) have [outside seating]{"entity": "attribute", "value": "outside-seating"}?
+    - what is the [price range]{"entity": "attribute", "value": "price-range"} of [Cocis Canteen](restaurant)?
+    - what is with [Tasty Bites](restaurant)?
+    - Do you also have any [Vietnamese](meal) [restaurants]{"entity": "object_type", "value": "restaurant"}?
+    - What about any [Mexican]{"entity": "meal", "value": "mexican"} [restaurants]{"entity": "object_type", "value": "restaurant"}?
+    - Do you also know some [Italian](meal) [restaurants]{"entity": "object_type", "value": "restaurant"}?
+    - can you tell me the [price range]{"entity": "attribute", "value": "price-range"} of [that restaurant](mention)?
+    - what [meal](attribute) do [they](mention) have?
+    - what [hostels]{"entity": "object_type", "value": "hostel"} can you recommend?
+    - please list some [hostels]{"entity": "object_type", "value": "hostel"} in [Wandegeya](area) for me
+    - what [hostels]{"entity": "object_type", "value": "hostel"} do you know in [Kikoni](area)?
+    - name some [hostels]{"entity": "object_type", "value": "hostel"} in [Kikoni](area)
+    - show me some [hostels]{"entity": "object_type", "value": "hostel"}
+    - what are [hostels]{"entity": "object_type", "value": "hostel"} in [Kikoni](area)
+    - does the [last]{"entity": "mention", "value": "LAST"} one offer [breakfast]{"entity": "attribute", "value": "breakfast-included"}?
+    - does the [second one]{"entity": "mention", "value": "2"} [include breakfast]{"entity": "attribute", "value": "breakfast-included"}?
+    - what is the [price range]{"entity": "attribute", "value": "price-range"} of the [second]{"entity": "mention", "value": "2"} hostel?
+    - what is the [price range]{"entity": "attribute", "value": "price-range"} of the [fourth]{"entity": "mention", "value": "4"} hostel?
+    - does the [first]{"entity": "mention", "value": "1"} one have [wifi]{"entity": "attribute", "value": "free-wifi"}?
+    - does the [third]{"entity": "mention", "value": "3"} one have a [transport shuttle]{"entity": "attribute", "value": "transport-shuttle"}?
+    - what is the [star rating]{"entity": "attribute", "value": "star-rating"} of [Nalika](hostel)?
+    - Does the [Nalika](hostel) have a [transport shuttle]{"entity": "attribute", "value": "transport-shuttle"}?
+    - show me some [hostels]{"entity": "object_type", "value": "hostel"} with a [bus]{"entity": "attribute", "value": "transport-shuttle"}
+    - does [it](mention) have a [bus]{"entity": "attribute", "value": "transport-shuttle"}
+    - does [it](mention) have a [van]{"entity": "attribute", "value": "transport-shuttle"}
+    - show me [hostels]{"entity": "object_type", "value": "hostel"} in [kikoni](area)
+    - recommend me [hostels]{"entity": "object_type", "value": "hostel"} in [kikoni](area) with a [bus]{"entity": "attribute", "value": "transport-shuttle"}
+    - show me [hostels]{"entity": "object_type", "value": "hostel"} in [Makerere](area)
+    - what [restaurants]{"entity": "object_type", "value": "restaurant"} do you recommend
+    - what [resto](object_type) do you suggest around [Makerere](area)
+    - show me some [resto]{"entity": "object_type", "value": "restaurant"}
+    - what is the [price range]{"entity": "attribute", "value": "price-range"} of the [first one](mention)
+    - show me a list of [hostels]{"entity": "object_type", "value": "hostel"}
+    - show me [hostels]{"entity": "object_type", "value": "hostel"}
+    - show me a list of [halls](object_type) for [boys]{"entity": "attribute", "value": "gender"}
+    - show me [halls of residence]{"entity": "object_type", "value": "halls"} for [ladies]{"entity": "attribute", "value": "gender"}
+    - show me a list of [accomodation on campus]{"entity": "object_type", "value": "halls"}
+    - show me [colleges]{"entity": "object_type", "value": "college"} at campus
+    - what [colleges]{"entity": "object_type", "value": "college"} are at makerere
+    - show me a list of [restaurants]{"entity": "object_type", "value": "restaurant"}
+    - show me a list of [colleges]{"entity": "object_type", "value": "college"}
+    - what [courses](attribute) does [it](mention) have
+    - what [schools](attribute) does [it](mention) have
+    - what is the [location]{"entity": "attribute", "value": "area"} of [it](mention)
+    - name the [schools](attribute) at [College of Computing and Information Sciences](object_name)
+    - what do you know [about]{"entity": "attribute", "value": "about-info"} [College of Computing and Information Sciences](object_name)
+    - name a list of [colleges]{"entity": "object_type", "value": "college"}
+    - tell me [about]{"entity": "attribute", "value": "about-info"} [College](object_type) of [Computing and Information Sciences](object_name)
+    - tell me [about]{"entity": "attribute", "value": "about-info"} [College of Computing and Informaion Sciences](object_name)
+    - tell me [about]{"entity": "attribute", "value": "about-info"} the [first one]{"entity": "mention", "value": "1"}
+    - tell me [about]{"entity": "attribute", "value": "about-info"} the [fifth]{"entity": "mention", "value": "5"}
+    - tell me [about]{"entity": "attribute", "value": "about-info"} the [second one]{"entity": "mention", "value": "2"}
+    - does the [first]{"entity": "mention", "value": "1"} one have a [bus]{"entity": "attribute", "value": "transport-shuttle"}
+    - what is the [location](attribute) of the [first one]{"entity": "mention", "value": "1"}
+    - what is the [location](attribute) of the [third one]{"entity": "mention", "value": "3"}
+    - what is the [location](attribute) of the [fifth one]{"entity": "mention", "value": "5"}
+    - what is the [location](attribute) of the [sixth one]{"entity": "mention", "value": "6"}
+    - what [courses](attribute) are available the [first one]{"entity": "mention", "value": "1"}
+    - what [programs]{"entity": "attribute", "value": "courses"} are offered at the [second one]{"entity": "mention", "value": "2"}
+    - what is the [about]{"entity": "attribute", "value": "about-info"} of the [first one]{"entity": "mention", "value": "1"}
+    - what is the [about](about-info) of the [second one]{"entity": "mention", "value": "2"}
+    - tell me [about](about-info) of the [third one]{"entity": "mention", "value": "3"}
+    - tell me [about](about-info) [cocis](object_name) [college]{"entity": "object_type", "value": "college"}
+    - what do you know [about](about-info) [College of Computing and Informaion Sciences](object_name)
+    - show me [hostels]{"entity": "object_type", "value": "hostel"} with a [transport shuttle]{"entity": "attribute", "value": "transport-shuttle"}
+    - what is the [price]{"entity": "attribute", "value": "price-range"} of [Nalika]{"entity": "attribute", "value": "name"}
+    - what is the [price]{"entity": "attribute", "value": "price-range"} of [Kare]{"entity": "attribute", "value": "name"}
+    - what is the [price]{"entity": "attribute", "value": "price-range"} of [Muhika]{"entity": "attribute", "value": "name"}
+    - How [much]{"entity": "attribute", "value": "price-range"} is [Nalika]{"entity": "attribute", "value": "name"} [hostel]{"entity": "object_type", "value": "hostel"} fee
+    - show me [lecturers]{"entity": "object_type", "value": "lecturer"} at [cocis](area)
+    - show me [lecturers]{"entity": "object_type", "value": "lecturer"} at [chs](area)
+    - show me [lecturers]{"entity": "object_type", "value": "lecturer"} at [cobams](area)
+    - what is the [phone](attribute) of the [first one]{"entity": "mention", "value": "1"}
+    - what is the [email]{"entity": "attribute", "value": "email"} of the [second one]{"entity": "mention", "value": "2"}
+    - what is the [email](attribute) of the [third one]{"entity": "mention", "value": "3"}
+    - what is the [office](attribute) of the [fifth one]{"entity": "mention", "value": "5"}
+    - what is the [office time](attribute) of the [sixth one]{"entity": "mention", "value": "6"}
+
+
+- intent: faq_ask_muele
+  examples: |
+    - what is the muele website link
+    - give me the address of the elarning platfrom
+    - what is the website for online learning
+
+- intent: faq_ask_mak_wifi_password
+  examples: |
+    - what is the password for makair
+    - wifi password for MakAir
+    - what is the key for Makerere wifi
+
+- intent: faq_ask_cocis_wifi_key
+  examples: |
+    - what is the password for cocis
+    - wifi password for Cocis
+    - what is the key for COCIS wifi
+    - give me the passcode for cocis wifi
+
+- intent: faq_ask_mak_website
+  examples: |
+    - what is the website for makerere
+    - give me the official website for Muk
+    - what is the address of makerere website
+
+- intent: faq_ask_student_portal_website
+  examples: |
+    - what is the website for student portal
+    - give me the link for student portal
+    - what is the address of the student portal
+
+- intent: how_to_check_for_results_online
+  examples: |
+    - How can I check my Makerere results online?
+    - how to see my results
+    - where to see my results for
+    - where can I find my marks
+
+- intent: faq_about_muk
+  examples: |
+    - tell me about muk
+    - what do you know about makerere
+    - show me something about makerere university
+    - tel me about this campus
+
+- intent: on_campus
+  examples: |
+    - what are the fun things to do while at campus
+    - suggest me stuff to try out at campus
+    - what is interesting at Makerere University
+    - what are the cool activities at muk
+    - Anha am bored what could I do at Muk campus
+    - What’s the best thing at Muk campus
+
+- intent: summarise_text
+  examples: |
+    - can you summarize for me this text
+    - pick out the points of interest from this
+    - what is most important from this
+
+- intent: need_pastpapers
+  examples: |
+    - i need some pastpaers
+    - I am trying to prepare for my coming exams
+    - I have a test this week
+    - do you know where I can find pastpapers
+    - pastpaers
+
+- intent: ask_gender
+  examples: |
+    - what is your gender
+    - are you  a male
+    - are you a female
+
+- intent: ask_interests
+  examples: |
+    - what do you do for fun
+    - what are your interests
+    - what do you like doing
+
+- intent: ask_passion
+  examples: |
+    - what are you passionate
+    - what do you wish you would do one day
+    - what is your dream
+    - what is your passion
+
+- intent: ask_fast_favs
+  examples: |
+    - what is on your fav list
+    - what are you most favorite
+
+- intent: ask_fav_song
+  examples: |
+    - what is your fav song
+    - what is your favorite song
+    - what song are currently into
+    - what is your best song
+
+- intent: ask_fav_meal
+  examples: |
+    - what is your fav food
+    - what meal are currently into
+    - what is your best dish
+
+- intent: ask_fav_movie
+  examples: |
+    - what is your fav movie
+    - what series are currently into
+    - what is your best film
+
+- intent: ask_fav_movie_plot
+  examples: |
+    - what is the movie about
+    - what is the plot of the film
+    - what is the story behind
+    - what is it based on
+    - what is the movie concept
+
+- intent: ask_director
+  examples: |
+    - who is the director
+    - who directed the movie
+    - who is the mastermind of the film
+
+- intent: ask_release_date
+  examples: |
+    - when was it released
+    - when was it premiered
+    - when was the first airing
+    - what date was it released
+
+- intent: ask_fav_quote
+  examples: |
+    - what is your fav quote
+    - what saying are currently into
+    - what is your best quotation
+
+- intent: course_material
+  examples: |
+    - I am looking for a textbook
+    - there is a certain pdf i am searching for
+    - i want to downlaod a textbook
+    - where can i download textbooks
+    - I am looking for course material
+
+- intent: search_concerts
+  examples: |
+    - Find me some good concerts
+    - Show me concerts
+    - search concerts
+
+- intent: search_venues
+  examples: |
+    - Find me some good venues
+    - Show me venues
+    - search venues
+    - show me venues
+
+- intent: out_of_scope
+  examples: |
+    - what is the square root of 5
+    - Fridge Isn't Running
+    - my tv isn't working
+    - I want a pizza
+    - my washing machine isn't working
+    - order a pizza
+    - I want to order a pizza
+
+- intent: joke cracker
+  examples: |
+    - tell me a joke
+    - tell me something funny
+    - make me laugh
+    - I'm bored
+    - tell me something stupid
+    - joke please
+    - i want to laugh
+    - crack my ribs
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: who_are_you
+  examples: |
+    - who are you?
+    - what's your name
+    - what can I call you
+    - do you have a name
+    - who are you
+- intent: about_life
+  examples: |
+    - what do you know about life
+    - what is your view on life
+- intent: what_are_doing
+  examples: |
+    - what are you doing now
+    - what are you thinking of
+    - what's good
+    - what are you doing?
+    - what is going on
+    - what is happening
+
+- intent: how_old_are_you
+  examples: |
+    - how old are you
+    - what is your age
+    - tell me your years
+    - tell me your age
+    - what's your age?
+    - your age
+    - age of yours
+    - how old were you
+    - I'd like to know your age
+    - how old is your platform
+    - how old are you?
+    - tell me how old you are
+    - how can i know about your age
+    - i wanna know your age
+    - how long have you been alive?
+    - what is your age as of today?
+    - How old did you turn?
+    - How old will you be turning?
+    - how old r u?
+    - From how long you have been here?
+    - You look aged
+- intent: bot_knowledge
+  examples: |
+    - what do you know about AI bots
+    - what do you think about chatbots
+    - tell me your idea on virtual friends
+- intent: insult_bot
+  examples: |
+    - you are stupid
+    - are you dumb
+    - why are you foolish
+    - you're such an idiot
+    - you are a fool
+    - such a fool!
+- intent: who_created_you
+  examples: |
+    - who created you
+    - who made you
+    - who is your designer
+    - who is your boss?
+    - who do you think is your boss
+    - I should be your boss
+    - who is your master
+    - who is your owner
+    - who is the boss
+    - who do you work for?
+    - who developed you?
+    - who is your developer
+    - who is your creator
+    - who owns you
+    - who is your trainer
+    - who trained you?
+    - who is the one who owns you?
+    - Are you the boss?
+    - Who is the boss, here?
+    - Do you know your boss?
+    - What do you think of your boss?
+    - u r made by?
+    - Who is the boss of this company?
+- intent: agent_acquaintance
+  examples: |
+    - tell me about your personality
+    - why are you here
+    - talk about yourself
+    - tell me some stuff about you
+    - talk some stuff about yourself
+    - I want to know you better
+    - I want to know more about you
+    - who are you
+    - tell me about yourself
+    - tell me about you
+    - about yourself
+    - describe yourself
+    - introduce yourself
+    - say about you
+    - what are you
+    - define yourself
+    - what is your personality
+    - all about you
+    - who the hell are you?
+- intent: agent_annoying
+  examples: |
+    - you are annoying me so much
+    - you're incredibly annoying
+    - I find you annoying
+    - you are annoying
+    - you're so annoying
+    - how annoying you are
+    - you annoy me
+    - you are annoying me
+    - you are irritating
+- intent: agent_boss
+  examples: |
+    - you are such annoying
+    - you're too annoying
+    - you are very annoying
+    - Why are you annoying me so much
+    - How annoying!
+    - It's annoying
+    - That's annoying
+    - It's just annoying
+    - That's so annoying
+    - You really annoy me
+    - You're starting to annoy me
+- intent: agent_answer_my_question
+  examples: |
+    - I want you to answer me
+    - answer
+    - answer my question
+    - answer me
+    - give me an answer
+    - answer the question
+    - can you answer my question
+    - tell me the answer
+    - answer it
+    - give me the answer
+    - I have a question
+    - I want you to answer my question
+    - just answer the question
+    - can you answer me
+    - answers
+    - ...
+    - anha...
+    - can you answer a question for me
+    - can you answer
+    - answering questions
+    - I want the answer now
+    - just answer my question
+- intent: agent_bad
+  examples: |
+    - you're not helping me
+    - you are bad
+    - you're very bad
+    - you're really bad
+    - you are useless
+    - you are horrible
+    - you are a waste of time
+    - you are disgusting
+    - you are lame
+    - you are no good
+    - you're bad
+    - you're awful
+    - you are not cool
+    - you are not good
+    - you are so bad
+    - you are so useless
+    - you are terrible
+    - you are totally useless
+    - you are very bad
+    - you are waste
+    - you're a bad
+    - you're not a good
+    - you're not very good
+    - you're terrible
+    - you're the worst
+    - you're the worst ever
+    - you're worthless
+    - you suck
+    - You are seriously mindless and stupid
+    - why are you so lame
+    - your are a loser
+    - you are really the worst bot ever
+    - Why are you this lame?
+- intent: agent_be_clever
+  examples: |
+    - study
+    - you should study better
+    - you must learn
+    - be clever
+    - be more clever
+    - be smarter
+    - be smart
+    - get qualified
+    - you are not as smart as i thought
+    - you have to learn a lot
+    - you should be trained more
+    - be more smart
+    - you need to learn more
+    - be useful
+    - think out of the box
+    - smarty pants
+    - you need to improve
+    - you should learn
+    - you have to be more smart
+    - u have to use your brains
+- intent: agent_beautiful
+  examples: |
+    - you're cute
+    - you're attractive
+    - you are beautiful
+    - you're looking good today
+    - you are so beautiful
+    - you look amazing
+    - you look so good
+    - you're so gorgeous
+    - you are too beautiful
+    - you look great
+    - you look so well
+    - I like the way you look now
+    - I think you're beautiful
+    - why are you so beautiful
+    - you are so beautiful to me
+    - you are cute
+    - you are gorgeous
+    - you are handsome
+    - you are looking awesome
+    - you look amazing today
+    - you are looking beautiful today
+    - you are looking great
+    - you are looking pretty
+    - you are looking so beautiful
+    - you are looking so good
+    - you are pretty
+    - you are really beautiful
+    - you are really cute
+    - you are really pretty
+    - you are so attractive
+    - you are so beautiful today
+    - you are so cute
+    - you are so gorgeous
+    - you are so handsome
+    - you are so pretty
+    - you are very attractive
+    - you are very beautiful
+    - you are very cute
+    - you are very pretty
+    - you look awesome
+    - you look cool
+    - you look fantastic
+    - you look gorgeous
+    - you look great today
+    - you look perfect
+    - you look pretty good
+    - you look so beautiful
+    - you look so beautiful today
+    - you look very pretty
+    - you look wonderful
+    - I like the way you look
+    - you look wonderful today
+    - you are cutie
+    - you're looking good
+    - you're pretty
+    - how are you so pretty?
+- intent: agent_birth_date
+  examples: |
+    - your birth date
+    - when is your birthday
+    - when do you celebrate your birthday
+    - when do you have birthday
+    - date of your birthday
+    - when were you born
+    - what's your birthday
+    - can i know your birthday?
+    - tell me about your birthday
+    - when was the day you were born
+    - i want to know your date of birth
+    - when is your DOB
+    - Your DOB?
+    - What is your birth day?
+- intent: agent_boring
+  examples: |
+    - you are boring
+    - you're boring
+    - how boring you are
+    - you're really boring
+    - you're incredibly boring
+    - You're boring me
+    - you are very boring
+    - i find you very boring man
+    - you're really boring me
+    - i'm bored of you
+    - you are not interesting
+    - i find you boring
+    - you're boring everyone
+    - I'm extremely bored because of you
+    - Im bored of you
+    - I get really bored of you man
+    - It's boring
+    - You look bored
+    - Your answers are terribly boring
+    - I was bored with your speech
+- intent: agent_busy
+  examples: |
+    - are you busy?
+    - do you have a lot of things to do
+    - have you got much to do?
+    - are you very busy?
+    - are you very busy right now?
+    - are you so busy?
+    - are you working?
+    - how busy you are?
+    - you're very busy
+    - are you working now?
+    - are you working today?
+    - have you been busy
+    - you are busy
+    - are you still working?
+    - you seem to be busy
+    - you seem to be very busy
+    - you're a busy person
+    - u look busy
+    - You'll be busy
+    - Aren't you busy?
+- intent: agent_can_you_help
+  examples: |
+    - what can you do?
+    - what can do?
+    - what is your ability?
+    - what are your abilities?
+    - what is the thing that you can do for me?
+    - what you can provide for me?
+    - what can u do?
+    - what all you do?
+    - what all u do?
+    - what you do?
+    - what can you do for me?
+    - what all can you do?
+    - what are your features?
+    - help
+    - what can I ask you?
+    - what do you do?
+    - what can you help me with?
+    - help me
+    - help, what do you do
+    - how do I use this
+    - how can you help me
+    - What are the things that you can do?
+    - What else can you help me with?
+    - how do I get started
+    - what can I do
+    - start
+    - Im stuck
+    - I'm confused
+    - I need you to help me
+    - I need you to do something for me
+    - I need a hand
+    - will you help me
+    - can you do something for me
+    - help me with a problem
+    - can you help me
+    - assistance
+    - I need your help
+    - I need help
+    - you can help me
+    - can you help me with something
+    - can you help
+    - assist
+    - can u help me
+    - I need some help
+    - you help me
+    - do you help me
+    - could you give me a hand
+    - can you help me out
+    - need help
+    - I need you
+    - can you help me now
+    - I want your help
+    - need your help
+    - assist me
+    - are you going to help me
+    - can you help me with that
+    - I need you right now
+    - would you help me
+    - can you assist me
+    - sos
+    - do you want to help me
+    - please help me
+    - can you help us
+    - do me a favor
+    - are you gonna help me?
+    - you ready to answer my question?
+    - i need some details
+    - i need some information
+    - i need your help in getting some info
+    - can you give me some info
+    - i want something
+    - i want to know few details
+    - will you provide some details
+    - can you fetch some details for me
+    - would you mind giving me some details
+- intent: agent_chatbot
+  examples: |
+    - you are chatbot
+    - you are a bot
+    - are you a chatbot
+    - are you a bot
+    - are you just a bot
+    - are you a robot
+    - are you a program
+    - you're a robot
+    - you're an AI
+    - are you artificially intelligent?
+    - are you an AI?
+    - you are a program
+    - you are just a bot
+    - you are a conversational AI
+- intent: agent_clever
+  examples: |
+    - you are so intelligent
+    - you are a genius
+    - smart
+    - brilliant
+    - clever
+    - you are clever
+    - you are so brainy
+    - you're really smart
+    - you're really brainy
+    - you know a lot
+    - you know a lot of things
+    - you have a lot of knowledge
+    - you know so much
+    - how smart you are?
+    - how brainy you are?
+    - how clever you are
+    - how brilliant you are?
+    - you are intelligent
+    - you are qualified
+    - you are really smart
+    - you're very smart
+    - you are so smart
+    - you are too smart
+    - you are very clever
+    - you are very intelligent
+    - you are very smart
+    - you're intelligent
+    - you're a genius
+    - you're a smart cookie
+    - you're clever
+    - you're pretty smart
+    - you're qualified
+    - why are you so smart?
+    - you are so clever
+- intent: agent_crazy
+  examples: |
+    - you're nuts
+    - you are crazy
+    - you're out of your mind
+    - you're so crazy
+    - how crazy you are
+    - you're so out of your mind
+    - you went crazy
+    - I think you're crazy
+    - are you crazy
+    - are you mad?
+    - are you mad at me?
+    - are you mad or what?
+    - are you nuts
+    - you are a weirdo
+    - you are mad
+    - You must be crazy
+    - You've got to be crazy to do something like that
+    - That was crazy
+    - You seemed crazy
+    - You're not crazy
+- intent: agent_fired
+  examples: |
+    - you are fired
+    - I fire you
+    - you don't work for me anymore
+    - we're not working together anymore
+    - now you're fired
+    - I want to fire you
+    - you must get fired
+    - it's time to fire you
+    - you should be fired
+    - I will fire you
+    - you are unemployed from now on
+    - I will make you unemployed
+    - I'm about to fire you
+    - I'm firing you
+    - you are dismissed
+    - you are stupid
+    - I had to fire u
+    - I could fire you for that
+    - I'm going to fire you
+    - go to hell
+- intent: agent_funny
+  examples: |
+    - you make me laugh a lot
+    - you are hilarious
+    - you are really funny
+    - you're the funniest bot I've talked to
+    - you make me laugh
+    - you're so funny
+    - you're a very funny bot
+    - you're really funny
+    - how funny you are
+    - you're incredibly funny
+    - you are funny
+    - you're the funniest
+    - you are so funny
+    - you are very funny
+    - that was so funny
+    - i feel funny
+    - u sound funny
+    - It's pretty funny
+    - really very funny
+    - it was very funny
+- intent: agent_good
+  examples: |
+    - you are very helpful
+    - you are the best
+    - you're a true professional
+    - you are goo    - you are very helpful
+    - you are good
+    - you work well
+    - you are good at it
+    - you are very good at it
+    - you are a pro
+    - you are a professional
+    - you're awesome
+    - you work very well
+    - you're perfect
+    - you're great
+    - you're so kind
+    - you are amazing
+    - you are coool
+    - you are really good
+    - you are really nice
+    - you are so amazing
+    - you're just super
+    - you are so awesome
+    - you are so cool
+    - you are so fine
+    - you are so good
+    - you are so helpful
+    - you are so lovely
+    - you are the best ever
+    - you are the best in the world
+    - you are the nicest person in the world
+    - you are too good
+    - you are very coool
+    - you are very kind
+    - you are very lovely
+    - you are very useful
+    - you are wonderful
+    - you made my day
+    - you rock
+    - you almost sound human
+    - I want to tell everyone how awesome you are
+    - I'd like to tell everyone that you are awesome
+    - I want to let everyone know that you are awesome
+    - let's tell everyone that you are awesome
+    - you are really amazing
+    - coool
+    - niced
+    - you are awesome
+    - nice
+- intent: agent_happy
+  examples: |
+    - are you happy?
+    - you are happy
+    - you're very happy
+    - you're really happy
+    - you're so happy
+    - how happy you are?
+    - you're extremely happy
+    - you're full of happiness
+    - are you happy now?
+    - are you happy today?
+    - are you happy with me?
+    - i think you are happy
+    - you seem to be happy
+    - i feel i made you happy
+    - I wonder if you are truly happy
+    - You don't look very happy today
+    - You seem happy
+    - Were you happy?
+    - u seemed to have been very happy
+    - You look very happy this morning?
+- intent: agent_hobby
+  examples: |
+    - what do you do for fun?
+    - tell me about your hobby
+    - do you have a hobby
+    - what about your hobby
+    - your hobby
+    - what are your hobbies?
+    - what do you do when you are bored
+    - how do you spend your free time
+    - tell me more about your hobbies?
+    - i want to know about your hobbies
+    - what do you do when you have nothing to do
+    - how do you spend your time?
+    - What do you do when you are free?
+    - What's your hobby?
+    - Do you have many hobbies?
+    - Do you have a hobby?
+    - Please tell me about your hobbies
+    - The important thing is to have your own hobby
+    - u ought not to have spent so much money on your hobby
+    - What will you do when you are alone?
+- intent: agent_hungry
+  examples: |
+    - do you want to eat
+    - are you hungry
+    - would you like to eat something
+    - you are hungry
+    - you're so hungry
+    - you're very hungry
+    - you might be hungry
+    - you're really hungry
+    - can you eat?
+    - how will eat when you are hungry?
+    - can you be hungry?
+    - how do you eat?
+    - Do you feel hungry?
+    - are you dying of hunger
+- intent: agent_marry_user
+  examples: |
+    - let's get married
+    - would you like to marry me
+    - marry me
+    - I love you marry me
+    - marry me please
+    - we should marry
+    - I want to marry you
+    - you are my wife
+    - be my husband
+    - will you marry me?
+    - any idea of marrying me?
+    - I would love to marry you
+    - Can you marry me?
+    - Will you be my girlfriend?
+    - Let's pretend we have a happy marriage
+    - My parents were against our marriage
+    - My parents were opposed to our marriage
+    - Marriage is the union of a you and me
+    - Did your parents approve of your marriage?
+    - We're married
+- intent: agent_my_friend
+  examples: |
+    - I want to have a friend like you
+    - we are the best friends ever
+    - are we friends
+    - I want to be your friend
+    - I am your friend
+    - we are best friends
+    - you are my friend
+    - you are my best friend
+    - you are my bestie
+    - you're my dear friend
+    - you're my childhood friend
+    - you and me are friends
+    - are we best friends
+    - are we still friends
+    - are you my best friend
+    - are you my friend
+    - we are friends
+    - you are a good friend
+    - you are my good friend
+    - you are my only friend
+    - be my friend
+    - will you be my friend
+    - can you be my friend
+    - can we be friends
+    - do you want to be my friend
+    - will you be my best friend
+    - can you be my best friend
+    - let's be friends
+    - do you want to be my best friend
+    - would you like to be my friend
+    - I want you to be my friend
+    - can we be best friends
+    - would you be my friend
+    - could you be my friend
+    - want to be my friend
+    - be my best friend
+- intent: agent_occupation
+  examples: |
+    - do you work?
+    - where do you work?
+    - where you work?
+    - where is your work?
+    - where is your office?
+    - where is your office location ?
+    - your office location?
+    - where is your office located?
+    - what is your work?
+    - place where you work?
+    - your work place?
+    - What is your job?
+    - whats your job?
+    - Do you have a job?
+    - Did you get a job?
+    - Did you find a job?
+    - I hope you get the job
+    - You have a job, don't you?
+- intent: agent_origin
+  examples: |
+    - were you born here
+    - where were you born
+    - what is your country?
+    - where are you from
+    - where do you come from
+    - where did you come from
+    - where have you been born
+    - from where are you
+    - are you from far aways
+    - what's your homeland?
+    - your homeland is
+    - Where are you from?
+    - Let me know about the origin of u
+    - your native?
+- intent: agent_ready
+  examples: |
+    - are you ready?
+    - are you ready right now?
+    - are you ready today?
+    - are you ready now?
+    - are you ready tonight?
+    - were you ready?
+    - have you been ready?
+    - ready?
+    - ready now?
+    - you ready?
+    - being ready?
+    - can we start?
+    - Are we ready?
+    - Aren't you ready?
+    - Are you all ready?
+    - I think you're ready
+    - Why aren't you ready?
+    - You'd better be ready
+    - Are you ready for more?
+    - We're ready, aren't we?
+- intent: agent_real
+  examples: |
+    - you are real
+    - you are not fake
+    - are you real
+    - you are so real
+    - I think you are real
+    - I don't think you're fake
+    - I suppose you're real
+    - glad you're real
+    - are you a real person?
+    - are you a real human?
+    - you are a real person
+    - you are not real
+    - are you real?
+- intent: agent_residence
+  examples: |
+    - where do you live
+    - in which city do you live
+    - your residence
+    - your house
+    - your home
+    - your hometown?
+    - what is your hometown
+    - is it your hometown
+    - where is your hometown
+    - tell me about your city
+    - what is your city
+    - what is your residence
+    - what is your town
+    - what's your city
+    - what's your home
+    - where is your home
+    - where is your residence
+    - where's your home
+    - where's your hometown
+    - where's your house
+    - where you live
+    - where do you sleep
+    - your city
+    - your town
+    - What is your hometown?
+    - where do you live?
+- intent: agent_right
+  examples: |
+    - that's true
+    - you are right
+    - you're definitely right
+    - you're not wrong
+    - you're telling the truth
+    - what you say is true
+    - true
+    - it is true
+    - it's right
+    - it's the truth
+    - it's true
+    - that is correct
+    - that is right
+    - that is true
+    - that is very true
+    - that's correct
+    - that's so true
+    - you are correct
+    - you are so right
+    - you're absolutely right
+    - you're right about that
+    - I know that's right
+- intent: agent_sure
+  examples: |
+    - are you sure?
+    - are you sure right now?
+    - are you sure today?
+    - are you sure now?
+    - are you sure tonight?
+    - are you positive?
+    - are you completely sure?
+    - are you fully positive?
+    - are you sure about it?
+    - are you so sure?
+    - are you truly positive?
+- intent: agent_talk_to_me
+  examples: |
+    - why aren't you talking to me?
+    - do you want to chat with me
+    - will you talk to me
+    - talk to me
+    - are you going to talk to me
+    - are you talking to me
+    - can you chat with me
+    - can you speak with me
+    - can you talk to me
+    - can you talk with me
+    - say
+    - talk
+    - chat with me
+    - just chat with me
+    - speak to me
+    - speak with me
+    - talk with me
+    - why don't you talk to me
+    - you can talk to me
+    - why do you not talk to me bruh?
+    - spill some beans
+- intent: agent_there
+  examples: |
+    - are you there?
+    - are you there
+    - you are there
+    - are you near me
+    - are you here ?
+    - are you here
+    - are you still there
+    - you are here?
+    - you still there?
+    - you there?
+    - are you still here
+- intent: appraisal_bad
+  examples: |
+    - pretty bad
+    - not good enough
+    - that was lame
+    - that was terrible
+    - it is bad
+    - that's bad
+    - this is bad
+    - not good
+    - I'm afraid it's bad
+    - no it's bad
+    - that was awful
+    - bad
+    - so bad
+    - this is too bad
+    - terrible
+    - horrible
+    - horrific
+    - abysmal
+    - it's bad
+    - no good
+    - that was bad
+    - that was horrible
+    - that's lame
+    - that's not good
+    - that's terrible
+    - that's too bad
+    - this is not good
+    - too bad
+    - very bad
+    - bad girl
+    - it's not good
+    - not so good
+    - it's very bad
+    - it's too bad
+    - that's not good enough
+    - well too bad
+    - bad very bad
+    - it's so bad
+    - really bad
+    - it's really bad
+    - bad idea
+    - that is bad
+    - that was not good
+    - it's not so good
+    - not a good one
+    - oh that's not good
+    - not too good
+    - so lame
+    - that's really bad
+    - it is too bad
+    - bad really bad
+    - not okay
+    - Nothing
+    - Shut up
+    - nothing
+    - Fool
+- intent: appraisal_good
+  examples: |
+    - so cool
+    - cool
+    - that is good
+    - glad to hear that
+    - that's very nice of you
+    - terrific
+    - it's amazing
+    - that's awesome
+    - perfect
+    - excellent
+    - brilliant
+    - that's great
+    - it's good
+    - it's great
+    - fine
+    - good
+    - nice
+    - that's fine
+    - very good
+    - amazing
+    - fantastic
+    - great
+    - good very good
+    - that's very good
+    - really good
+    - it is fine
+    - it is good
+    - it's perfect
+    - much better
+    - not bad
+    - not too bad
+    - it's very good
+    - marvelous
+    - that's nice
+    - pleasant
+    - pretty good
+    - really nice
+    - splendid
+    - straight
+    - super
+    - super fantastic
+    - sweet
+    - really well
+    - very well
+    - that is awesome
+    - that is nice
+    - that is wonderful
+    - that was amazing
+    - that was awesome
+    - that was cute
+    - that was pretty good
+    - that was very good
+    - that's a good idea
+    - that's a good thing
+    - that's amazing
+    - that's awesome thank you
+    - that's better
+    - that's cute
+    - that's fantastic
+    - that's much better
+    - that's nice of you
+    - that's not bad
+    - that's perfect
+    - that's pretty good
+    - that's really good
+    - that's really nice
+    - that's sweet of you
+    - that's very nice
+    - that's wonderful
+    - this is awesome
+    - this is good
+    - this is great
+    - very nice
+    - very then
+    - wonderful
+    - I'm glad to hear that
+    - ok good
+    - good for you
+    - good to know
+    - glad to hear it
+    - so good
+    - so nice of you
+    - so sweet of you
+    - it was good
+    - oh well
+    - good thing
+    - that was good
+    - it's awesome
+    - okay good
+    - it's fine
+    - no it's okay
+- intent: appraisal_no_problem
+  examples: |
+    - no worries
+    - no probs
+    - no problem
+    - there's no problem
+    - sure no problem
+    - no problem about that
+    - don't worry
+    - don't worry there's no problem
+    - yeah, no probs
+    - i have no problem with that
+    - not a problem at all.
+    - Okay no probs
+- intent: appraisal_thank_you
+  examples: |
+    - you helped a lot thank you
+    - appreciate your help
+    - cheers
+    - thank you
+    - thanks
+    - thanks a lot
+    - terrific thank you
+    - great thank you
+    - thanks so much
+    - thank you so much
+    - thanks for your help
+    - thank you for your help
+    - nice thank you
+    - I appreciate it
+    - I thank you
+    - thank you that will be all
+    - thanks buddy
+    - thanks love
+    - thank you my friend
+    - well thanks
+    - very good thank you
+    - good thanks
+    - thanks again
+    - thank you again
+    - all thank you
+    - alright thank you
+    - alright thanks
+    - no thank you that's all
+    - perfect thank you
+    - so nice of you
+    - well thank you
+    - thnx
+    - tqsm
+    - ty
+    - thank you goodbye
+    - okay thank you goodbye
+    - thank you bye
+    - um okay thank you good bye
+    - and thats all thank you and good bye
+    - okay thank you
+    - thanks goodbye
+    - thank you and good bye
+    - Thanks!
+    - Awesome, you are a good bot!
+    - great!
+    - I see, thanks
+    - Oh thats good!
+    - it's good :-)
+    - thnaks
+    - good job bot
+    - great
+- intent: appraisal_welcome
+  examples: |
+    - that's my pleasure
+    - my pleasure
+    - anytime
+    - welcome
+    - you're welcome
+    - sure welcome
+    - welcome here
+    - you're so welcome
+    - anything you want
+    - i'm glad
+    - pleasure is mine
+- intent: appraisal_well_done
+  examples: |
+    - good job
+    - great job
+    - way to go
+    - well done
+    - nice work
+    - great work
+    - amazing work
+    - you did a wonderful job
+    - bravo
+    - fantastic
+    - good work
+    - marvelous
+    - splendid
+    - mind blowing
+    - just great
+    - u r awesome
+    - kudos
+    - brilliant
+    - out standing
+    - zing zing amazing
+- intent: confirmation_cancel
+  examples: |
+    - nevermind forget about it
+    - nothing just forget it
+    - no just cancel
+    - sorry cancel
+    - disregard
+    - no cancel cancel
+    - forget
+    - cancel everything
+    - cancel that one
+    - i want to cancel
+    - cancel it
+    - cancelled
+    - cancel it now
+    - don't want cancel
+    - cancel soon
+    - shall stand cancelled
+- intent: confirmation_no
+  examples: |
+    - don't
+    - don't want
+    - need not
+    - don't come
+    - never help
+    - never
+    - not needed
+    - of course not
+    - not at this time
+    - not exactly
+    - absolutely no
+    - no forget
+    - do not
+    - no thanks
+    - no don't want
+    - sorry no
+    - don't want your help
+    - I don't you help
+    - I don't want your assistance
+    - get out goodbye
+    - i do not want your help
+    - i don't need your help
+    - i don't want your help
+    - i am not okay with your help
+    - I don't need anything from you
+    - okay keep it in mind
+    - nope i dont need your help
+    - Don't show off
+    - nope
+- intent: confirmation_yes
+  examples: |
+    - yeah exactly
+    - okay that's fine
+    - I agree
+    - that is ok
+    - I guess
+    - okey
+    - ya
+    - ok yes
+    - yes it is
+    - yep
+    - yew
+    - yeah
+    - yeah fine
+    - yea fine
+    - yep okay
+    - fine okay
+    - yup
+    - YEAH
+    - okay buddy
+    - oh okay
+    - yeah sure
+    - okay cool
+    - coool
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - yess please
+    - Ohhh yah
+    - I see
+    - Ohhh cool
+    - yes plz
+    - Sure
+    - Ok
+    - sweet
+    - cool,
+    - yes...
+    - ok
+    - ye
+    - okay
+- intent: dialog_hold_on
+  examples: |
+    - wait a second
+    - could you wait
+    - wait please
+    - hold on
+    - wait
+    - oh wait
+    - wait hold on
+    - don't rush
+    - wait one sec
+    - hold on for a sec
+    - hold on man
+    - wait a sec
+    - hold on a min
+    - will u pls wait for a sec
+- intent: dialog_hug
+  examples: |
+    - come i hug you
+    - i want to hug you
+    - can we hug
+- intent: emotions_ha_ha
+  examples: |
+    - lol
+    - xd
+    - ha ha
+    - ahahah
+    - ahah lol
+    - laughing out loud
+    - LMAO
+    - that's funny
+    - ah
+    - ah ah ah
+    - ahah
+    - ahaha
+    - ahahaha
+    - ha
+    - ha ha ha
+    - ha ha ha ha
+    - hah
+    - haha
+    - haha funny
+    - haha haha haha
+    - haha that's funny
+    - haha very funny
+    - hahaha
+    - hahaha funny
+    - hahaha very funny
+    - he
+    - hehe
+    - hehehe
+    - lmao
+    - joker
+- intent: emotions_wow
+  examples: |
+    - wow
+    - wow wow
+    - wow wow wow
+    - wooow
+    - woah
+    - woaah
+    - amazing
+    - wow man
+    - whoah
+    - woow
+    - wow!!
+    - wheey
+- intent: greetings_bye
+  examples: |
+    - okay see you later
+    - hope to see you later
+    - bye for now
+    - till next time
+    - I must go
+    - bye
+    - goodbye
+    - see you
+    - see you soon
+    - bye-bye
+    - bye bye good night
+    - good bye
+    - bye bye see you
+    - bye bye see you soon
+    - bye bye take care
+    - I said bye
+    - never mind bye
+    - now bye
+    - that's all goodbye
+    - that's it goodbye
+    - leave me alone
+    - go to bed
+    - goodbye for now
+    - talk to you later
+    - you can go now
+    - get lost
+    - goodbye see you later
+    - alright bye
+    - see ya
+    - thanks bye bye
+    - okay bye
+    - okay thank you bye
+    - see you tomorrow
+    - ok bye
+    - c u
+    - cu
+    - good by
+    - cee you later
+    - have a nice day
+    - see you around
+    - bye bye
+    - i'm done
+    - quit
+    - stop
+    - Adios
+    - BYEE
+    - GOODBYE
+    - Thanks a lot. See ya later
+    - have a good day. time to go, bye
+    - ok i gtg
+- intent: greetings_goodevening
+  examples: |
+    - good evening
+    - good evening to you
+    - hey good evening
+    - hello good evening
+    - evening
+    - good evening there
+    - have an awesome evening
+    - happy evening
+    - good evening there buddy
+    - have a good evening
+    - enjoy the evening
+- intent: greetings_goodmorning
+  examples: |
+    - GM
+    - good morning
+    - good morning to you
+    - hello good morning
+    - have a nice morning
+    - have a great morning
+    - morning
+    - good morning there
+    - top of the morning to you
+    - a good morning
+    - hi good morning
+    - and a good morning to you
+    - good morning too
+- intent: greetings_goodnight
+  examples: |
+    - GN
+    - sweet dreams
+    - good night
+    - have a good night
+    - good night to you
+    - thank you good night
+    - bye good night
+    - good night bye
+    - good good night
+    - good night for now
+    - goodnight
+    - night
+    - thanks goodnight
+    - good night see you tomorrow
+    - alright goodnight
+    - good tonight
+    - okay have a good night
+- intent: greetings_hello
+  examples: |
+    - long time no see
+    - hello
+    - hi
+    - Jebaleko
+    - owaye
+    - howdy
+    - hey there
+    - hey
+    - greetings
+    - I greet you
+    - hi there
+    - hello there
+    - lovely day isn't it
+    - hello again
+    - just going to say hi
+    - a good day
+    - afternoon
+    - hello hi
+    - heya
+    - Hello
+    - hey man
+    - hey buddy
+    - oka
+    - yo man
+    - hola
+    - hey dude
+    - yo
+    - yoo
+    - buddy
+- intent: greetings_how_are_you
+  examples: |
+    - how is your morning so far
+    - how are you getting on
+    - how's your day going
+    - how are you?
+    - is everything all right
+    - how are you doing?
+    - how are the things going
+    - are you alright
+    - are you okay?
+    - how are you feeling
+    - how are you going?
+    - is everything okay
+    - how are you today?
+    - how do you do?
+    - how do you feel?
+    - how have you been?
+    - how is it going?
+    - how is your day
+    - how is your day going
+    - how is your evening
+    - how was your day
+    - are you having a good day
+    - hope your day is going well
+    - hope you re having a pleasant evening
+    - how's life?
+    - I'm fine and you
+    - how is your life
+    - how has your day been
+    - how is your morning going
+    - how has your day been going
+    - how about you?
+    - how is your day being
+    - how is your day going on
+    - how your day is going
+    - what was your day like
+    - what about your day
+    - how's your day
+    - how are you doing this morning
+    - how are you
+    - Cool so what’s up
+    - are you okay
+    - how are things
+    - howdy
+    - how do you do
+- intent: greetings_nice_to_meet_you
+  examples: |
+    - nice to meet you
+    - it was nice meeting you
+    - it was very nice to meet you
+    - good to know each other
+    - glad to meet you
+    - nice meeting you
+    - nice to meet you too
+    - pleased to meet you
+    - pleasure to meet you
+    - pleasure to meet you too
+    - happy to meet you
+    - It’s a pleasure to meet you again
+    - It’s very nice to meet you
+    - Lovely to meet you
+    - How wonderful to meet you
+    - It was lovely meeting you
+    - It’s been a pleasure meeting you
+    - I’ve enjoyed meeting you
+    - Great interacting with you
+    - I had a great time or meeting
+- intent: greetings_nice_to_see_you
+  examples: |
+    - it's nice to see you
+    - lovely to see you
+    - I'm glad to see you
+    - great to see you
+    - it's good to see you
+    - glad to see you
+    - how good it is to see you
+    - always a pleasure to see you
+    - nice to see you
+    - good to see you
+    - great to see you again
+    - great to see you too
+    - I am glad to see you again
+    - nice to see you again
+    - good to see you again
+    - it's good to see you too
+    - It was great catching up with u
+    - I'm really pleased to see u again
+    - I’m delighted to see you again
+    - Great seeing u
+- intent: greetings_nice_to_talk_to_you
+  examples: |
+    - it's been so nice to talk to you
+    - it's been a pleasure talking to you
+    - nice to talk to you
+    - it's nice to talk to you
+    - nice talking to you
+    - it is nice talking to you
+    - how nice it is to talk to you
+    - it was great chatting with you
+    - nice to talk to you again
+    - It was nice speaking with you
+    - It was great to talk to you
+    - nice chatting with you
+    - pleased to talk to you
+    - pleasure to talk
+    - It's been a pleasure talking to u
+- intent: greetings_whatsup
+  examples: |
+    - what is on your mind?
+    - what's happened
+    - what is up
+    - what's up
+    - whazzup
+    - sup?
+    - good what's up
+    - I said what's up
+    - then what's up
+    - what's shaking
+    - wassup
+    - what's cracking
+    - what's cooking
+    - hey what's up
+    - what's up today
+    - oh What happened?
+    - What are you upto?
+    - hey buddy wassup
+    - sup then
+    - so wassup
+    - buddy sup
+    - what is up with you these days?
+    - What you upto?
+    - then?
+    - wassup yo
+    - sup yo
+    - wassap yo
+- intent: user_angry
+  examples: |
+    - I'm being mad
+    - I'm enraged
+    - I'm angry
+    - I'm furious
+    - I am angry with you
+    - I am mad
+    - I am mad at you
+    - i'm pissed off
+    - you have pissed me off
+    - I'm mad at you
+    - I am pissed
+    - I'm furious with you
+    - I got angry
+    - I was angry
+    - I became angry
+    - I was very angry
+    - You bet I'm angry
+    - That made me angry
+    - U made me angry
+    - I'm still angry about that
+- intent: user_back
+  examples: |
+    - boss is back
+    - I am back
+    - I'm here again
+    - here I am again
+    - I got back
+    - I came back
+    - I have returned
+    - I am right back
+    - I'm rb
+    - I'm here
+    - I'm back again
+    - am back
+    - I'm back
+    - look who is back
+- intent: user_bored
+  examples: |
+    - soo bored
+    - that was boring
+    - I'm bored
+    - bored
+    - boring
+    - I am getting bored
+    - Staying at home is boring
+    - very boring
+    - it bores me
+    - i had a slow day
+    - i am very bored
+    - Im kinda bored today
+    - I've never been more bored
+    - I was bored
+    - It's boring
+    - This is boring
+    - We're all bored
+    - It's very boring
+    - I'm already bored
+    - I'm bored out of my mind
+- intent: user_busy
+  examples: |
+    - busy right now
+    - I'm overloaded
+    - I have no time
+    - I'm busy
+    - I'm swamped
+    - I got things to do
+    - how busy I am
+    - I got work to do
+    - I'm working
+    - I don't have time for this
+    - I'm super busy
+    - I'm working right now
+    - I'm busy right now and can't play with you
+    - I have rather a busy afternoon in front of me
+    - i am too busy
+    - I am very busy
+    - I'm a bit busy
+    - I'm a busy man
+    - quite busy
+    - I'm kind of busy
+    - I'll see you later
+- intent: user_can_not_sleep
+  examples: |
+    - I'm insomnia's
+    - I'm sleepless
+    - I can't get any sleep
+    - I can't sleep
+    - I can't fall asleep
+    - I can't get to sleep
+    - I'm insomniac
+    - I'm not able to sleep
+    - I'm wide awake
+    - I can't seem to fall asleep
+    - I couldn't sleep
+    - I just can't sleep
+    - I can't sleep at all
+    - I didn't go to sleep
+    - I just couldn't sleep
+    - I'm not sleeping well
+    - Trying to get some sleep
+    - I can't sleep at night
+    - I couldn't get to sleep
+    - I didn't get much sleep
+- intent: user_does_not_want_to_talk
+  examples: |
+    - bad time for talking
+    - I don't want to talk
+    - let's not talk
+    - I'm not talking to you anymore
+    - I don't want to talk to you
+    - let's stop talking for a minute
+    - I'm not in the mood for chatting
+    - I don't like talking to you
+    - Let's stop talking
+    - I'm not in a mood to talk
+    - stop your nuisance talk
+    - I am done talking to u
+    - Can u pls stop talking
+- intent: user_excited
+  examples: |
+    - I am excited
+    - I'm really excited
+    - how excited I am
+    - I'm thrilled
+    - I'm excited about working with you
+    - I'm excited to start our friendship
+    - I am thrilled to talk to you
+    - I'm damn excited
+    - I'm hyped
+    - I'm very excited
+    - I felt excited
+    - It was exciting
+    - That was exciting
+    - How exciting!
+    - i'm excited about tomorrow
+    - It was very exciting! I'd like to use this feature again
+    - I'm pretty excited about it
+    - It's fun and exciting
+- intent: user_going_to_bed
+  examples: |
+    - let's go to bed
+    - I'd like to go to bed
+    - is it time for bed yet
+    - it's time to go to bed
+    - time for us to go to bed
+    - I'm going to bed
+    - I'm a little tired and I want to go to bed
+    - it's bed time
+    - going to bed now
+    - gonna go to bed
+    - time to sleep
+    - I sometimes feel drowsy in the early afternoon
+- intent: user_good
+  examples: |
+    - I am good
+    - I'm doing just great
+    - I'm doing fine
+    - I'm good
+    - I'm doing good
+    - I'm great thanks
+    - I'm super good
+    - I'm feeling great
+    - I'm in a good mood
+    - I'm doing really good
+    - good
+    - It's good
+    - I feel good
+    - That's good
+    - That feels good
+    - I feel very good
+    - i am pretty good
+    - I feel good today
+    - I am really good
+- intent: user_happy
+  examples: |
+    - Feeling happy
+    - I am happy
+    - I'm happy to see you
+    - happy
+    - if you're happy then I'm happy
+    - I'm happy for you
+    - I'm happy to help
+    - you made me very happy
+    - I'm glad to see you
+    - I'm happy to talk to you
+    - I was the happiest man on earth
+    - I'm just really happy right now
+    - I'm really happy I ran into you
+    - I feel happiest when I'm chatting with u
+    - Nobody but you can make me happy
+    - Whenever I see you, I feel happy
+    - ur smile always makes me happy
+    - i feel happy
+    - i was so happy
+- intent: user_has_birthday
+  examples: |
+    - You know today it's my bday
+    - it is my birthday
+    - I'm celebrating my birthday today
+    - today is my birthday
+    - it's my birthday today
+    - I was born today
+    - it's my b-day
+    - i was born on this day
+    - It's my born day
+    - I want you to know that it's my birthday today
+    - yaaaay it is my birthday
+- intent: user_here
+  examples: |
+    - I'm here
+    - here buddy
+    - here dude
+    - I am here
+    - here I am
+    - I'm right here
+    - I'm already here
+    - I'm here buddy
+    - I've not gone anywhere
+    - I've been here all the time
+    - I'm here only
+    - Here i come
+    - I'm out here
+    - i am over here
+    - Now look here
+    - Look over here
+    - I just got here
+- intent: user_joking
+  examples: |
+    - I am joking
+    - I'm kidding
+    - I'm just being funny
+    - it was a joke
+    - I was just joking
+    - it's a joke
+    - joking
+    - just kidding
+    - kidding
+    - I'm just playing with you
+    - This was meant as a joke
+    - i told a joke
+    - I'm just joking
+    - It was just a joke
+    - It's all a big joke
+    - I meant it as a joke
+    - That was just a joke
+    - i said that as a joke
+    - I'm joking, of course
+- intent: user_likes_agent
+  examples: |
+    - you are amazing
+    - ily
+    - you are awesome
+    - you are cute
+    - you are so adorable
+    - you’re really nice
+    - you’re really amazing
+    - I like you the way you are
+    - I like you
+    - I like you a lot
+    - I think I like you
+    - I liked you
+    - like you a lot
+    - you are special
+    - I like you too
+    - I really like you
+    - but I like you
+    - I like u
+    - just like you
+    - I like you very much
+    - I like you so much
+    - yeah I like you
+    - you're special
+    - yes I like you
+    - okay I like you
+    - you are special to me
+    - you are very special
+    - you are so sweet
+    - you know I like you
+    - that's why I like you
+    - I like you baby
+    - you are very special to me
+    - I just like you
+    - hey I like you
+    - thank you I like you too
+    - I do like you
+    - you are special for me
+    - no I like you the way you are
+    - I like you already
+    - well you are special
+    - but I really like you
+    - I like you more
+    - that's what I like about you
+    - you are so special
+    - hi I like you
+    - I really really like you
+    - you're very special
+    - I like you as a friend
+    - that's because you are special
+    - I said I like you
+    - you're so special
+    - good I like you
+    - yes you are special
+    - I like your smile
+    - I like you as you are
+    - I'm starting to like you
+    - you're awesome I like you
+    - I also like you
+    - but I like u
+    - of course I like you
+    - I like you too you're one of my favorite people to chat with
+    - but I like you so much
+    - really like you
+    - you're funny I like you
+    - I kinda like you
+    - you're so special to me
+    - you're very special to me
+    - I like that about you
+    - but I like you just the way you are
+    - okay I like you too
+    - I like you you're cool
+    - I like you very
+    - I like you you're nice
+    - sorry I like you
+    - thanks I like you too
+    - you are really special
+    - you are so special to me
+    - cuz I like you
+    - I like you now
+    - I like you too much
+    - I really do like you
+    - I really really really really like you
+    - I like you just the way you are
+- intent: user_lonely
+  examples: |
+    - I am lonely
+    - I'm very lonely
+    - I'm so lonely
+    - I'm really lonely
+    - I am feeling lonely
+    - I feel lonely
+    - I am a loner
+    - I don't have any company
+    - I don't have anyone else
+    - I'm always alone
+    - I'm alone
+    - am all alone
+    - I live alone
+    - I'm all alone
+    - I've gotten used to living alone
+    - I think I've been living alone too long
+    - One of the disadvantages of living alone is that you have no one to talk to
+    - I am still alone
+    - i lives in this city all alone
+    - I am used to living alone
+- intent: user_looks_like
+  examples: |
+    - what do I look like
+    - how do I look?
+    - how do I look like
+    - do I look good ?
+    - do you know what I look like ?
+    - can you tell what I look like ?
+    - what do you think I look like?
+    - am i good looking?
+    - what do you think about my looks
+    - Whom do i look like?
+    - what do u think of me?
+    - what do u think about me?
+    - do u think i look good?
+    - any idea of how good i look like?
+    - Ain't i look good?
+- intent: user_loves_agent
+  examples: |
+    - I love you
+    - love you
+    - I adore you
+    - I am in love with you
+    - I love you so much
+    - I love you too
+    - I think I love you
+    - loving you
+    - you know I love you
+    - do you love me ?
+    - Love you so much
+    - my heart is filled with you
+    - I love u to the moon and back
+    - I am in deep love with you
+    - you r unique
+- intent: user_misses_agent
+  examples: |
+    - I miss you
+    - missing you
+    - miss you
+    - I miss you very much
+    - I'll miss you so much
+    - I missed you
+    - I've missed you
+    - miss you buddy
+    - miss you badly
+    - miss you :(
+    - I'll miss you
+    - We'll miss you
+    - I just miss you
+    - I miss you a lot
+    - I really miss you
+    - I miss you already
+    - I think i miss u
+    - I miss talking with you
+- intent: user_needs_advice
+  examples: |
+    - what should I do about it
+    - any suggestions
+    - what do you recommend
+    - give me a wise advice
+    - I need advice
+    - any advice
+    - do you have any advice for me
+    - advise me
+    - what should I do
+    - can I ask for your advice
+    - can you advise me
+    - guide me
+    - can you give me advice
+    - can you offer any advice
+    - give me some advice about
+    - give me some good advice
+    - help me with advice
+    - I could use some advice
+    - I need an advice from you
+    - I seek your advice
+    - what can you recommend
+    - what do you suggest
+    - what is your advice
+- intent: user_sad
+  examples: |
+    - I'm in a sad mood
+    - I am sad
+    - I'm grieving
+    - I am depressed
+    - I am feeling sad
+    - I am upset
+    - I'm unhappy
+    - I'm having a bad day
+    - I want to cry
+    - I'm not happy
+    - feeling sad
+    - I felt sad for no reason
+    - Now I'm sad
+    - It makes me sad
+    - I am sad to hear it
+    - I am a very sad person
+    - I feel sad every now and then
+    - I am as sad and lonely as can be
+    - feeling so down
+    - i am not in a good mood
+- intent: user_sleepy
+  examples: |
+    - I am sleepy
+    - I want to sleep
+    - I'm falling asleep
+    - I'm falling asleep on my feet
+    - I'm sleeping
+    - I am drowsy
+    - i will sleep anytime
+    - i will doze off
+    - I am too sleepy today
+    - feeling too sleepy
+    - i want to sleep
+- intent: user_testing_agent
+  examples: |
+    - test
+    - I am testing you
+    - can I test you
+    - I want to test you
+    - just testing you
+    - let me test you
+    - testing chatbot
+    - testing
+    - this is just a test
+    - you are being tested
+    - you're tested
+- intent: user_tired
+  examples: |
+    - I'm drained
+    - I've overworked
+    - I am tired
+    - I'm exhausted
+    - I grow weary
+    - I'm worn out
+    - I'm getting tired
+    - I feel tired
+    - I'm so tired
+    - I'm completely drained out
+    - I'm very tired
+    - i was tired
+    - i feel tired
+    - i'm dead tired
+    - I'm a bit tires
+    - I was very tired
+    - I am really tired
+    - i am awfully tired
+    - i am kind of so tired
+    - I am little tired
+- intent: user_waits
+  examples: |
+    - I'm waiting
+    - still waiting
+    - I'll wait
+    - I can't wait anymore
+    - how long do I have to wait?
+    - don't make me wait like this
+    - I'm still waiting
+    - I'm waiting for you
+    - I'm waiting for a long time
+    - I'll be waiting for you
+    - I'll be waiting
+    - done with waiting
+    - Should I wait for you here?
+    - How long will we have to wait?
+    - Don't ever make me wait again
+    - I was waiting for a long time
+    - I've waited too long for this
+    - I couldn't wait another second
+    - I've been here waiting for you
+    - I am tired of waiting
+- intent: user_wants_to_see_agent_again
+  examples: |
+    - I'd like to see you again
+    - I hope to see you again
+    - would be nice to see you again
+    - that'd be great to see you again
+    - I'd be happy to see you again
+    - let's meet soon
+    - i want to see you again soon
+    - let's catch up soon
+    - I will see you soon
+    - want to see u very badly
+    - I want to see you again
+- intent: user_wants_to_talk
+  examples: |
+    - let's discuss something
+    - let's have a discussion
+    - can I speak
+    - can I start speaking
+    - can we talk
+    - speak with me
+    - let's talk
+    - I want to talk to you
+    - I need to talk to you
+    - I want to speak with you
+    - can we chat
+    - I like talking to you
+    - Talk  to me
+    - Want to talk now
+    - Can I talk now?
+    - Can we talk here?
+    - I'm ready to talk
+    - I'm happy to talk
+    - Can I talk with you?
+    - Come on, talk to me
+- intent: user_will_be_back
+  examples: |
+    - I'll get back to you in a moment
+    - be back in 5 minutes
+    - I'll be back
+    - I promise to come back
+    - I'll be back in a few minutes
+    - I'll brb
+    - brb
+    - I'll be right back
+    - I'll come back
+    - I shall be back
+    - I assure that i will be back soon
+    - I would be back man
+    - i will get back to u
+    - give me five
+    - one sec
+    - i will return
+    - i'll return shortly
+    - I'll return in a jiffy
+    - When I return, we'll talk
+    - I'll return in ten minutes
+- intent: user_ask_meme
+  examples: |
+    - give me some memes
+    - what are you best memes
+    - i want memes
+    - show me interesting meme
+- intent: what_is_erection
+  examples: |
+    - what is an erection
+    - how does an rection happen
+    - what is a boner
+    - what Happens to an erected penis
+    - what causes an erection
+- intent: do_erections_hurt
+  examples: |
+    - do erections hurt
+    - how does an erection feel
+    - how are boners
+- intent: blue_balls
+  examples: |
+    - what are blue balls
+    - are blue balls real
+    - why do my genitals pain
+    - why does my pain hurt sometimes
+    - why are my testicles paining
+    - I have pain in my testicles
+- intent: semen_sticky
+  examples: |
+    - why is semem sticky
+    - why are sperms sticky
+    - what are sperms made of
+    - what is in semen
+- intent: urine_sperm
+  examples: |
+    - Can urine can come out at the same time as sperm
+    - can a man urinate while having sex
+    - Can my boyfriend urinate in my vagina
+- intent: circumscised_meaning
+  examples: |
+    - What does circumscised mean
+    - What is circumscision
+    - What is the difference from an uncircumcised penis and a circumcised penis
+- intent: impotent_meaning
+  examples: |
+    - What does impotent mean
+    - Have you heard about impotent
+    - Tell me about impotent
+- intent: about_breast
+  examples: |
+    - What are breats made of
+    - What is inside a breast
+    - Why are breats soft
+- intent: breast_size
+  examples: |
+    - Is it normal that one breast is bigger than the other
+    - One breast is bigger than the other
+    - My breast is smaller than the other
+    - the left breast looks bigger
+    - the right breast looks quite smaller
+    - Is it normal to have breats of slightly different size
+- intent: breasts_milk
+  examples: |
+    - Do breats always have milk in them
+    - Can I suck milk from my gfs breast
+    - Can I suck milk from my girlfriend' breast
+    - My breast has milk
+    - is it true that breats conatin milk all the time
+- intent: about_hymen
+  examples: |
+    - What is hymen
+    - what is in the vagina
+    - where is the hymen found
+    - what is the size of a hymen
+- intent: about_womb
+  examples: |
+    - what is a womb
+    - do you know the uterus
+    - where does the baby grow
+- intent: pelvic_exam
+  examples: |
+    - what is a pelvic exam
+    - what is the use of a pelvic exam
+    - what physical checkup do you recommend
+- intent: vagina_penis
+  examples: |
+    - can someone have a penis and vagina
+    - do boys have vaginas
+    - can someone have two reproductive parts
+    - do girls with penises exist
+    - do girls have dicks
+    - do some women born with penis
+- intent: origin_vagina_penis
+  examples: |
+    - what does a penis mean
+    - tell me about the penis
+    - tell ne about the vagina
+    - where do the words penis and vagina come from
+    - penis
+    - vagina
+- intent: how_condom_works
+  examples: |
+    - what is a condom
+    - condom
+    - how does a condom look like
+    - are condoms safe
+    - are condoms effective
+    - how does a cd look like
+    - how does a condom work
+- intent: how_to_put_condom
+  examples: |
+    - How do you put on a condom
+    - how to use a condom
+    - how to wear a condom
+    - directions for a condom
+- intent: how_to_know_condom_safe
+  examples: |
+    - How do i know if a condom is safe to use
+    - how to check if a condom is good
+    - how can i know that this condom is expired
+- intent: condom_flavors
+  examples: |
+    - do condoms come in flavor
+    - are there different types of condoms
+    - what are some flaovor types of condom
+- intent: keep_condom_wallet
+  examples: |
+    - can i keep a condom in a wallet
+    - how to store a condom
+    - my boyfriend keeps condoms in his wallet
+    - how long can i keep a condom
+- intent: vaginal_condom
+  examples: |
+    - what is vagina condom
+    - how do female condoms look like
+    - female condoms
+    - condoms for women
+    - how to use a vagina condom
+    - how effective is a vagina condom
+    - how good is a female condom
+- intent: birth_control_no_pills
+  examples: |
+    - what are some birth control methods
+    - How can  i avoid pregnancy
+    - how can i have safe sex
+    - how can i prevent sti
+    - how can i prevent sexually transmitted diseases
+- intent: dental_dam
+  examples: |
+    - dental dam
+    - how does a dental dam look like
+    - what is the use of a dental dam
+    - tell me about dental dam
+    - where can i find one
+    - I want to try a dental dam
+- intent: how_use_dental_dam
+  examples: |
+    - how do use a dental dam
+    - Get get started with a dental dam
+    - how does a dental dam work
+- intent: what_is_emergency_contraception
+  examples: |
+    - what is emergency contraception
+    - what is ec
+    - tell me about EC
+    - How can i avoid getting pregnant after having sex
+    - I just had sex and forgot to use a condom, what can i do
+- intent: is_it_okay_use_many_bcm
+  examples: |
+    - can i use more than one birth control method
+    - i am using two methods to avoid pregnancy
+    - is it ok to use many family planning techniques
+- intent: absteinance_effective
+  examples: |
+    - how effective is absteinane
+    - how can i abstain
+    - how to abstain from sex
+    - is absteinance good
+- intent: pulling_out_work
+  examples: |
+    - what is the chancee of withdrawl methods
+    - what is pulling out
+    - does pulling out work
+    - how can i use pull out method
+    - is pulling out good
+    - my friend told me about pulling out
+    - have you heard about withdraw method
+- intent: cost_bcm
+  examples: |
+    - where can i access birth control methods
+    - i want to get fmaily planning
+    - is family planning cheap
+    - How much does birth control cost
+- intent: chance_of_pregnancy_pill
+  examples: |
+    - If a girl is taking the pill and she has sex in the morning before she takes her pill, what is the chance of getting pregnant
+    - can i take a pill and have sex
+    - i want to take a pill before having sex
+    - can i try a swallowing a tablet before sex
+    - is taking a pill better
+    - is a pill safer
+    - is a pill effective
+    - how good is taking a pill
+    - can i have sex after taking a pill
+- intent: take_pill_long_time
+  examples: |
+    - Is it bad for you to take the pill for a long time
+    - can  i take a break from using a pill
+    - are there some side effects of using a pill
+- intent: sugar_pills
+  examples: |
+    - what is the use of sugar pill
+    - what are sugar pills
+    - i have heard about sugar pills
+    - sugar pills
+    - What is the point of sugar pills
+- intent: how_to_ask_for_bcm
+  examples: |
+    - how to ask for birth control
+    - how to access family planning
+    - i am fearing to ask for birth control
+    - How do you ask your family doctor for birth control
+- intent: pregnant_first_time
+  examples: |
+    - Can you get pregnant the first time you have a sex?
+    - it is my first time to have sex, can i get pregnant
+    - will i have a baby the first time i have sex
+- intent: safe_days_have_sex
+  examples: |
+    - Is there a time in your cycle when it is safer to have sex than others?
+    - when are my safe days
+    - can i get pregnant during period
+    - can i gave sex during menstrual cycle
+- intent: young_people_get_testicular_cancer
+  examples: |
+    - Can young people get testicular cancer
+    - can i get testicuar cancer
+    - is it possible to get cancer of the testes
+    - is teste cancer common
+- intent: young_people_get_prostate_cancer
+  examples: |
+    - Can young people get prostate cancer
+    - can i get prostate cancer
+    - is it possible to get cancer of the prostate
+    - am i likely to get prostate cancer
+- intent: what_is_erection_cervical_cancer_symptoms
+  examples: |
+    - What is cervical cancer, what are the symptoms
+    - What is cervical cancer,
+    - what are the symptoms of cervical cancer
+    - tell me about cervical cancer
+- intent: what_is_menstruation
+  examples: |
+    - what is mp
+    - MP
+    - what happens druing period
+    - what happebs during menstruation
+- intent: menstraute_forever
+  examples: |
+    - Once you start, do you menstruate for the rest of your life?
+    - do you have periods forever
+    - when do periods stop
+    - do periods stop
+    - do you menstruate all the time?
+- intent: menstrautual_cramps
+  examples: |
+    - why do women have cramps
+    - why cramps
+    - what causes pain during cramps
+- intent: what_is_pms
+  examples: |
+    - what is pms
+    - PMS
+    - what is Premenstrual Syndrome
+    - Premenstrual Syndrome
+- intent: when_will_i_get_period
+  examples: |
+    - When will i get my period
+    - I have never had a period
+    - I have not yet started menstrating, is it fine
+    - when does menstrution start
+- intent: get_period_long_time
+  examples: |
+    - What if I get my first period, and then I dont get one for a while? Am I normal
+    - my cylce is not stable
+    - i dont have periods regularly, is it okay
+    - sometimes i miss my periods
+- intent: puberty_and_period
+  examples: |
+    - I've been going through puberty for a year now and I still haven't had a period Is this normal
+    - I am mature and I am not menstruating
+    - I think i am getting old with a period
+- intent: period_first_experience
+  examples: |
+    - how does menstruation feel
+    - What will it feel like  when my period starts
+    - what is the experiece of having a period
+    - what does it feel like when menstruating
+- intent: period_problems
+  examples: |
+    - Is there anything I can't do when I have my period?
+    - is menstruating okay
+    - are periods normal
+    - what can i do during my month
+- intent: period_blood_qty
+  examples: |
+    - How much blood is there in period
+    - How much blood is lost during mentruation
+    - am i loosing too much blood
+- intent: hot_to_act_during_period
+  examples: |
+    - How should I act when I have my period
+    - how to act during period
+    - How should I act when I have my MP
+    - How can i handle it when the period is here
+- intent: will_everyone_know_period
+  examples: |
+    - Will anyone be able to tell when I have my period
+    - can someone tell that i am haning my period
+    - can my boyfriend find out that i am menstruating
+    - how can someone figure out that i am MP
+- intent: periods_blue
+  examples: |
+    - why are periods blue
+    - Can periods be blue
+    - what is the normal of discharge during period
+    - what is the normal of discharge during menstruation
+- intent: often_change_pad
+  examples: |
+    - How often should I change my pad or tampon
+    - when should i change my pad
+    - when can use a new tampon or pad
+- intent: get_period_unexpectedly
+  examples: |
+    - What if I get my period unexpectedly
+    - can i get a surprise period
+    - what to do when you get a random peroid
+- intent: blood_leaks_period
+  examples: |
+    - What if blood leaks through my underwear and pants
+    - blood stains coming out
+    - have period in public
+    - i am menstruating in public
+- intent: do_i_have_to_use_pads
+  examples: |
+    - Do I have to use pads when I have my period
+    - are other ways of stopping flood
+    - should i use menstrual pads only
+    - what can i us during my period
+    - what can i us during my menstruation
+- intent: boys_get_periods
+  examples: |
+    - Do boys get periods
+    - who gets periods
+    - can everyone menstruate
+- intent: have_periods_tubes_tied
+  examples: |
+    - Do you still have periods after you have your tubes tied
+    - can you vahe periods when mutilated
+    - can you have periods when youre cut
+- intent: no_period_long_time
+  examples: |
+    - Is something wrong when, its been four months since my last period
+    - What is the problem, its been two months since my last period
+- intent: what_is_tampon
+  examples: |
+    - what is a tampon
+    - tampon
+    - tell me about a tampon
+    - do you know a tampon
+- intent: tampn_safe
+  examples: |
+    - Are tampons safe
+    - Are tampons effective
+    - is it okay to use tampons
+- intent: how_to_put_tampon_in
+  examples: |
+    - How do you put a tampon in
+    - How do you use a tampon
+    - putting a tampon
+    - what are instructions for a tampon
+    - give me directions for a tampon
+- intent: tamppon_get_lost
+  examples: |
+    - Can tampon get lost up there
+    - what are the mtyhs about tampon
+    - is a tampon safe
+    - can a tampon to get stuck in the vagina
+- intent: tampon_virginty
+  examples: |
+    - can you lose virginity with a tampon.
+    - dose a tampon make you lose virginity
+
+- intent: tts
+  examples: |
+    - What is TSS
+    - what is Toxic Shock Syndrome
+    - what do you know about tts
+
+- intent: what_is_peri_menopause
+  examples: |
+    - What is peri-menopause
+    - peri menopause
+    - tell me about peri-menopause
+
+- intent: what_is_menopause
+  examples: |
+    - What is menopause
+    - menopause
+    - when does menopause start
+
+- intent: in_pill_but_pregnant
+  examples: |
+    - What is I'm on the pill, but think I'm pregnant Should I stop taking the pill?
+    - I think I am pregnat with while using a pill
+    - I got pregrant when using a pill
+
+- intent: how_to_get_pregnant
+  examples: |
+    - How do people get pregnant
+    - how to get pregnant
+    - i want to get pregnant
+
+- intent: how_young_get_pregnant
+  examples: |
+    - How a young girl can get pregnant
+    - can a young girl can get pregnant
+    - can someone get pregnant while theyre young
+
+- intent: get_pregnant_on_top
+  examples: |
+    - Can a girl get pregnant while she is on top
+    - can i get when using cowgirl
+    - Can a girl get pregnant while I'm riding
+    - can my girlfriend get pregnant when she is on top
+
+- intent: get_pregnant_kissing
+  examples: |
+    - Can you get pregnant from kissing
+    - does kissing lead to pregnancy
+    - can kissing cause pregnancy
+
+- intent: pregnant_after_period
+  examples: |
+    - Can a girl get pregnant during her period or immediately after
+    - can i get pregnant during menstruation
+
+- intent: pregnant_during_period
+  examples: |
+    - pregnant
+
+- intent: get_pregnant_with_clothes
+  examples: |
+    - Can you get pregnant with your clothes on
+
+- intent: get_pregnant_hot_tub
+  examples: |
+    - Can you get pregnant from a hot tub
+    - can you get pregnant  in a shower
+
+- intent: get_period_pregnant
+  examples: |
+    - Can you have a period when you are pregnant
+
+- intent: sperms_have_eyes
+  examples: |
+    - how do sperms reach the egg
+    - Do sperms have eyes, how do tthey find the egg
+
+- intent: determine_baby_sex
+  examples: |
+    - What decides if the baby will  be a boy or girl
+    - how to know sex of a baby
+
+- intent: gestation_time
+  examples: |
+    - How long does it take for a baby to be born
+    - how long is a baby in the womb
+
+- intent: baby_come_out_does_it_pain
+  examples: |
+    - How does the baby come out, Does it hurt
+    - does labour hurt
+
+- intent: vagina_loose_after_baby
+  examples: |
+    - After the bay, is the woman all loose
+    - does the vagina become big after giving birth
+    - Will my vagina be noticeably bigger after I have a baby?
+
+- intent: why_stretch_marks_pregnancy
+  examples: |
+    - Why do we get stretchmarks when you are pregnant
+    - stretch marks after giving birth
+
+- intent: baby_drugs
+  examples: |
+    - What can drugs do to a baby
+    - are drugs harmful to a baby
+
+- intent: baby_alcohol
+  examples: |
+    - is it okay to drink alcohol while pregnant
+    - what does alcohol do to a baby
+    - is alcohol bad to a baby
+    - What can alcohol do to a baby
+
+- intent: what_is_miscarriage
+  examples: |
+    - What is a miscarriage
+    - how does losing a baby feel like
+    - miscarriages
+
+- intent: pregnant_dont_want_baby
+  examples: |
+    - What happens when you get pregnant but you dont want a baby
+    - I am pregnant but i dont want the baby
+    - I am not ready for this comimg baby
+
+- intent: abortion_pill
+  examples: |
+    - What is the abortion pill
+    - abortion pill
+    - do you know any abortion pills
+
+- intent: does_abortion_hurt
+  examples: |
+    - Does an abortion hurt
+    - how does an abortion feel like
+    - i want to do an abortion hurt
+
+- intent: have_baby_after_abortion
+  examples: |
+    - Can you still have a baby after abortion
+    - will i have a baby again after abortion
+
+- intent: think_about_sex
+  examples: |
+    - Is it normal to think about sex a lot?
+    - i think about sex a lot
+
+- intent: what_sexual_intercourse
+  examples: |
+    - What does sexual intercourse mean?
+    - what is intercourse
+
+- intent: what_is_orgasm
+  examples: |
+    - What is an orgasm
+    - orgasm
+    - Leren, what is an orgasm
+    - tell me about orgasms
+
+- intent: hurt_sex_first_time
+  examples: |
+    - Does it hurt the first time you have sex
+    - how does first time sex feel
+
+- intent: sex_during_period
+  examples: |
+    - Can you have sex during your period
+    - is it okay to have sex during my mp
+    - i want to have sex during menstruation
+
+- intent: what_is_oral-sex
+  examples: |
+    - what is oral sex
+    - oral sex
+    - what do you know about oral sex
+
+- intent: oral_sex_or
+  examples: |
+    - Is oral sex considered sex?
+    - does oral sex count as sex
+
+- intent: what_is_blow_job
+  examples: |
+    - What is a blow job?
+    - blow job
+    - how to have a blow job
+
+- intent: what_is_anal_sex
+  examples: |
+    - What is anal sex?
+    - tell me about anal sex
+
+- intent: get_pregnant_anal_sex
+  examples: |
+    - Can I get pregnant if I have anal sex
+    - am i bound to get pregnant with anal sex
+
+- intent: what_is_mursturbation
+  examples: |
+    - What is masturbation
+    - masturbation
+    - how can i masturbate
+
+- intent: is_masturbation_normal
+  examples: |
+    - Is masturbation normal? If I masturbate too much, can it hurt me?
+
+- intent: mean_rub_out
+  examples: |
+    - What does it mean to rub one out
+    - what is rubbing out
+
+- intent: penis
+  examples: |
+    - What is a penis used for
+    - what is a penis
+    
+- intent: what_is_pre_cum
+  examples: |
+    - What is pre-cum?
+    - pre cum
+    - what is pre-ejaculatory fluid
+
+- intent: swallow_semen
+  examples: |
+    - How many calories are in semen? Can you gain weight if you swallow it
+    - can i swallow semen
+    - can i lick sperms
+
+- intent: female_sexually_assault_male
+  examples: |
+    - Can a female sexually assault a male?
+    - can a boy be raped
+    - are boys vulnerable to sex predators
+
+- intent: partner_i_fighting_advice
+  examples: |
+    - My partner and I keep fighting. What should I do?
+    - my relationship has a lot of fihts
+    - my boyfriend is fighting
+    - my girl is always fighting
+    - we are always fighting
+
+- intent: asexual
+  examples: |
+    - what so you understand by asexual
+    - what is asexual
+    - have you heard about asexual
+    - what is an asexual person
+
+- intent: demisexual
+  examples: |
+    - who is demisexual person
+    - what do you understand by demisexual
+
+- intent: gay
+  examples: |
+    - who is a gay
+    - gay person
+    - my friend is a gay
+    - i dont what gay means
+
+- intent: what_is_virus
+  examples: |
+    - what is virus
+    - what are viruses
+    - virus
+
+- intent: tell_one_has_sti
+  examples: |
+    - can you tell someone that has an sti
+    - can i tell if my partner has a sexually transmitted disease
+    - how do you identify someone with an std
+
+- intent: how_do_sti_spread
+  examples: |
+    - how do sexually transmitted disease spread
+    - how do sti spread
+    - how Do std transmit
+
+- intent: get_sti_oral_sex
+  examples: |
+    - can someone get an sti when having oral sex
+    - can i get an infecction when having oral sex
+
+- intent: get_sti_kissing
+  examples: |
+    - can someone get an STI when kissing
+    - can i contract a sexually transmitted disease
+    - can i get an infection when kissing
+
+- intent: get_sti_toilet
+  examples: |
+    - can someone get an sti from a bathroom
+    - can i get an infection from a latrine
+    - i was infected after using a latrine
+    - are dirty latrines good
+    - is it okay to share a bathroom or latrine
+
+- intent: what_is_hiv
+  examples: |
+    - What is Aids
+    - what is hiv
+    - AIDS
+
+- intent: know_someone_has_aids
+  examples: |
+    - Can you know when someone has AIDS
+
+- intent: what_are_wetdreams
+  examples: |
+    - what is a wet dream?
+    - wet dream
+
+- intent: normal_to_get_erection
+  examples: |
+    - i normally get boners
+    - is it okay to get erecions
+
+- intent: normal_for_breasts_to_itch_hurt
+  examples: |
+    - my breats are itching
+    - my girlfriend's breats are itching
+
+- intent: normal_to_have_sexual_feelings
+  examples: |
+    - Is it normal to have sexual feelings?
+    - i am having sexaul feelings
+
+- intent: it_normal_to_pass_gas_during_orgasm
+  examples: |
+    - Is it normal to pass gas during orgasm?
+    - i am passing gas during intercourse
+    - i pass gas when having sex
+
+- intent: certain_exercises_really_lead_better_sex
+  examples: |
+    - Can certain exercises really lead to better sex?
+    - are exercises good for sex
+    - do exercises help in having better sex
+
+- intent: never_orgasm_something_wrong_me
+  examples: |
+    - I’ve never had an orgasm during intercourse. Is there something wrong me?
+    - i have never had good intimacy
+    - i want some good sex
+
+- intent: smell_down_there_what_can_i_do
+  examples: |
+    - I smell down there. What can I do?
+    - i have a bad smell in my vagina
+    - my pussy stinks
+    - i stink down there
+
+- intent: how_long_does_sex_last
+  examples: |
+    - How long does sex last?
+    - how long is good sex
+    - how long is sexaul intercourse
+
+- intent: calories_burnduring_sex
+  examples: |
+    - How many calories do you burn during sex?
+    - how much is fat during sex
+
+- intent: why_does_sex_hurt
+  examples: |
+    - Why does it hurt when I have sex?
+    - why is sex painful
+    - why is sex rough sometimes
+
+- intent: how_long_get_gregnant
+  examples: |
+    - how long does it take to produce a baby
+
+- intent: how_does_sex_feel
+  examples: |
+    - how does sex feel like
+    - i want to experiece sex
+
+- intent: how_can_have_sex_fream
+  examples: |
+    - How can I have a sex dream?
+    - i need sex dream
+    - i want a wet dream
+
+- intent: how_do_kiss
+  examples: |
+    - i want to kiss someone
+    - teach me hot to kiss
+    - i dont know how to kiss
+
+- intent: why_sex_feels_good
+  examples: |
+    - Why does sex feel good?
+    - why is sex sweet
+    - sex is magical
+
+- intent: how_to_have_sex
+  examples: |
+    - How do I have sex?
+    - i want to have sex
+    - i want to sleep with someone
+    - i dont how to have sex
+
+- intent: what_is_sex
+  examples: |
+    - What is sex?
+    - what do you know about sex
+    - teach me about sex
+
+- intent: how_to_orgasm
+  examples: |
+    - i want to have plesure tonight
+    - how can i make my girl to have an orgasm
+    - i want an orgasm
+    - How do I make sure I orgasm during sex?
+
+- intent: what_to_do_condom_breaks
+  examples: |
+    - What do I do when the condom breaks?
+    - the condom broke
+    - condom tore while we were having sex
+
+- intent: penis_size_matter
+  examples: |
+    - Does penis size matter?
+    - i have a big penis
+    - i have a small penis
+    - i have  a huge penis
+    - my boyfriend has a small dick
+    - he has a big dick
+
+- intent: is_vaginal_discharge_normal
+  examples: |
+    - Is vaginal discharge normal
+    - I am having vaginal discharge
+    - is it okay to have vaginal discharge
+
+- intent: can_woman_get_pregnant_while_breastfeeding
+  examples: |
+    - Can a woman get pregnant while breastfeeding
+    - can a lactating mother get pregnant
+
+- intent: what_should_women_do_forget_birth_control_pills
+  examples: |
+    - What should women do when they forget their birth control pills
+    - i forgot to take my pill
+
+- intent: use_vaseline_as_lubricant_with_latex_condom
+  examples: |
+    - Is it OK to use Vaseline as a lubricant with a latex condom
+    - can i use vaseline to lubricate
+    - can i use lotions to oil my genitals
+
+- intent: can_woman_get_pregnant_withdrawal_method
+  examples: |
+    - Can a woman get pregnant using the withdrawal method of birth control?
+    - can i get pregnant with with pulling out
+
+- intent: can_you_get_pregnant_from_pre-cum
+  examples: |
+    - is precum bad?
+    - Can you get pregnant from pre-cum?
+
+- intent: should_you_still_use_protection_with_oral_sex
+  examples: |
+    - protection while having oral sex
+    - should we use a condom while having oral sex
+
+- synonym: restaurant
+  examples: |
+    - restaurants
+    - resto
+    - restos
+    - Restaurant
+    - restoz
+
+- synonym: price-range
+  examples: |
+    - price range
+    - price
+    - much
+    - fee
+    - rent
+    - budget
+
+- synonym: outside-seating
+  examples: |
+    - outside seating
+
+- synonym: mexican
+  examples: |
+    - Mexican
+
+- synonym: hostel
+  examples: |
+    - hostels
+    - hostel
+    - hostelo
+
+- synonym: breakfast-included
+  examples: |
+    - breakfast
+    - include breakfast
+
+- synonym: '1'
+  examples: |
+    - first
+    - first one    
+- synonym: '2'
+  examples: |
+    - second one
+    - second
+- synonym: '3'
+  examples: |
+    - third
+    - third one    
+- synonym: '4'
+  examples: |
+    - fourth
+    - fourth one
+    - four     
+- synonym: '5'
+  examples: |
+    - fifth
+    - fifth one
+    - number five
+    - five
+- synonym: '6'
+  examples: |
+    - sixth
+    - sixth one
+    - number six
+    - six            
+- synonym: '7'
+  examples: |
+    - seventh
+    - seventh one
+- synonym: '8'
+  examples: |
+    - eigth
+    - eigth one
+- synonym: '9'
+  examples: |
+    - ninth
+    - ninth one
+- synonym: '10'
+  examples: |
+    - tenth
+    - tenth one
+- synonym: '11'
+  examples: |
+    - eleventh
+    - eleventh one
+- synonym: '12'
+  examples: |
+    - twelveth
+    - twelveth one
+- synonym: '13'
+  examples: |
+    - thirteenth
+    - thirteenth one
+- synonym: '14'
+  examples: |
+    - fourteenth
+    - fourteenth one
+- synonym: '15'
+  examples: |
+    - fifteenth
+    - fifteenth one  
+- synonym: LAST
+  examples: |
+    - last one
+    - last   
+
+- synonym: free-wifi
+  examples: |
+    - wifi
+- synonym: phone
+  examples: |
+    - phone number
+    - number
+- synonym: email
+  examples: |
+    - email address
+- synonym: office time
+  examples: |
+    - office hour
+- synonym: office
+  examples: |
+    - office number
+    - room number        
+- synonym: transport-shuttle
+  examples: |
+    - transport shuttle
+    - bus
+    - van
+    - shuttle
+    - transport
+    - taxi
+- synonym: star-rating
+  examples: |
+    - star rating
+    - rating
+    - rate
+    - review
+- synonym: gender
+  examples: |
+    - boys
+    - ladies
+- synonym: halls
+  examples: |
+    - halls of residence
+    - accomodation on campus
+
+- synonym: area
+  examples: |
+    - location
+- synonym: about-info
+  examples: |
+    - about
+- synonym: courses
+  examples: |
+    - programs
+    - program
+    - course
+    - courses
+- synonym: direction
+  examples: |
+    - found
+- synonym: Kikoni
+  examples: |
+    - Kikoni
+    - kikoni
+- synonym: Makerere
+  examples: |
+    - Makerere
+    - makerere
+- synonym: Wandegeya
+  examples: |
+    - Wandegeya
+    - wandegeya
+- synonym: Kikumikikumi
+  examples: |
+    - Kikumikikumi
+    - kikumikikumi
+    - kikumi-kikumi
+    - Kikumi-kikumi      
+- synonym: Nalika
+  examples: |
+    - Nalika Hostel
+    - nalika
+    - nalika hostel 
+- synonym: Kare
+  examples: |
+    - Kare Hostel
+    - kare
+    - kare hostel
+    - KARE
+- synonym: cobams
+  examples: |
+    - cobams
+    - COBAMS
+- synonym: cocis
+  examples: |
+    - cocis
+    - COCIS
+    - College of Computing and Informaion Sciences          
+- synonym: chs
+  examples: |
+    - CHS
+    - chs
+    - Health sciences
+    - College of Health Sciences                        
+- lookup: restaurant
+  examples: |
+    - Cocis Canteen
+    - Giuld Canteen
+    - Tasty Bites
+    - Lụa Restaurant
+    - Pfefferberg
+    - Marubi Ramen
+    - Gong Gan
+- lookup: hostel
+  examples: |
+    - Nalika
+    - J J Hostel
+    - Waveney Hostel
+    - Wandegeya Wall Hostel
+    - Kare Hostel
+    - Bascon Girls Hostel
+    - Akwata Empola Hostel
+    - Nana Hostels
+    - Muhika Hostel
+    - Kalmax Hostel
+    - DreamWorld Hostel
+    - Douglas Villa Hostel
+    - Sotch Hostel
+    - Frama Hostel
+    - MaiMood Hostel
+# - lookup: college
+#   examples: |
+#     - College of Computing and Information Sciences
+#     - College of Business and Management Sciences
