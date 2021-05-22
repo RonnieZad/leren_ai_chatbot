@@ -1,0 +1,26 @@
+[
+  {
+    "text": "good afternoon",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.21808890998363495
+    }
+  },
+  {
+    "text": "great",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "thankyou",
+      "confidence": 0.2528778910636902
+    }
+  },
+  {
+    "text": "kampala",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "city",
+      "confidence": 0.13637574017047882
+    }
+  }
+]

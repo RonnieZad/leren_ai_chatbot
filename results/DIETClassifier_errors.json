@@ -1,0 +1,55 @@
+[
+  {
+    "text": "kampala",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "kampala",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "tell me about College of Computing and Informaion Sciences",
+    "entities": [
+      {
+        "start": 8,
+        "end": 13,
+        "value": "about-info",
+        "entity": "attribute"
+      },
+      {
+        "start": 14,
+        "end": 58,
+        "value": "College of Computing and Informaion Sciences",
+        "entity": "object_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "about-info",
+        "start": 8,
+        "end": 13,
+        "confidence_entity": 0.5364906787872314,
+        "value": "about-info",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "attribute",
+        "start": 14,
+        "end": 58,
+        "confidence_entity": 0.5886809825897217,
+        "value": "name",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  }
+]
