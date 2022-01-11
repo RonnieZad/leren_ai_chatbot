@@ -1,8 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.leren_ai_bot_app">
+    package="com.gleamstudios.leren_ai_bot_app">
+      <uses-permission android:name="android.permission.VIBRATE" />
+  <uses-permission android:name="android.permission.INTERNET"/>
    <application
-        android:label="leren_ai_bot_app"
-        android:icon="@mipmap/ic_launcher">
+        android:label="Leren"
+        android:icon="@mipmap/leren_ic">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"

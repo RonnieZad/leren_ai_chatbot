@@ -1,4 +1,4 @@
-package com.example.leren_ai_bot_app
+package com.gleamstudios.leren_ai_bot_app
 
 import io.flutter.embedding.android.FlutterActivity
 
