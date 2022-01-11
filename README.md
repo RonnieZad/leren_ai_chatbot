@@ -1,6 +1,6 @@
 # leren_ai_bot_app
 
-A new Flutter project.
+A new Flutter project
 
 ## Getting Started
 
