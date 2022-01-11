@@ -12,10 +12,10 @@ void main() {
   if (Platform.isIOS) {
 //do nothing, there properties have been configured in the ios project
   } else {
-    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
-    SystemChrome.setApplicationSwitcherDescription(
-        const ApplicationSwitcherDescription(label: 'Leren'));
-    SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersive);
+    // SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+    // SystemChrome.setApplicationSwitcherDescription(
+    //     const ApplicationSwitcherDescription(label: 'Leren'));
+    // SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersive);
   }
 
   initializeDateFormatting().then((_) => runApp(const MyApp()));

@@ -3,7 +3,7 @@ description: Leren is an AI digital human here to help you with anything that yo
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
-version: 1.1.0+2
+version: 1.2.0+3
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
