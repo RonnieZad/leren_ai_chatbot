@@ -128,9 +128,11 @@ packages:
   flutter_chat_ui:
     dependency: "direct main"
     description:
-      name: flutter_chat_ui
-      url: "https://pub.dartlang.org"
-    source: hosted
+      path: "."
+      ref: HEAD
+      resolved-ref: ef9675a0996f7dbb32961032b448815cb5a68aa6
+      url: "https://github.com/RonnieZad/flutter_chat_ui"
+    source: git
     version: "1.5.3"
   flutter_inner_drawer:
     dependency: "direct main"
