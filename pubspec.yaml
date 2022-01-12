@@ -3,7 +3,7 @@ description: Leren is an AI digital human here to help you with anything that yo
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
-version: 1.2.0+3
+version: 1.2.1+4
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
@@ -17,7 +17,6 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   animated_text_kit: ^4.2.1
   cupertino_icons: ^1.0.4
-  flutter_chat_ui: ^1.5.3
   bouncing_widget: ^2.0.0
   intl: ^0.17.0
   mime: ^1.0.1
@@ -33,6 +32,9 @@ dependencies:
   provider: ^6.0.2
   google_maps_flutter: ^2.1.1
   #speech_to_text: ^5.4.2
+  flutter_chat_ui:
+    git: 
+      https://github.com/RonnieZad/flutter_chat_ui
 
 dev_dependencies:
   flutter_test:
