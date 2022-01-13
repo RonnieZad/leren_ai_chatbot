@@ -30,7 +30,7 @@ dependencies:
   shared_preferences: ^2.0.11
   share: ^2.0.4
   provider: ^6.0.2
-  google_maps_flutter: ^2.1.1
+  # google_maps_flutter: ^2.1.1
   #speech_to_text: ^5.4.2
   flutter_chat_ui:
     git: 
