@@ -1,9 +1,20 @@
+//  LEREN DIGITAL HUMAN
+//
+//  Created by Ronald Zad Muhanguzi.
+//  2021, All rights reserved.
+//
+
+//  Unless required by applicable law or agreed to in writing, software
+//  distributed under the License is distributed on an "AS IS" BASIS,
+//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
 import 'dart:ui';
 
 import 'package:bouncing_widget/bouncing_widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:leren_ai_bot_app/constants/strings.dart';
 import 'package:leren_ai_bot_app/widgets/bot_button.dart';
 import 'package:leren_ai_bot_app/widgets/box_container.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -23,6 +34,8 @@ class _SettingsState extends State<Settings> {
   TextEditingController webhookController = TextEditingController();
   TextEditingController nameController = TextEditingController();
   TextEditingController emailController = TextEditingController();
+
+
   @override
   Widget build(BuildContext context) {
     var prefs = Provider.of<SharedPreferences?>(context);
@@ -107,15 +120,19 @@ class _SettingsState extends State<Settings> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Row(
-                        children: [Text('Name'), Spacer(), Text(myName)],
+                        children: <Widget>[
+                          const Text('Name'),
+                          const Spacer(),
+                          Text(myName)
+                        ],
                       ),
                       SizedBox(
                         height: 10.h,
                       ),
                       Row(
-                        children: [
-                          Text('Email address'),
-                          Spacer(),
+                        children: <Widget>[
+                          const Text('Email address'),
+                          const Spacer(),
                           Text(myEmail)
                         ],
                       )
@@ -131,13 +148,17 @@ class _SettingsState extends State<Settings> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Row(
-                        children: [Text('App Name'), Spacer(), Text('Leren')],
+                        children: const <Widget>[
+                          Text('App Name'),
+                          Spacer(),
+                          Text('Leren')
+                        ],
                       ),
                       SizedBox(
                         height: 10.h,
                       ),
                       Row(
-                        children: [
+                        children: const <Widget>[
                           Text('App Version'),
                           Spacer(),
                           Text('v1.0.1'),
@@ -153,9 +174,9 @@ class _SettingsState extends State<Settings> {
                         child: Container(
                           color: Colors.transparent,
                           child: Row(
-                            children: [
-                              Text('Webhook'),
-                              Spacer(),
+                            children: <Widget>[
+                              const Text('Webhook'),
+                              const Spacer(),
                               Text('https://$webhook'),
                               SvgPicture.asset(
                                   'assets/images/fi-rr-angle-small-right.svg',
@@ -182,9 +203,9 @@ class _SettingsState extends State<Settings> {
                       children: <Widget>[
                         Row(
                           children: [
-                            Text(
+                            const Text(
                                 'Share Leren with your friends, Sharing is loving😛🥰'),
-                            Spacer(),
+                            const Spacer(),
                             SvgPicture.asset('assets/images/fi-rr-share.svg',
                                 width: 16.0, height: 16.0)
                           ],
@@ -203,10 +224,11 @@ class _SettingsState extends State<Settings> {
                     children: <Widget>[
                       Row(
                         children: [
-                          Text('Light Mode'),
-                          Spacer(),
+                          const Text('Light Mode'),
+                          const Spacer(),
                           CupertinoSwitch(
-                              trackColor: Color.fromRGBO(251, 241, 212, 1),
+                              trackColor:
+                                  const Color.fromRGBO(251, 241, 212, 1),
                               activeColor: Colors.amber,
                               value: true,
                               onChanged: (val) {}),
@@ -222,9 +244,9 @@ class _SettingsState extends State<Settings> {
                         child: Container(
                           color: Colors.transparent,
                           child: Row(
-                            children: [
-                              Text('Chat Background'),
-                              Spacer(),
+                            children: <Widget>[
+                              const Text('Chat Background'),
+                              const Spacer(),
                               SvgPicture.asset(
                                   'assets/images/fi-rr-angle-small-right.svg',
                                   width: 16.0,
@@ -243,13 +265,6 @@ class _SettingsState extends State<Settings> {
       ],
     ));
   }
-
-  var backgrounds = [
-    {"image": "assets/images/paper.webp", "name": "Default"},
-    {"image": "assets/images/leren.webp", "name": "Background 1"},
-    {"image": "assets/images/paper2.webp", "name": "Background 2"},
-    {"image": "assets/images/paper3.webp", "name": "Background 3"}
-  ];
 
   _onShare(BuildContext context) async {
     // A builder is used to retrieve the context immediately
@@ -299,8 +314,8 @@ class _SettingsState extends State<Settings> {
                     itemBuilder: (BuildContext context, int index) {
                       return GestureDetector(
                         onTap: () {
-                          prefs.setString(
-                              'setBg', backgrounds[index]['image']!);
+                          prefs.setString('setBg',
+                              'assets/images/${backgrounds[index]['image']!}');
                           Navigator.pop(context);
                         },
                         child: Column(
@@ -312,7 +327,7 @@ class _SettingsState extends State<Settings> {
                                   borderRadius: BorderRadius.circular(12.r),
                                   image: DecorationImage(
                                       image: AssetImage(
-                                          backgrounds[index]['image']!),
+                                          'assets/images/${backgrounds[index]['image']!}'),
                                       fit: BoxFit.cover)),
                             ),
                             SizedBox(height: 10.h),
@@ -353,7 +368,7 @@ class _SettingsState extends State<Settings> {
                                 size: 24.w, color: Colors.red)),
                       ),
                       Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
-                        Text(
+                        const Text(
                           'Change Webhook',
                           textScaleFactor: 0.7,
                         ),
@@ -369,7 +384,7 @@ class _SettingsState extends State<Settings> {
                           child: Container(
                             height: 65.h,
                             decoration: BoxDecoration(
-                              color: Color(0xFFf5f5f5),
+                              color: const Color(0xFFf5f5f5),
                               borderRadius: BorderRadius.circular(14.r),
                             ),
                             child: TextFormField(
@@ -388,7 +403,7 @@ class _SettingsState extends State<Settings> {
                           child: Row(
                             children: [
                               Expanded(
-                                child: Container(
+                                child: SizedBox(
                                   height: 60.h,
                                   child: CupertinoButton(
                                       color: Colors.amber,
@@ -446,7 +461,7 @@ class _SettingsState extends State<Settings> {
                                 size: 24.w, color: Colors.red)),
                       ),
                       Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
-                        Text(
+                        const Text(
                           'Edit Account',
                           textScaleFactor: 0.7,
                         ),
@@ -462,7 +477,7 @@ class _SettingsState extends State<Settings> {
                           child: Container(
                             height: 65.h,
                             decoration: BoxDecoration(
-                              color: Color(0xFFf5f5f5),
+                              color: const Color(0xFFf5f5f5),
                               borderRadius: BorderRadius.circular(14.r),
                             ),
                             child: TextFormField(
@@ -480,7 +495,7 @@ class _SettingsState extends State<Settings> {
                           child: Container(
                             height: 65.h,
                             decoration: BoxDecoration(
-                              color: Color(0xFFf5f5f5),
+                              color: const Color(0xFFf5f5f5),
                               borderRadius: BorderRadius.circular(14.r),
                             ),
                             child: TextFormField(
@@ -499,7 +514,7 @@ class _SettingsState extends State<Settings> {
                           child: Row(
                             children: [
                               Expanded(
-                                child: Container(
+                                child: SizedBox(
                                   height: 60.h,
                                   child: CupertinoButton(
                                       color: Colors.amber,

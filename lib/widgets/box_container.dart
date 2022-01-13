@@ -1,7 +1,7 @@
-//  DISABILITY INFORMATION MANAGEMENT SYSTEM - DMIS
+//  LEREN DIGITAL HUMAN
 //
-//  Created by Ronnie Zad.
-//  2021, Centric Solutions-UG. All rights reserved.
+//  Created by Ronald Zad Muhanguzi.
+//  2021, All rights reserved.
 //
 
 //  Unless required by applicable law or agreed to in writing, software
@@ -35,7 +35,7 @@ class BoxContainer extends StatelessWidget {
                     Text(title!,
                         style: TextStyle(
                             fontSize: 24.sp, fontWeight: FontWeight.w800)),
-                    Spacer(),
+                  const  Spacer(),
                   onPressed == null? Container():  BouncingWidget(
                         onPressed: onPressed ?? (){},
                         child: SvgPicture.asset('assets/images/fi-rr-edit.svg',

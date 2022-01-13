@@ -1,3 +1,13 @@
+//  LEREN DIGITAL HUMAN
+//
+//  Created by Ronald Zad Muhanguzi.
+//  2021, All rights reserved.
+//
+
+//  Unless required by applicable law or agreed to in writing, software
+//  distributed under the License is distributed on an "AS IS" BASIS,
+//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:leren_ai_bot_app/widgets/bot_button.dart';
@@ -37,7 +47,7 @@ class _InfoState extends State<Info> {
                             fontWeight: FontWeight.w600, fontSize: 28.sp),
                       ),
                       const Spacer(),
-                      Container(
+                      SizedBox(
                         width: 45.w,
                         height: 45.w,
                       ),
@@ -79,12 +89,12 @@ class _InfoState extends State<Info> {
             isAlwaysShown: true,
             child: ListView(
               physics: const BouncingScrollPhysics(),
-              padding:  EdgeInsets.only(right: 20.w, top: 20.h, bottom: 40.h),
+              padding: EdgeInsets.only(right: 20.w, top: 20.h, bottom: 40.h),
               controller: controller,
               shrinkWrap: true,
               children: <Widget>[
                 RichText(
-                    text: TextSpan(
+                    text: const TextSpan(
                         text: 'LEREN,',
                         style: TextStyle(color: Colors.black),
                         children: [
@@ -103,7 +113,7 @@ class _InfoState extends State<Info> {
                   endIndent: 320.w,
                 ),
                 RichText(
-                    text: TextSpan(
+                    text: const TextSpan(
                         text:
                             'Leren is still young, about 3 years old and her mind and intelligence is still evolving. Here are some quick topics that you can discuss with her. If you notice any hiccups or prefer a topic or feature kindly write to us in email and we will be glad to better Leren with your assistance✌🏽\n\n',
                         style: TextStyle(color: Colors.black),
@@ -123,7 +133,7 @@ class _InfoState extends State<Info> {
                   endIndent: 320.w,
                 ),
                 RichText(
-                    text: TextSpan(
+                    text: const TextSpan(
                         text:
                             'Leren is proudly developed with love❤️ by a team of Makerere Students of the Computer Science class. They are shortlisted below\n\n',
                         style: TextStyle(color: Colors.black),

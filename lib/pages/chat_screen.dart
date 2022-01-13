@@ -1,3 +1,13 @@
+//  LEREN DIGITAL HUMAN
+//
+//  Created by Ronald Zad Muhanguzi.
+//  2021, All rights reserved.
+//
+
+//  Unless required by applicable law or agreed to in writing, software
+//  distributed under the License is distributed on an "AS IS" BASIS,
+//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
 import 'dart:convert';
 import 'dart:ui';
 import 'package:bouncing_widget/bouncing_widget.dart';
@@ -8,6 +18,7 @@ import 'package:flutter_chat_types/flutter_chat_types.dart' as types;
 import 'package:flutter_chat_ui/flutter_chat_ui.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:leren_ai_bot_app/constants/strings.dart';
 import 'package:leren_ai_bot_app/models/reply_model.dart';
 import 'package:leren_ai_bot_app/models/sent_model.dart';
 import 'package:leren_ai_bot_app/pages/menu/info_screen.dart';
@@ -28,46 +39,6 @@ class _ChatPageState extends State<ChatPage> {
   List<types.Message> _messages = [];
   final _user = const types.User(id: '06c33e8b-e835-4736-80f4-63f44b66666c');
   bool isOnline = true;
-  var msgTemplate = [
-    {
-      "author": {
-        "firstName": "Leren",
-        "id": "b4878b96-efbc-479a-8291-474ef323dec7",
-        "imageUrl": "https://avatars.githubusercontent.com/u/14123304?v=4"
-      },
-      "createdAt": DateTime.now().millisecondsSinceEpoch,
-      "id": "e7a673e9-86eb-4572-936f-2882b0183cdc",
-      "status": "seen",
-      "text":
-          "You can ask me about college🕍, hostels🏢, restaurants🍟, halls of residence🏠, finding you course material📚, directions📍, weather🌤, counseling, date and time📅 and anything else about Muk Campus. We can always talk. If you need any help, I am the guy😎",
-      "type": "text"
-    },
-    {
-      "author": {
-        "firstName": "Leren",
-        "id": "b4878b96-efbc-479a-8291-474ef323dec7",
-        "imageUrl": "https://avatars.githubusercontent.com/u/14123304?v=4"
-      },
-      "createdAt": DateTime.now().millisecondsSinceEpoch,
-      "id": "e7a673e9-86eb-4572-936f-2882b0183cdc",
-      "status": "seen",
-      "text":
-          "I am a digital human here to assist you with anything while at campus",
-      "type": "text"
-    },
-    {
-      "author": {
-        "firstName": "Leren",
-        "id": "b4878b96-efbc-479a-8291-474ef323dec7",
-        "imageUrl": "https://avatars.githubusercontent.com/u/14123304?v=4"
-      },
-      "createdAt": DateTime.now().millisecondsSinceEpoch,
-      "id": "e7a673e9-86eb-4572-936f-2882b0183cdc",
-      "status": "seen",
-      "text": "Hello there, My name is Leren",
-      "type": "text"
-    }
-  ];
 
   @override
   void initState() {
@@ -171,6 +142,7 @@ class _ChatPageState extends State<ChatPage> {
         });
       }
     } catch (e) {
+      // ignore: avoid_print
       print(e);
       // show that bot is offline
     }
@@ -179,13 +151,15 @@ class _ChatPageState extends State<ChatPage> {
   @override
   Widget build(BuildContext context) {
     var prefs = Provider.of<SharedPreferences?>(context);
-    var chatBg = prefs?.getString('setBg') ?? 'assets/images/paper.webp';
+    var chatBg = prefs?.getString('setBg') ??
+        'assets/images/${backgrounds[3]['image']!}';
 
     return Scaffold(
       body: Stack(
         children: [
           Image.asset(
             chatBg,
+            width: double.infinity,
             fit: BoxFit.cover,
             height: double.infinity,
           ),
@@ -197,7 +171,7 @@ class _ChatPageState extends State<ChatPage> {
                 primaryColor: Color.fromRGBO(89, 169, 240, 1),
                 backgroundColor: Colors.transparent,
                 messageBorderRadius: 23.0,
-                inputBackgroundColor: Color.fromRGBO(47, 114, 131, 1),
+                inputBackgroundColor: Color.fromRGBO(39, 39, 58, 1),
                 inputBorderRadius:
                     BorderRadius.vertical(top: Radius.circular(25.0))),
             onMessageTap: _handleMessageTap,
@@ -210,12 +184,11 @@ class _ChatPageState extends State<ChatPage> {
             child: BackdropFilter(
               filter: ImageFilter.blur(sigmaX: 20.0, sigmaY: 20.0),
               child: Container(
-                height: 100.0,
+                height: 120.0,
                 width: double.infinity,
                 decoration: const BoxDecoration(
-                    color: Colors.white10,
-                    borderRadius:
-                        BorderRadius.vertical(bottom: Radius.circular(25.0))),
+                  color: Colors.black45,
+                ),
                 child: Padding(
                   padding:
                       const EdgeInsets.only(left: 20.0, top: 30.0, right: 20.0),
@@ -233,7 +206,8 @@ class _ChatPageState extends State<ChatPage> {
                               Padding(
                                 padding: const EdgeInsets.all(7.0),
                                 child: SvgPicture.asset(
-                                    'assets/images/fi-rr-angle-small-left.svg'),
+                                    'assets/images/fi-rr-angle-small-left.svg',
+                                    color: Colors.white),
                               ),
                               const SizedBox(
                                 width: 5.0,
@@ -241,6 +215,7 @@ class _ChatPageState extends State<ChatPage> {
                               const Text(
                                 'Back',
                                 style: TextStyle(
+                                    color: Colors.white,
                                     fontWeight: FontWeight.bold,
                                     fontSize: 18.0),
                               )
@@ -252,9 +227,7 @@ class _ChatPageState extends State<ChatPage> {
                       BouncingWidget(
                         onPressed: () {
                           HapticFeedback.selectionClick();
-
                           _modalBuilder(context);
-                          //Navigator.of(context).restorablePush(_modalBuilder);
                         },
                         child: Stack(
                           alignment: Alignment.center,
@@ -292,8 +265,8 @@ class _ChatPageState extends State<ChatPage> {
   }
 
   static _modalBuilder(BuildContext context) {
-    SharedPreferences? preference =
-        Provider.of<SharedPreferences?>(context, listen: false);
+    // SharedPreferences? preference =
+    //     Provider.of<SharedPreferences?>(context, listen: false);
 
     showDialog(
         context: context,
@@ -305,7 +278,6 @@ class _ChatPageState extends State<ChatPage> {
               alignment: Alignment.topRight,
               child: SizedBox(
                 width: 230.w,
-                //height: 400.w,
                 child: CupertinoPopupSurface(
                   isSurfacePainted: true,
                   child: Column(
@@ -323,15 +295,16 @@ class _ChatPageState extends State<ChatPage> {
                                     builder: (context) => const Info(),
                                   ),
                                 );
-                                
                               },
                               icon: SizedBox(
-                                width: 18.0, height: 18.0,
-                                child: SvgPicture.asset('assets/images/fi-rr-info.svg')),
-                              label: Text('Info')),
+                                  width: 18.0,
+                                  height: 18.0,
+                                  child: SvgPicture.asset(
+                                      'assets/images/fi-rr-info.svg')),
+                              label: const Text('Info')),
                         ],
                       ),
-                         Row(
+                      Row(
                         children: [
                           TextButton.icon(
                               onPressed: () {
@@ -342,15 +315,16 @@ class _ChatPageState extends State<ChatPage> {
                                     builder: (context) => const Info(),
                                   ),
                                 );
-                                
                               },
                               icon: SizedBox(
-                                width: 18.0, height: 18.0,
-                                child: SvgPicture.asset('assets/images/fi-rr-info.svg')),
-                              label: Text('Export Chat')),
+                                  width: 18.0,
+                                  height: 18.0,
+                                  child: SvgPicture.asset(
+                                      'assets/images/fi-rr-info.svg')),
+                              label: const Text('Export Chat')),
                         ],
                       ),
-                           Row(
+                      Row(
                         children: [
                           TextButton.icon(
                               onPressed: () {
@@ -361,12 +335,13 @@ class _ChatPageState extends State<ChatPage> {
                                     builder: (context) => const Info(),
                                   ),
                                 );
-                                
                               },
                               icon: SizedBox(
-                                width: 18.0, height: 18.0,
-                                child: SvgPicture.asset('assets/images/fi-rr-info.svg')),
-                              label: Text('Clear Chat History')),
+                                  width: 18.0,
+                                  height: 18.0,
+                                  child: SvgPicture.asset(
+                                      'assets/images/fi-rr-info.svg')),
+                              label: const Text('Clear Chat History')),
                         ],
                       )
                     ],

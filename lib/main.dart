@@ -1,12 +1,22 @@
+//  LEREN DIGITAL HUMAN
+//
+//  Created by Ronald Zad Muhanguzi.
+//  2021, All rights reserved.
+//
+
+//  Unless required by applicable law or agreed to in writing, software
+//  distributed under the License is distributed on an "AS IS" BASIS,
+//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:intl/date_symbol_data_local.dart';
-import 'package:leren_ai_bot_app/pages/main_screen.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
+import 'widgets/app_drawer.dart';
 
 void main() {
   if (Platform.isIOS) {
