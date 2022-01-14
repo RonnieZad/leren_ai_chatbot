@@ -164,6 +164,7 @@ class _ChatPageState extends State<ChatPage> {
             height: double.infinity,
           ),
           Chat(
+            scrollPhysics: const BouncingScrollPhysics(),
             messages: _messages,
             theme: const DefaultChatTheme(
                 dateDividerTextStyle:
