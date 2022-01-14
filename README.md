@@ -1,4 +1,4 @@
-# leren_ai_bot_app
+# LEREN DIGITAL HUMAN
 
 Leren is an AI digital human here to help you with anything that you need at campus, hit me up any time. You can ask her about colleges🕍, hostels🏢, restaurants🍟, halls of residence🏠, finding you course material📚, directions📍, weather🌤, counseling, date and time📅 and anything else about Muk Campus. Text her right away. If you need any help, ask Leren.
 
